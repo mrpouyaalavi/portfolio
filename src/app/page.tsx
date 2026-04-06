@@ -5,7 +5,7 @@ import Image from "next/image";
 import {
   ArrowRight,
   Download,
-  ExternalLink,
+
   Code2,
   Database,
   Layers,
@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { projects, skillGroups } from "@/lib/data";
+import { ProjectCard } from "@/components/ui/ProjectCard";
 import { GITHUB_URL, LINKEDIN_URL } from "@/lib/constants";
 import { motion } from "framer-motion";
 import {
@@ -46,7 +47,7 @@ const TICKER = [
 ];
 
 export default function Home() {
-  const featuredProject = projects["syllabus-sync"];
+  const projectList = Object.values(projects);
 
   return (
     <div>
@@ -263,98 +264,28 @@ export default function Home() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.05 }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-4"
           >
-            {/* Featured project card */}
-            <motion.div variants={fadeInUp}>
-              <div className="group relative glass-card p-8 md:p-10 transition-all duration-300 overflow-hidden">
-                {/* Gradient accent line */}
-                <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-accent/50 to-transparent" />
+            {projectList.map((project) => (
+              <motion.div key={project.slug} variants={fadeInUp}>
+                <ProjectCard project={project} />
+              </motion.div>
+            ))}
+          </motion.div>
 
-                <div className="flex flex-col lg:flex-row lg:items-start gap-8">
-                  <div className="flex-1 space-y-5">
-                    <div className="flex items-center gap-3">
-                      <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
-                        {featuredProject.category}
-                      </span>
-                      <span className="text-xs text-text-muted">
-                        {featuredProject.year}
-                      </span>
-                    </div>
-
-                    <h3 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-accent transition-colors">
-                      {featuredProject.title}
-                    </h3>
-
-                    <p className="text-text-secondary leading-relaxed">
-                      {featuredProject.fullDescription}
-                    </p>
-
-                    <div className="flex flex-wrap gap-1.5">
-                      {featuredProject.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="text-[11px] font-medium px-2.5 py-1 rounded-md bg-overlay-subtle text-text-muted border border-border-subtle"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-
-                    <ul className="space-y-2">
-                      {featuredProject.highlights.slice(0, 3).map((h) => (
-                        <li
-                          key={h}
-                          className="flex items-start gap-2 text-sm text-text-secondary"
-                        >
-                          <span className="text-accent mt-1 shrink-0">▸</span>
-                          {h}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Right side links */}
-                  <div className="lg:w-48 flex flex-row lg:flex-col gap-3">
-                    {featuredProject.links.demo && (
-                      <a
-                        href={featuredProject.links.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-accent/10 text-accent text-sm font-medium border border-accent/20 hover:bg-accent/20 transition-colors"
-                      >
-                        <ExternalLink size={14} /> Live Demo
-                      </a>
-                    )}
-                    {featuredProject.links.repo && (
-                      <a
-                        href={featuredProject.links.repo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-overlay-subtle text-text-secondary text-sm font-medium border border-border-subtle hover:border-accent/30 hover:text-accent transition-colors"
-                      >
-                        <GithubIcon size={14} /> Source
-                      </a>
-                    )}
-                    <Link
-                      href={`/projects/${featuredProject.slug}`}
-                      className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-overlay-subtle text-text-secondary text-sm font-medium border border-border-subtle hover:border-accent/30 hover:text-accent transition-colors"
-                    >
-                      Details <ArrowRight size={14} />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* View all projects link */}
-            <motion.div variants={fadeInUp} className="mt-8 text-center">
-              <Link
-                href="/projects"
-                className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-light transition-colors"
-              >
-                View all projects <ArrowRight size={16} />
-              </Link>
-            </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="mt-8 text-center"
+          >
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-light transition-colors"
+            >
+              View all projects <ArrowRight size={16} />
+            </Link>
           </motion.div>
         </section>
       </AnimatedSection>

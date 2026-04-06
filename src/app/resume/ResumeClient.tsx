@@ -163,7 +163,7 @@ export function ResumeClient() {
                   <h4 className="text-lg font-semibold text-foreground">
                     Syllabus Sync — Student Productivity Platform
                   </h4>
-                  <span className="text-xs text-text-muted">Dec 2025 – Present</span>
+                  <span className="text-xs text-text-muted">December 2025 – Present</span>
                 </div>
                 <p className="text-xs text-accent-light font-medium mb-3">
                   Next.js 16 · React 19 · TypeScript · Tailwind CSS · Supabase · Vitest

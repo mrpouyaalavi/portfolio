@@ -18,7 +18,7 @@ export const projects: Record<string, Project> = {
     slug: "syllabus-sync",
     title: "Syllabus Sync",
     category: "Full-Stack",
-    year: "2025–Present",
+    year: "Dec 2025 – Present",
     description:
       "A full-stack platform helping Macquarie University students manage academic planning, deadlines, and campus navigation — built with Next.js 16, React 19, Supabase, and TypeScript.",
     fullDescription:
@@ -48,7 +48,7 @@ export const projects: Record<string, Project> = {
     slug: "cifar-10-image-classification",
     title: "CIFAR-10 Image Classification",
     category: "AI/ML",
-    year: "2025",
+    year: "Mar 2026 – Present",
     description:
       "A deep learning comparative study benchmarking custom CNN architectures against transfer learning with pretrained models on the CIFAR-10 image classification task.",
     fullDescription:
