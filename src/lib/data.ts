@@ -1,7 +1,7 @@
 export interface Project {
   slug: string;
   title: string;
-  category: "Full-Stack" | "Frontend" | "Backend" | "DevOps";
+  category: "Full-Stack" | "Frontend" | "Backend" | "DevOps" | "AI/ML";
   year: string;
   description: string;
   fullDescription: string;
@@ -42,6 +42,35 @@ export const projects: Record<string, Project> = {
       "Added accessibility and internationalisation aligned with WCAG principles",
       "Deployed via GitHub Actions and Vercel with full CI/CD pipelines",
       "Responsive mobile-first design serving potential university-wide adoption",
+    ],
+  },
+  "cifar-10-image-classification": {
+    slug: "cifar-10-image-classification",
+    title: "CIFAR-10 Image Classification",
+    category: "AI/ML",
+    year: "2025",
+    description:
+      "A deep learning comparative study benchmarking custom CNN architectures against transfer learning with pretrained models on the CIFAR-10 image classification task.",
+    fullDescription:
+      "An end-to-end machine learning pipeline comparing custom CNN architectures trained from scratch against transfer learning with pretrained models (MobileNetV2, ResNet-18, EfficientNet-B0, ViT) on the CIFAR-10 benchmark. Includes advanced data augmentation, Grad-CAM interpretability, INT8 quantization for deployment, and an interactive Streamlit demo.",
+    tags: [
+      "Python",
+      "PyTorch",
+      "Deep Learning",
+      "Computer Vision",
+      "Streamlit",
+      "scikit-learn",
+    ],
+    links: {
+      repo: "https://github.com/mrpouyaalavi/CIFAR-10-Image-Classification",
+    },
+    highlights: [
+      "Compared 5 architectures: Custom CNN, MobileNetV2, ResNet-18, EfficientNet-B0, and Vision Transformer (ViT)",
+      "MobileNetV2 achieved 85.53% accuracy with just 0.5% of the Custom CNN's trainable parameters",
+      "Implemented advanced augmentation techniques including CutOut, MixUp, and CutMix",
+      "Built Grad-CAM interpretability visualizations to explain model predictions",
+      "Created an interactive Streamlit demo with side-by-side model comparison",
+      "Applied INT8 dynamic quantization for efficient deployment",
     ],
   },
 };

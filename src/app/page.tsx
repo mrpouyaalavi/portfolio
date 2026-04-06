@@ -38,7 +38,10 @@ const TICKER = [
   "GitHub Actions",
   "Vercel",
   "REST APIs",
+  "Python",
+  "PyTorch",
   "Full-Stack Development",
+  "AI & Machine Learning",
   "Sydney, NSW",
 ];
 

@@ -86,7 +86,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
       {/* Full card link */}
       <Link
         href={`/projects/${project.slug}`}
-        className="absolute inset-0 rounded-(--radius)"
+        className="absolute inset-0 rounded-2xl"
         aria-label={`View ${project.title} details`}
       />
     </motion.div>

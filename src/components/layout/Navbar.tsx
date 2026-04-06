@@ -41,7 +41,7 @@ export function Navbar() {
             <span className="text-accent font-bold text-sm">P</span>
           </div>
           <span className="font-semibold text-foreground group-hover:text-accent transition-colors duration-300 text-sm tracking-tight">
-            Pouya Alavi
+            Pouya Alavi Naeini
           </span>
         </Link>
 
