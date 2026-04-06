@@ -23,7 +23,7 @@
 
 A modern, professional portfolio website for **Pouya Alavi Naeini**, a full-stack developer and final-year IT student at Macquarie University. The site features system-aware light/dark theming, animated page transitions, a glass-card design system, SEO optimisation with structured data, and a fully responsive layout from 360px to ultrawide.
 
-**[🔗 Live Site](https://pouyaalavi.dev)** &nbsp;·&nbsp; **[💼 LinkedIn](https://linkedin.com/in/pouya-alavi)** &nbsp;·&nbsp; **[🐙 GitHub](https://github.com/mrpouyaalavi)**
+**[🔗 Live Site](https://www.pouyaalavi.dev)** &nbsp;·&nbsp; **[💼 LinkedIn](https://linkedin.com/in/pouya-alavi)** &nbsp;·&nbsp; **[🐙 GitHub](https://github.com/mrpouyaalavi)**
 
 <br/>
 
