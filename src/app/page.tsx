@@ -196,8 +196,8 @@ export default function Home() {
                     <Image
                       src="/pouya-profile.jpeg"
                       alt="Pouya Alavi Naeini — Full-Stack Developer"
-                      width={500}
-                      height={500}
+                      width={400}
+                      height={400}
                       priority
                       className="w-full h-full object-cover"
                     />
