@@ -9,6 +9,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GITHUB_URL, LINKEDIN_URL, CONTACT_EMAIL } from "@/lib/constants";
 import { skillGroups, experiences, education } from "@/lib/data";
 import Link from "next/link";
+import Image from "next/image";
 
 export function AboutClient() {
   return (
@@ -65,10 +66,10 @@ export function AboutClient() {
 
             {/* Info row */}
             <div className="flex flex-wrap gap-3">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/4 border border-border-subtle text-text-muted text-xs font-medium">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-overlay-subtle border border-border-subtle text-text-muted text-xs font-medium">
                 <MapPin size={12} /> Sydney, NSW
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/4 border border-border-subtle text-text-muted text-xs font-medium">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-overlay-subtle border border-border-subtle text-text-muted text-xs font-medium">
                 <GraduationCap size={12} /> Macquarie University
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-accent/8 border border-accent/20 text-accent text-xs font-medium">
@@ -82,7 +83,7 @@ export function AboutClient() {
                 href={GITHUB_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/4 border border-border-subtle hover:border-accent/30 hover:text-accent text-text-secondary text-sm font-medium transition-all"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-overlay-subtle border border-border-subtle hover:border-accent/30 hover:text-accent text-text-secondary text-sm font-medium transition-all"
               >
                 <GithubIcon size={16} /> GitHub
               </a>
@@ -90,13 +91,13 @@ export function AboutClient() {
                 href={LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/4 border border-border-subtle hover:border-accent/30 hover:text-accent text-text-secondary text-sm font-medium transition-all"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-overlay-subtle border border-border-subtle hover:border-accent/30 hover:text-accent text-text-secondary text-sm font-medium transition-all"
               >
                 <LinkedinIcon size={16} /> LinkedIn
               </a>
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
-                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/4 border border-border-subtle hover:border-accent/30 hover:text-accent text-text-secondary text-sm font-medium transition-all"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-overlay-subtle border border-border-subtle hover:border-accent/30 hover:text-accent text-text-secondary text-sm font-medium transition-all"
               >
                 <Mail size={16} /> Email
               </a>
@@ -111,15 +112,35 @@ export function AboutClient() {
               </Link>
               <Link
                 href="/resume"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white/6 hover:bg-white/10 text-foreground text-sm font-semibold rounded-xl border border-border-default hover:border-border-accent transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-overlay hover:bg-overlay-strong text-foreground text-sm font-semibold rounded-xl border border-border-default hover:border-border-accent transition-all"
               >
                 View Resume
               </Link>
             </div>
           </motion.div>
 
-          {/* Right — Stats */}
-          <motion.div variants={fadeInUp} className="lg:col-span-4 space-y-4">
+          {/* Right — Photo + Stats */}
+          <motion.div variants={fadeInUp} className="lg:col-span-4 space-y-6">
+            {/* Profile Photo */}
+            <div className="flex justify-center">
+              <div className="relative">
+                <div className="absolute -inset-3 rounded-2xl bg-linear-to-br from-accent/20 via-secondary/10 to-accent/5 blur-xl opacity-50" />
+                <div className="relative w-48 h-48 lg:w-56 lg:h-56 rounded-2xl p-0.5 bg-linear-to-br from-accent/40 via-secondary/20 to-accent/10">
+                  <div className="w-full h-full rounded-2xl overflow-hidden bg-white ring-1 ring-border-subtle">
+                    <Image
+                      src="/pouya-profile.jpeg"
+                      alt="Pouya Alavi Naeini"
+                      width={500}
+                      height={500}
+                      priority
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Stats */}
             {[
               { value: "2026", label: "Graduating", color: "text-accent" },
               { value: "Full-Stack", label: "Specialisation", color: "text-secondary" },
@@ -162,7 +183,7 @@ export function AboutClient() {
                     {group.skills.map((skill) => (
                       <span
                         key={skill}
-                        className="px-3 py-1.5 text-xs font-medium rounded-lg bg-white/4 text-text-secondary border border-border-subtle hover:border-accent/30 hover:text-accent hover:bg-accent/4 transition-all cursor-default"
+                        className="px-3 py-1.5 text-xs font-medium rounded-lg bg-overlay-subtle text-text-secondary border border-border-subtle hover:border-accent/30 hover:text-accent hover:bg-accent/4 transition-all cursor-default"
                       >
                         {skill}
                       </span>

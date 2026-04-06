@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   Download,
@@ -64,7 +65,8 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 lg:py-28">
-          <div className="max-w-3xl">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:gap-16">
+            <div className="max-w-3xl lg:max-w-xl xl:max-w-2xl">
             {/* Status badge */}
             <motion.div
               initial={{ opacity: 0, y: 16 }}
@@ -128,7 +130,7 @@ export default function Home() {
               ].map(({ icon: Icon, text }) => (
                 <span
                   key={text}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/4 border border-border-subtle text-text-muted text-xs font-medium"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-overlay-subtle border border-border-subtle text-text-muted text-xs font-medium"
                 >
                   <Icon size={12} />
                   {text}
@@ -151,7 +153,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/resume"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white/6 hover:bg-white/10 text-foreground text-sm font-semibold rounded-xl border border-border-default hover:border-border-accent transition-all duration-300"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-overlay hover:bg-overlay-strong text-foreground text-sm font-semibold rounded-xl border border-border-default hover:border-border-accent transition-all duration-300"
               >
                 <Download size={16} /> Resume
               </Link>
@@ -160,7 +162,7 @@ export default function Home() {
                   href={GITHUB_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2.5 rounded-xl bg-white/4 hover:bg-white/8 border border-border-subtle hover:border-accent/30 text-text-muted hover:text-accent transition-all"
+                  className="p-2.5 rounded-xl bg-overlay-subtle hover:bg-overlay-hover border border-border-subtle hover:border-accent/30 text-text-muted hover:text-accent transition-all"
                   aria-label="GitHub"
                 >
                   <GithubIcon size={18} />
@@ -169,11 +171,40 @@ export default function Home() {
                   href={LINKEDIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2.5 rounded-xl bg-white/4 hover:bg-white/8 border border-border-subtle hover:border-accent/30 text-text-muted hover:text-accent transition-all"
+                  className="p-2.5 rounded-xl bg-overlay-subtle hover:bg-overlay-hover border border-border-subtle hover:border-accent/30 text-text-muted hover:text-accent transition-all"
                   aria-label="LinkedIn"
                 >
                   <LinkedinIcon size={18} />
                 </a>
+              </div>
+            </motion.div>
+          </div>
+
+            {/* Profile Photo */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              className="hidden lg:flex items-center justify-center shrink-0"
+            >
+              <div className="relative">
+                {/* Decorative glow ring */}
+                <div className="absolute -inset-4 rounded-full bg-linear-to-br from-accent/20 via-secondary/10 to-accent/5 blur-2xl opacity-60" />
+                {/* White ring + photo */}
+                <div className="relative w-64 h-64 xl:w-72 xl:h-72 rounded-full p-1 bg-linear-to-br from-accent/40 via-secondary/20 to-accent/10">
+                  <div className="w-full h-full rounded-full overflow-hidden bg-white ring-2 ring-border-subtle">
+                    <Image
+                      src="/pouya-profile.jpeg"
+                      alt="Pouya Alavi Naeini — Full-Stack Developer"
+                      width={500}
+                      height={500}
+                      priority
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                {/* Accent dot */}
+                <div className="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-success border-4 border-background" />
               </div>
             </motion.div>
           </div>
@@ -259,7 +290,7 @@ export default function Home() {
                       {featuredProject.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="text-[11px] font-medium px-2.5 py-1 rounded-md bg-white/4 text-text-muted border border-border-subtle"
+                          className="text-[11px] font-medium px-2.5 py-1 rounded-md bg-overlay-subtle text-text-muted border border-border-subtle"
                         >
                           {tag}
                         </span>
@@ -296,14 +327,14 @@ export default function Home() {
                         href={featuredProject.links.repo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/4 text-text-secondary text-sm font-medium border border-border-subtle hover:border-accent/30 hover:text-accent transition-colors"
+                        className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-overlay-subtle text-text-secondary text-sm font-medium border border-border-subtle hover:border-accent/30 hover:text-accent transition-colors"
                       >
                         <GithubIcon size={14} /> Source
                       </a>
                     )}
                     <Link
                       href={`/projects/${featuredProject.slug}`}
-                      className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/4 text-text-secondary text-sm font-medium border border-border-subtle hover:border-accent/30 hover:text-accent transition-colors"
+                      className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-overlay-subtle text-text-secondary text-sm font-medium border border-border-subtle hover:border-accent/30 hover:text-accent transition-colors"
                     >
                       Details <ArrowRight size={14} />
                     </Link>
@@ -424,7 +455,7 @@ export default function Home() {
                   {group.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1.5 text-xs font-medium rounded-lg bg-white/4 text-text-secondary border border-border-subtle hover:border-accent/30 hover:text-accent hover:bg-accent/4 transition-all cursor-default"
+                      className="px-3 py-1.5 text-xs font-medium rounded-lg bg-overlay-subtle text-text-secondary border border-border-subtle hover:border-accent/30 hover:text-accent hover:bg-accent/4 transition-all cursor-default"
                     >
                       {skill}
                     </span>
@@ -465,7 +496,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white/6 hover:bg-white/10 text-foreground text-sm font-semibold rounded-xl border border-border-default hover:border-border-accent transition-all duration-300"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-overlay hover:bg-overlay-strong text-foreground text-sm font-semibold rounded-xl border border-border-default hover:border-border-accent transition-all duration-300"
               >
                 Learn More About Me
               </Link>

@@ -56,7 +56,7 @@ export function ProjectDetailClient({ project }: { project: Project }) {
                 href={project.links.repo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/4 text-text-secondary text-sm font-medium border border-border-subtle hover:border-accent/30 hover:text-accent transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-overlay-subtle text-text-secondary text-sm font-medium border border-border-subtle hover:border-accent/30 hover:text-accent transition-colors"
               >
                 <GithubIcon size={14} /> View Source
               </a>
@@ -73,7 +73,7 @@ export function ProjectDetailClient({ project }: { project: Project }) {
             {project.tags.map((tag) => (
               <span
                 key={tag}
-                className="px-3 py-1.5 text-xs font-medium rounded-lg bg-white/4 text-text-secondary border border-border-subtle"
+                className="px-3 py-1.5 text-xs font-medium rounded-lg bg-overlay-subtle text-text-secondary border border-border-subtle"
               >
                 {tag}
               </span>

@@ -137,7 +137,7 @@ export function ResumeClient() {
                       {group.skills.map((skill) => (
                         <span
                           key={skill}
-                          className="text-xs px-2 py-1 rounded-md bg-white/4 text-text-secondary border border-border-subtle"
+                          className="text-xs px-2 py-1 rounded-md bg-overlay-subtle text-text-secondary border border-border-subtle"
                         >
                           {skill}
                         </span>

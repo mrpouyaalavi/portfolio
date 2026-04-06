@@ -47,7 +47,7 @@ export function ContactClient() {
                   name="name"
                   type="text"
                   placeholder="Your name"
-                  className="w-full px-4 py-3 rounded-xl bg-white/4 border border-border-subtle text-foreground placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/30 transition-all"
+                  className="w-full px-4 py-3 rounded-xl bg-overlay-subtle border border-border-subtle text-foreground placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/30 transition-all"
                 />
               </div>
               <div>
@@ -59,7 +59,7 @@ export function ContactClient() {
                   name="email"
                   type="email"
                   placeholder="you@example.com"
-                  className="w-full px-4 py-3 rounded-xl bg-white/4 border border-border-subtle text-foreground placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/30 transition-all"
+                  className="w-full px-4 py-3 rounded-xl bg-overlay-subtle border border-border-subtle text-foreground placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/30 transition-all"
                 />
               </div>
             </div>
@@ -72,7 +72,7 @@ export function ContactClient() {
                 name="subject"
                 type="text"
                 placeholder="What's this about?"
-                className="w-full px-4 py-3 rounded-xl bg-white/4 border border-border-subtle text-foreground placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/30 transition-all"
+                className="w-full px-4 py-3 rounded-xl bg-overlay-subtle border border-border-subtle text-foreground placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/30 transition-all"
               />
             </div>
             <div>
@@ -84,7 +84,7 @@ export function ContactClient() {
                 name="body"
                 rows={5}
                 placeholder="Tell me about your project or idea..."
-                className="w-full px-4 py-3 rounded-xl bg-white/4 border border-border-subtle text-foreground placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/30 transition-all resize-none"
+                className="w-full px-4 py-3 rounded-xl bg-overlay-subtle border border-border-subtle text-foreground placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/30 transition-all resize-none"
               />
             </div>
             <button
@@ -121,7 +121,7 @@ export function ContactClient() {
                 rel="noopener noreferrer"
                 className="glass-card p-4 flex flex-col items-center gap-2 hover:scale-[1.02] transition-transform text-center group"
               >
-                <div className="w-10 h-10 rounded-xl bg-white/6 border border-border-subtle flex items-center justify-center group-hover:border-accent/30 transition-colors">
+                <div className="w-10 h-10 rounded-xl bg-overlay border border-border-subtle flex items-center justify-center group-hover:border-accent/30 transition-colors">
                   <GithubIcon size={18} className="text-text-secondary group-hover:text-accent transition-colors" />
                 </div>
                 <span className="text-xs font-medium text-text-secondary group-hover:text-accent transition-colors">
@@ -135,7 +135,7 @@ export function ContactClient() {
                 rel="noopener noreferrer"
                 className="glass-card p-4 flex flex-col items-center gap-2 hover:scale-[1.02] transition-transform text-center group"
               >
-                <div className="w-10 h-10 rounded-xl bg-white/6 border border-border-subtle flex items-center justify-center group-hover:border-accent/30 transition-colors">
+                <div className="w-10 h-10 rounded-xl bg-overlay border border-border-subtle flex items-center justify-center group-hover:border-accent/30 transition-colors">
                   <LinkedinIcon size={18} className="text-text-secondary group-hover:text-accent transition-colors" />
                 </div>
                 <span className="text-xs font-medium text-text-secondary group-hover:text-accent transition-colors">

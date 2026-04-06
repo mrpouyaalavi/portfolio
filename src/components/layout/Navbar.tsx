@@ -58,7 +58,7 @@ export function Navbar() {
                   "relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300",
                   isActive
                     ? "text-accent"
-                    : "text-text-secondary hover:text-foreground hover:bg-white/4"
+                    : "text-text-secondary hover:text-foreground hover:bg-overlay-subtle"
                 )}
               >
                 {item.name}
@@ -76,7 +76,7 @@ export function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden p-2 text-text-secondary hover:text-foreground rounded-lg hover:bg-white/4 transition-colors"
+          className="md:hidden p-2 text-text-secondary hover:text-foreground rounded-lg hover:bg-overlay-subtle transition-colors"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileOpen}
@@ -107,7 +107,7 @@ export function Navbar() {
                     "block px-4 py-3 rounded-lg text-sm font-medium transition-colors",
                     isActive
                       ? "text-accent bg-accent/8"
-                      : "text-text-secondary hover:text-foreground hover:bg-white/4"
+                      : "text-text-secondary hover:text-foreground hover:bg-overlay-subtle"
                   )}
                 >
                   {item.name}
