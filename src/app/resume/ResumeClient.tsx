@@ -15,7 +15,8 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { CONTACT_EMAIL, GITHUB_URL, LINKEDIN_URL, PHONE } from "@/lib/constants";
-import { experiences, education, skillGroups } from "@/lib/data";
+import { experiences, education, skillGroups, projects } from "@/lib/data";
+import { SITE_URL } from "@/lib/constants";
 
 export function ResumeClient() {
   return (
@@ -78,6 +79,14 @@ export function ResumeClient() {
                 </div>
                 <div className="flex flex-col gap-2 justify-center md:items-end">
                   <a
+                    href={LINKEDIN_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors text-sm"
+                  >
+                    <LinkedinIcon size={14} /> linkedin.com/in/pouya-alavi
+                  </a>
+                  <a
                     href={GITHUB_URL}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -86,12 +95,12 @@ export function ResumeClient() {
                     <GithubIcon size={14} /> github.com/mrpouyaalavi
                   </a>
                   <a
-                    href={LINKEDIN_URL}
+                    href={SITE_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors text-sm"
                   >
-                    <LinkedinIcon size={14} /> LinkedIn Profile
+                    <Code2 size={14} /> pouyaalavi.dev
                   </a>
                 </div>
               </div>
@@ -149,63 +158,59 @@ export function ResumeClient() {
             </section>
           </AnimatedSection>
 
-          {/* Featured Project */}
+          {/* Projects */}
           <AnimatedSection variants={fadeInUp}>
             <section className="space-y-4">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-8 h-8 rounded-lg bg-accent/10 border border-accent/20 flex items-center justify-center">
                   <Code2 size={16} className="text-accent" />
                 </div>
-                <h3 className="text-lg font-bold text-foreground">Featured Project</h3>
+                <h3 className="text-lg font-bold text-foreground">Projects</h3>
               </div>
-              <div className="glass-card p-6">
-                <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-3">
-                  <h4 className="text-lg font-semibold text-foreground">
-                    Syllabus Sync — Student Productivity Platform
-                  </h4>
-                  <span className="text-xs text-text-muted">December 2025 – Present</span>
-                </div>
-                <p className="text-xs text-accent-light font-medium mb-3">
-                  Next.js 16 · React 19 · TypeScript · Tailwind CSS · Supabase · Vitest
-                </p>
-                <ul className="space-y-2 text-sm text-text-secondary">
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-1 shrink-0">▸</span>
-                    Built a full-stack platform to help students manage academic planning, deadlines,
-                    and campus navigation
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-1 shrink-0">▸</span>
-                    Implemented secure authentication with TOTP-based MFA, row-level security, and
-                    rate limiting
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-1 shrink-0">▸</span>
-                    Added accessibility and internationalisation aligned with WCAG principles
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-1 shrink-0">▸</span>
-                    Deployed via GitHub Actions and Vercel with full CI/CD pipelines
-                  </li>
-                </ul>
-                <div className="flex gap-3 mt-4">
-                  <a
-                    href="https://github.com/mrpouyaalavi/syllabus-sync"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-accent hover:text-accent-light transition-colors flex items-center gap-1"
-                  >
-                    <GithubIcon size={12} /> GitHub
-                  </a>
-                  <a
-                    href="https://syllabus-sync-ashy.vercel.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs text-accent hover:text-accent-light transition-colors flex items-center gap-1"
-                  >
-                    Live Demo ↗
-                  </a>
-                </div>
+              <div className="space-y-4">
+                {Object.values(projects).map((project) => (
+                  <div key={project.slug} className="glass-card p-6">
+                    <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-3">
+                      <h4 className="text-lg font-semibold text-foreground">
+                        {project.title}
+                      </h4>
+                      <span className="text-xs text-text-muted">{project.year}</span>
+                    </div>
+                    <p className="text-xs text-accent-light font-medium mb-3">
+                      {project.tags.join(" · ")}
+                    </p>
+                    <ul className="space-y-2 text-sm text-text-secondary">
+                      {project.highlights.map((h) => (
+                        <li key={h} className="flex items-start gap-2">
+                          <span className="text-accent mt-1 shrink-0">▸</span>
+                          {h}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="flex gap-3 mt-4">
+                      {project.links.repo && (
+                        <a
+                          href={project.links.repo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs text-accent hover:text-accent-light transition-colors flex items-center gap-1"
+                        >
+                          <GithubIcon size={12} /> GitHub
+                        </a>
+                      )}
+                      {project.links.demo && (
+                        <a
+                          href={project.links.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs text-accent hover:text-accent-light transition-colors flex items-center gap-1"
+                        >
+                          Live Demo ↗
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                ))}
               </div>
             </section>
           </AnimatedSection>

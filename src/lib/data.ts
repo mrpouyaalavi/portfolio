@@ -37,11 +37,11 @@ export const projects: Record<string, Project> = {
       demo: "https://syllabus-sync-ashy.vercel.app",
     },
     highlights: [
-      "Built academic planning tools, campus navigation, and multilingual support with RTL layout",
-      "Implemented secure authentication with TOTP-based MFA and row-level security",
-      "Added accessibility and internationalisation aligned with WCAG principles",
-      "Deployed via GitHub Actions and Vercel with full CI/CD pipelines",
-      "Responsive mobile-first design serving potential university-wide adoption",
+      "Built a full-stack platform to help Macquarie University students manage academic planning, deadlines, and campus navigation in one place",
+      "Developed features including academic planning tools, campus navigation, multilingual support (with RTL layout), and responsive mobile-first design",
+      "Implemented secure authentication with TOTP-based MFA, row-level security, rate limiting, and comprehensive test coverage to strengthen reliability and user security",
+      "Added accessibility and internationalisation improvements to align the platform with WCAG principles and inclusive design practices",
+      "Deployed via GitHub Actions and Vercel with CI/CD pipelines, integrating testing, security, and deployment practices across the full project lifecycle",
     ],
   },
   "cifar-10-image-classification": {
@@ -50,27 +50,25 @@ export const projects: Record<string, Project> = {
     category: "AI/ML",
     year: "Mar 2026 – Present",
     description:
-      "A deep learning comparative study benchmarking custom CNN architectures against transfer learning with pretrained models on the CIFAR-10 image classification task.",
+      "An end-to-end deep learning pipeline comparing custom CNN architectures against transfer learning with pretrained models on the CIFAR-10 image classification benchmark.",
     fullDescription:
       "An end-to-end machine learning pipeline comparing custom CNN architectures trained from scratch against transfer learning with pretrained models (MobileNetV2, ResNet-18, EfficientNet-B0, ViT) on the CIFAR-10 benchmark. Includes advanced data augmentation, Grad-CAM interpretability, INT8 quantization for deployment, and an interactive Streamlit demo.",
     tags: [
       "Python",
       "PyTorch",
-      "Deep Learning",
-      "Computer Vision",
-      "Streamlit",
       "scikit-learn",
+      "Streamlit",
+      "Jupyter",
+      "Grad-CAM",
     ],
     links: {
       repo: "https://github.com/mrpouyaalavi/CIFAR-10-Image-Classification",
     },
     highlights: [
-      "Compared 5 architectures: Custom CNN, MobileNetV2, ResNet-18, EfficientNet-B0, and Vision Transformer (ViT)",
-      "MobileNetV2 achieved 85.53% accuracy with just 0.5% of the Custom CNN's trainable parameters",
-      "Implemented advanced augmentation techniques including CutOut, MixUp, and CutMix",
-      "Built Grad-CAM interpretability visualizations to explain model predictions",
-      "Created an interactive Streamlit demo with side-by-side model comparison",
-      "Applied INT8 dynamic quantization for efficient deployment",
+      "Designed and implemented an end-to-end image classification pipeline to evaluate five deep learning architectures on the CIFAR-10 dataset",
+      "Compared training-from-scratch and transfer learning approaches under controlled conditions, with MobileNetV2 reaching 85.53% test accuracy and outperforming a custom CNN by nearly 30 percentage points",
+      "Applied modern training techniques, including data augmentation, cosine annealing learning rate scheduling, and progressive unfreezing, to improve convergence and generalisation",
+      "Extended the project with Grad-CAM interpretability, INT8 quantisation, command-line inference tools, and a Streamlit interface to support analysis and deployment",
     ],
   },
 };
