@@ -1,65 +1,478 @@
-import Image from "next/image";
+"use client";
+
+import Link from "next/link";
+import {
+  ArrowRight,
+  Download,
+  ExternalLink,
+  Code2,
+  Database,
+  Layers,
+  Sparkles,
+  MapPin,
+  GraduationCap,
+} from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
+import { projects, skillGroups } from "@/lib/data";
+import { GITHUB_URL, LINKEDIN_URL } from "@/lib/constants";
+import { motion } from "framer-motion";
+import {
+  fadeInUp,
+  staggerContainer,
+} from "@/lib/utils";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+
+/* ─── Ticker ─── */
+const TICKER = [
+  "Next.js",
+  "React",
+  "TypeScript",
+  "Supabase",
+  "Tailwind CSS",
+  "PostgreSQL",
+  "Node.js",
+  "Vitest",
+  "Playwright",
+  "GitHub Actions",
+  "Vercel",
+  "REST APIs",
+  "Full-Stack Development",
+  "Sydney, NSW",
+];
 
 export default function Home() {
+  const featuredProject = projects["syllabus-sync"];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div>
+      {/* ═══════════════════════════════════
+          HERO
+      ═══════════════════════════════════ */}
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+        {/* Background effects */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          aria-hidden="true"
+        >
+          {/* Gradient orbs */}
+          <div className="absolute top-1/4 -left-32 w-96 h-96 bg-accent/8 rounded-full blur-[120px]" />
+          <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-secondary/6 rounded-full blur-[100px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-accent/3 rounded-full blur-[150px]" />
+          {/* Dot grid */}
+          <div className="absolute inset-0 dot-grid opacity-40" />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 lg:py-28">
+          <div className="max-w-3xl">
+            {/* Status badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-accent/8 border border-accent/20 mb-8"
+            >
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inset-0 rounded-full bg-success opacity-75" />
+                <span className="relative rounded-full h-2 w-2 bg-success" />
+              </span>
+              <span className="text-xs font-medium text-text-secondary">
+                Open to opportunities · Sydney, NSW
+              </span>
+            </motion.div>
+
+            {/* Headline */}
+            <motion.div
+              initial={{ opacity: 0, y: 32 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="space-y-4 mb-8"
+            >
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]">
+                <span className="text-foreground">Hi, I&apos;m </span>
+                <span className="text-gradient">Pouya</span>
+              </h1>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-text-secondary">
+                Full-Stack Developer
+              </h2>
+            </motion.div>
+
+            {/* Description */}
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-lg text-text-secondary leading-relaxed max-w-xl mb-6"
+            >
+              Final-year IT student at{" "}
+              <span className="text-foreground font-medium">
+                Macquarie University
+              </span>{" "}
+              specialising in AI &amp; Web Development. I build modern, accessible
+              web applications with{" "}
+              <span className="text-accent-light">Next.js</span>,{" "}
+              <span className="text-accent-light">React</span>, and{" "}
+              <span className="text-accent-light">TypeScript</span>.
+            </motion.p>
+
+            {/* Info chips */}
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="flex flex-wrap gap-2 mb-8"
+            >
+              {[
+                { icon: GraduationCap, text: "Macquarie University · Nov 2026" },
+                { icon: MapPin, text: "Sydney, NSW" },
+              ].map(({ icon: Icon, text }) => (
+                <span
+                  key={text}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/4 border border-border-subtle text-text-muted text-xs font-medium"
+                >
+                  <Icon size={12} />
+                  {text}
+                </span>
+              ))}
+            </motion.div>
+
+            {/* CTA buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="flex flex-wrap items-center gap-3"
+            >
+              <Link
+                href="/projects"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent/90 text-white text-sm font-semibold rounded-xl transition-all duration-300 shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30"
+              >
+                View My Work <ArrowRight size={16} />
+              </Link>
+              <Link
+                href="/resume"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white/6 hover:bg-white/10 text-foreground text-sm font-semibold rounded-xl border border-border-default hover:border-border-accent transition-all duration-300"
+              >
+                <Download size={16} /> Resume
+              </Link>
+              <div className="flex items-center gap-2 ml-2">
+                <a
+                  href={GITHUB_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2.5 rounded-xl bg-white/4 hover:bg-white/8 border border-border-subtle hover:border-accent/30 text-text-muted hover:text-accent transition-all"
+                  aria-label="GitHub"
+                >
+                  <GithubIcon size={18} />
+                </a>
+                <a
+                  href={LINKEDIN_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2.5 rounded-xl bg-white/4 hover:bg-white/8 border border-border-subtle hover:border-accent/30 text-text-muted hover:text-accent transition-all"
+                  aria-label="LinkedIn"
+                >
+                  <LinkedinIcon size={18} />
+                </a>
+              </div>
+            </motion.div>
+          </div>
         </div>
-      </main>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        >
+          <span className="text-[10px] font-medium text-text-muted tracking-widest uppercase">
+            Scroll
+          </span>
+          <motion.div
+            animate={{ scaleY: [1, 1.5, 1], opacity: [0.3, 0.8, 0.3] }}
+            transition={{ repeat: Infinity, duration: 2 }}
+            className="w-px h-8 bg-linear-to-b from-accent/50 to-transparent"
+          />
+        </motion.div>
+      </section>
+
+      {/* ═══════════════════════════════════
+          TECH TICKER
+      ═══════════════════════════════════ */}
+      <div className="border-y border-border-subtle bg-surface-1/50 py-3 overflow-hidden">
+        <motion.div
+          className="flex whitespace-nowrap"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
+        >
+          {[...TICKER, ...TICKER].map((item, i) => (
+            <span key={i} className="flex items-center shrink-0">
+              <span className="text-xs font-medium text-text-muted tracking-wide px-6">
+                {item}
+              </span>
+              <span className="text-accent/40 text-[8px]">●</span>
+            </span>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* ═══════════════════════════════════
+          FEATURED PROJECT
+      ═══════════════════════════════════ */}
+      <AnimatedSection>
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+          <SectionHeading number="01" label="Featured Work" title="Projects" />
+
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.05 }}
+          >
+            {/* Featured project card */}
+            <motion.div variants={fadeInUp}>
+              <div className="group relative glass-card p-8 md:p-10 transition-all duration-300 overflow-hidden">
+                {/* Gradient accent line */}
+                <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-accent/50 to-transparent" />
+
+                <div className="flex flex-col lg:flex-row lg:items-start gap-8">
+                  <div className="flex-1 space-y-5">
+                    <div className="flex items-center gap-3">
+                      <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
+                        {featuredProject.category}
+                      </span>
+                      <span className="text-xs text-text-muted">
+                        {featuredProject.year}
+                      </span>
+                    </div>
+
+                    <h3 className="text-2xl md:text-3xl font-bold text-foreground group-hover:text-accent transition-colors">
+                      {featuredProject.title}
+                    </h3>
+
+                    <p className="text-text-secondary leading-relaxed">
+                      {featuredProject.fullDescription}
+                    </p>
+
+                    <div className="flex flex-wrap gap-1.5">
+                      {featuredProject.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="text-[11px] font-medium px-2.5 py-1 rounded-md bg-white/4 text-text-muted border border-border-subtle"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    <ul className="space-y-2">
+                      {featuredProject.highlights.slice(0, 3).map((h) => (
+                        <li
+                          key={h}
+                          className="flex items-start gap-2 text-sm text-text-secondary"
+                        >
+                          <span className="text-accent mt-1 shrink-0">▸</span>
+                          {h}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Right side links */}
+                  <div className="lg:w-48 flex flex-row lg:flex-col gap-3">
+                    {featuredProject.links.demo && (
+                      <a
+                        href={featuredProject.links.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-accent/10 text-accent text-sm font-medium border border-accent/20 hover:bg-accent/20 transition-colors"
+                      >
+                        <ExternalLink size={14} /> Live Demo
+                      </a>
+                    )}
+                    {featuredProject.links.repo && (
+                      <a
+                        href={featuredProject.links.repo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/4 text-text-secondary text-sm font-medium border border-border-subtle hover:border-accent/30 hover:text-accent transition-colors"
+                      >
+                        <GithubIcon size={14} /> Source
+                      </a>
+                    )}
+                    <Link
+                      href={`/projects/${featuredProject.slug}`}
+                      className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/4 text-text-secondary text-sm font-medium border border-border-subtle hover:border-accent/30 hover:text-accent transition-colors"
+                    >
+                      Details <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* View all projects link */}
+            <motion.div variants={fadeInUp} className="mt-8 text-center">
+              <Link
+                href="/projects"
+                className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-light transition-colors"
+              >
+                View all projects <ArrowRight size={16} />
+              </Link>
+            </motion.div>
+          </motion.div>
+        </section>
+      </AnimatedSection>
+
+      <div className="section-divider max-w-6xl mx-auto" />
+
+      {/* ═══════════════════════════════════
+          WHAT I DO
+      ═══════════════════════════════════ */}
+      <AnimatedSection>
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+          <SectionHeading number="02" label="Expertise" title="What I Do" />
+
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-4"
+          >
+            {[
+              {
+                icon: Code2,
+                title: "Frontend Development",
+                desc: "Building responsive, accessible UIs with React, Next.js, and Tailwind CSS. Strong focus on performance and user experience.",
+                color: "text-accent",
+                bg: "bg-accent/10",
+                border: "border-accent/20",
+              },
+              {
+                icon: Database,
+                title: "Backend & Databases",
+                desc: "Designing REST APIs, managing PostgreSQL databases, and implementing secure authentication with Supabase and Node.js.",
+                color: "text-secondary",
+                bg: "bg-secondary/10",
+                border: "border-secondary/20",
+              },
+              {
+                icon: Layers,
+                title: "DevOps & Testing",
+                desc: "CI/CD pipelines with GitHub Actions, automated testing with Vitest and Playwright, and deployments via Vercel.",
+                color: "text-warm",
+                bg: "bg-warm/10",
+                border: "border-warm/20",
+              },
+            ].map((item) => (
+              <motion.div
+                key={item.title}
+                variants={fadeInUp}
+                className="glass-card p-6 hover:scale-[1.02] transition-transform duration-300"
+              >
+                <div
+                  className={`w-10 h-10 rounded-xl ${item.bg} border ${item.border} flex items-center justify-center mb-5`}
+                >
+                  <item.icon className={`w-5 h-5 ${item.color}`} />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-text-secondary leading-relaxed">
+                  {item.desc}
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </section>
+      </AnimatedSection>
+
+      <div className="section-divider max-w-6xl mx-auto" />
+
+      {/* ═══════════════════════════════════
+          SKILLS
+      ═══════════════════════════════════ */}
+      <AnimatedSection>
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+          <SectionHeading
+            number="03"
+            label="Tech Stack"
+            title="Skills & Tools"
+          />
+
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            className="space-y-6"
+          >
+            {skillGroups.map((group) => (
+              <motion.div
+                key={group.label}
+                variants={fadeInUp}
+                className="flex flex-col sm:flex-row sm:items-start gap-4"
+              >
+                <div className="w-32 shrink-0">
+                  <span className="text-xs font-semibold text-text-muted uppercase tracking-wider">
+                    {group.label}
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {group.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-3 py-1.5 text-xs font-medium rounded-lg bg-white/4 text-text-secondary border border-border-subtle hover:border-accent/30 hover:text-accent hover:bg-accent/4 transition-all cursor-default"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </section>
+      </AnimatedSection>
+
+      <div className="section-divider max-w-6xl mx-auto" />
+
+      {/* ═══════════════════════════════════
+          CTA
+      ═══════════════════════════════════ */}
+      <AnimatedSection>
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+          <div className="relative glass-card p-10 md:p-16 text-center overflow-hidden">
+            {/* Glow */}
+            <div className="absolute inset-0 bg-linear-to-r from-accent/6 via-transparent to-secondary/4 pointer-events-none" />
+
+            <Sparkles className="w-8 h-8 text-accent mx-auto mb-6" />
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Let&apos;s Build Something Together
+            </h2>
+            <p className="text-text-secondary max-w-lg mx-auto mb-8 leading-relaxed">
+              I&apos;m always open to new opportunities, collaborations, and
+              interesting projects. Whether you have a question or just want to say
+              hi — feel free to reach out!
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent/90 text-white text-sm font-semibold rounded-xl transition-all duration-300 shadow-lg shadow-accent/25"
+              >
+                Get in Touch <ArrowRight size={16} />
+              </Link>
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white/6 hover:bg-white/10 text-foreground text-sm font-semibold rounded-xl border border-border-default hover:border-border-accent transition-all duration-300"
+              >
+                Learn More About Me
+              </Link>
+            </div>
+          </div>
+        </section>
+      </AnimatedSection>
     </div>
   );
 }
