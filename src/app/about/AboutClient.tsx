@@ -40,40 +40,59 @@ export function AboutClient() {
               <p className="text-xl text-accent-light font-medium">
                 Full-Stack Developer
               </p>
+              <p className="text-sm text-text-muted font-medium">
+                Final-Year IT Student · Next.js, React, TypeScript
+              </p>
             </div>
 
             <div className="glass-card p-6 md:p-8 space-y-4">
               <p className="text-text-secondary leading-relaxed">
-                I&apos;m a final-year Bachelor of Information Technology student at{" "}
-                <span className="text-foreground font-medium">Macquarie University</span>{" "}
-                (graduating November 2026), specialising in AI and Web/App Development.
-                I&apos;m passionate about building modern, accessible, and performant web applications.
+                I&apos;m a developer focused on building full-stack web
+                applications with{" "}
+                <span className="text-foreground">
+                  Next.js, React, TypeScript, and Supabase
+                </span>
+                , with a secondary interest in applied AI/ML using{" "}
+                <span className="text-foreground">Python and PyTorch</span>.
+                I&apos;m a final-year Bachelor of Information Technology
+                student at{" "}
+                <span className="text-foreground font-medium">
+                  Macquarie University
+                </span>
+                , graduating in November 2026.
               </p>
               <p className="text-text-secondary leading-relaxed">
-                I built{" "}
-                <span className="text-accent-light font-medium">Syllabus Sync</span>, a full-stack
-                platform helping Macquarie University students manage academic planning, deadlines,
-                and campus navigation. It combines{" "}
-                <span className="text-foreground">Next.js, React, TypeScript, and Supabase</span>{" "}
-                with strong CS fundamentals and a focus on user experience.
+                My flagship projects are{" "}
+                <span className="text-accent-light font-medium">
+                  Syllabus Sync
+                </span>
+                , a collaboratively built student productivity platform with
+                MFA, row-level security, multilingual/RTL support, and CI/CD on
+                Vercel; and a{" "}
+                <span className="text-accent-light font-medium">
+                  CIFAR-10 image classification
+                </span>{" "}
+                project that compares custom CNNs and transfer learning under
+                controlled conditions, with Grad-CAM interpretability and a
+                Streamlit demo.
               </p>
               <p className="text-text-secondary leading-relaxed">
-                Beyond coding, I bring hands-on experience in customer-facing roles at IKEA and Zara,
-                which has sharpened my communication, teamwork, and problem-solving skills. I thrive
-                in collaborative environments and love turning complex problems into elegant solutions.
+                I care about accessibility, testing, and user-centred design,
+                and I&apos;m currently looking for graduate or junior
+                full-stack roles — locally in Sydney or longer term abroad.
               </p>
             </div>
 
             {/* Info row */}
             <div className="flex flex-wrap gap-3">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-overlay-subtle border border-border-subtle text-text-muted text-xs font-medium">
-                <MapPin size={12} /> Sydney, NSW
+                <MapPin size={12} /> Sydney, Australia
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-overlay-subtle border border-border-subtle text-text-muted text-xs font-medium">
-                <GraduationCap size={12} /> Macquarie University
+                <GraduationCap size={12} /> Macquarie University · Nov 2026
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-accent/8 border border-accent/20 text-accent text-xs font-medium">
-                <Heart size={12} /> Open to opportunities
+                <Heart size={12} /> Open to graduate &amp; junior roles
               </span>
             </div>
 
@@ -142,9 +161,9 @@ export function AboutClient() {
 
             {/* Stats */}
             {[
-              { value: "2026", label: "Graduating", color: "text-accent" },
-              { value: "Full-Stack", label: "Specialisation", color: "text-secondary" },
-              { value: "3+", label: "Years Learning", color: "text-warm" },
+              { value: "Nov 2026", label: "Graduating", color: "text-accent" },
+              { value: "Full-Stack", label: "Focus", color: "text-secondary" },
+              { value: "Applied AI", label: "Secondary", color: "text-warm" },
             ].map((s) => (
               <div
                 key={s.label}

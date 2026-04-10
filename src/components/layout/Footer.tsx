@@ -29,7 +29,8 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed max-w-xs">
-              Full-Stack Developer building modern web applications with React, Next.js, and TypeScript. Based in Sydney, NSW.
+              Full-Stack Developer building web apps with Next.js, React,
+              TypeScript, and Supabase. Based in Sydney, Australia.
             </p>
             <div className="flex items-center gap-3">
               <motion.a
@@ -93,7 +94,7 @@ export function Footer() {
               <a href={`mailto:${CONTACT_EMAIL}`} className="block hover:text-accent transition-colors">
                 {CONTACT_EMAIL}
               </a>
-              <p>Sydney, NSW, Australia</p>
+              <p>Sydney, Australia</p>
             </div>
           </div>
         </div>

@@ -24,8 +24,9 @@ export function ContactClient() {
               Let&apos;s <span className="text-gradient">Connect</span>
             </h1>
             <p className="text-text-secondary max-w-md mx-auto">
-              Have a project in mind, want to collaborate, or just say hello?
-              I&apos;d love to hear from you.
+              Open to graduate and junior full-stack roles, collaborations,
+              and interesting side projects. The fastest way to reach me is
+              email.
             </p>
           </div>
         </AnimatedSection>
@@ -148,7 +149,7 @@ export function ContactClient() {
             {/* Location */}
             <div className="text-center">
               <span className="inline-flex items-center gap-1.5 text-xs text-text-muted">
-                <MapPin size={12} /> Based in Sydney, NSW, Australia
+                <MapPin size={12} /> Based in Sydney, Australia
               </span>
             </div>
           </div>

@@ -63,11 +63,11 @@ export function ResumeClient() {
                     Pouya Alavi Naeini
                   </h2>
                   <p className="text-lg text-accent-light font-medium mb-4">
-                    Final-Year IT Student · Full-Stack Developer
+                    Full-Stack Developer · Final-Year IT Student
                   </p>
                   <div className="flex flex-col gap-2 text-text-secondary text-sm">
                     <div className="flex items-center gap-2">
-                      <MapPin size={14} className="text-text-muted" /> Sydney, NSW
+                      <MapPin size={14} className="text-text-muted" /> Sydney, Australia
                     </div>
                     <div className="flex items-center gap-2">
                       <Mail size={14} className="text-text-muted" /> {CONTACT_EMAIL}
@@ -117,12 +117,14 @@ export function ResumeClient() {
                 <h3 className="text-lg font-bold text-foreground">Professional Summary</h3>
               </div>
               <p className="text-text-secondary leading-relaxed">
-                Final-year Bachelor of IT student at Macquarie University (graduating November 2026)
-                specialising in AI and Web/App Development. Builder of Syllabus Sync, a full-stack
-                platform designed to help Macquarie University students manage academic planning,
-                deadlines, and campus navigation. Combines hands-on experience in Next.js, React,
-                TypeScript, and Supabase with strong CS fundamentals and customer-facing communication
-                skills.
+                Final-year IT student at Macquarie University, graduating in
+                November 2026, with hands-on experience building full-stack
+                web applications using Next.js, React, TypeScript, and
+                Supabase. Co-developed Syllabus Sync, a student productivity
+                platform, and built a CIFAR-10 image classification app with
+                Python, PyTorch, and Streamlit. Strong foundation in software
+                development, testing, accessibility, and user-centred design.
+                Open to graduate and junior full-stack roles.
               </p>
             </section>
           </AnimatedSection>

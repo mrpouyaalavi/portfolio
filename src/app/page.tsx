@@ -30,20 +30,20 @@ const TICKER = [
   "Next.js",
   "React",
   "TypeScript",
-  "Supabase",
   "Tailwind CSS",
+  "Supabase",
   "PostgreSQL",
   "Node.js",
-  "Vitest",
-  "Playwright",
-  "GitHub Actions",
-  "Vercel",
-  "REST APIs",
   "Python",
   "PyTorch",
+  "GitHub Actions",
+  "Vercel",
+  "Docker",
+  "Vitest",
+  "Playwright",
   "Full-Stack Development",
-  "AI & Machine Learning",
-  "Sydney, NSW",
+  "Applied AI & ML",
+  "Sydney, Australia",
 ];
 
 export default function Home() {
@@ -83,7 +83,7 @@ export default function Home() {
                 <span className="relative rounded-full h-2 w-2 bg-success" />
               </span>
               <span className="text-xs font-medium text-text-secondary">
-                Open to opportunities · Sydney, NSW
+                Open to graduate &amp; junior roles · Sydney, Australia
               </span>
             </motion.div>
 
@@ -101,6 +101,9 @@ export default function Home() {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-text-secondary">
                 Full-Stack Developer
               </h2>
+              <p className="text-sm sm:text-base text-text-muted font-medium">
+                Final-Year IT Student · Next.js, React, TypeScript
+              </p>
             </motion.div>
 
             {/* Description */}
@@ -110,15 +113,19 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg text-text-secondary leading-relaxed max-w-xl mb-6"
             >
-              Final-year IT student at{" "}
+              I build full-stack web apps with{" "}
+              <span className="text-accent-light">Next.js</span>,{" "}
+              <span className="text-accent-light">React</span>,{" "}
+              <span className="text-accent-light">TypeScript</span>, and{" "}
+              <span className="text-accent-light">Supabase</span>, with applied
+              AI/ML work in{" "}
+              <span className="text-accent-light">Python</span> and{" "}
+              <span className="text-accent-light">PyTorch</span>. Final-year IT
+              student at{" "}
               <span className="text-foreground font-medium">
                 Macquarie University
-              </span>{" "}
-              specialising in AI &amp; Web Development. I build modern, accessible
-              web applications with{" "}
-              <span className="text-accent-light">Next.js</span>,{" "}
-              <span className="text-accent-light">React</span>, and{" "}
-              <span className="text-accent-light">TypeScript</span>.
+              </span>
+              , graduating November 2026.
             </motion.p>
 
             {/* Info chips */}
@@ -130,7 +137,7 @@ export default function Home() {
             >
               {[
                 { icon: GraduationCap, text: "Macquarie University · Nov 2026" },
-                { icon: MapPin, text: "Sydney, NSW" },
+                { icon: MapPin, text: "Sydney, Australia" },
               ].map(({ icon: Icon, text }) => (
                 <span
                   key={text}
@@ -153,13 +160,13 @@ export default function Home() {
                 href="/projects"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent/90 text-white text-sm font-semibold rounded-xl transition-all duration-300 shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30"
               >
-                View My Work <ArrowRight size={16} />
+                See Projects <ArrowRight size={16} />
               </Link>
               <Link
                 href="/resume"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-overlay hover:bg-overlay-strong text-foreground text-sm font-semibold rounded-xl border border-border-default hover:border-border-accent transition-all duration-300"
               >
-                <Download size={16} /> Resume
+                <Download size={16} /> Download Resume
               </Link>
               <div className="flex items-center gap-2 ml-2">
                 <a
@@ -309,24 +316,24 @@ export default function Home() {
             {[
               {
                 icon: Code2,
-                title: "Frontend Development",
-                desc: "Building responsive, accessible UIs with React, Next.js, and Tailwind CSS. Strong focus on performance and user experience.",
+                title: "Full-Stack Web Apps",
+                desc: "Shipping end-to-end features with Next.js, React, TypeScript, Tailwind CSS, and Supabase — from schema and auth to the UI users see.",
                 color: "text-accent",
                 bg: "bg-accent/10",
                 border: "border-accent/20",
               },
               {
                 icon: Database,
-                title: "Backend & Databases",
-                desc: "Designing REST APIs, managing PostgreSQL databases, and implementing secure authentication with Supabase and Node.js.",
+                title: "Applied AI & ML",
+                desc: "Building practical ML pipelines in Python and PyTorch — controlled experiments, Grad-CAM interpretability, and Streamlit demos.",
                 color: "text-secondary",
                 bg: "bg-secondary/10",
                 border: "border-secondary/20",
               },
               {
                 icon: Layers,
-                title: "DevOps & Testing",
-                desc: "CI/CD pipelines with GitHub Actions, automated testing with Vitest and Playwright, and deployments via Vercel.",
+                title: "Testing & DevOps",
+                desc: "CI/CD on GitHub Actions and Vercel, with Vitest and Playwright keeping the feedback loop fast and regressions visible.",
                 color: "text-warm",
                 bg: "bg-warm/10",
                 border: "border-warm/20",
@@ -414,12 +421,12 @@ export default function Home() {
 
             <Sparkles className="w-8 h-8 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Let&apos;s Build Something Together
+              Open to Graduate &amp; Junior Roles
             </h2>
             <p className="text-text-secondary max-w-lg mx-auto mb-8 leading-relaxed">
-              I&apos;m always open to new opportunities, collaborations, and
-              interesting projects. Whether you have a question or just want to say
-              hi — feel free to reach out!
+              I&apos;m graduating in November 2026 and looking for full-stack
+              software roles — locally in Sydney or longer-term abroad. Happy
+              to chat about projects, internships, or interesting problems.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link

@@ -20,12 +20,12 @@ export const projects: Record<string, Project> = {
     category: "Full-Stack",
     year: "Dec 2025 – Present",
     description:
-      "A full-stack platform helping Macquarie University students manage academic planning, deadlines, and campus navigation — built with Next.js 16, React 19, Supabase, and TypeScript.",
+      "A collaborative full-stack productivity platform for Macquarie University students — academic planning, deadlines, and campus navigation in one place.",
     fullDescription:
-      "Syllabus Sync is a full-stack productivity platform designed to help Macquarie University students manage academic planning, deadlines, and campus navigation, with potential for broader university use. It features secure authentication with TOTP-based MFA, row-level security, rate limiting, and comprehensive test coverage.",
+      "Syllabus Sync is a full-stack productivity platform co-developed for Macquarie University students, designed to support academic planning, deadlines, and campus navigation. Built with Next.js, React, TypeScript, Tailwind CSS, and Supabase, it ships with multilingual support and RTL layouts, TOTP-based MFA, row-level security, accessibility improvements, and CI/CD workflows via GitHub Actions and Vercel.",
     tags: [
-      "Next.js 16",
-      "React 19",
+      "Next.js",
+      "React",
       "TypeScript",
       "Tailwind CSS",
       "Supabase",
@@ -37,11 +37,11 @@ export const projects: Record<string, Project> = {
       demo: "https://syllabus-sync-ashy.vercel.app",
     },
     highlights: [
-      "Built a full-stack platform to help Macquarie University students manage academic planning, deadlines, and campus navigation in one place",
-      "Developed features including academic planning tools, campus navigation, multilingual support (with RTL layout), and responsive mobile-first design",
-      "Implemented secure authentication with TOTP-based MFA, row-level security, rate limiting, and comprehensive test coverage to strengthen reliability and user security",
-      "Added accessibility and internationalisation improvements to align the platform with WCAG principles and inclusive design practices",
-      "Deployed via GitHub Actions and Vercel with CI/CD pipelines, integrating testing, security, and deployment practices across the full project lifecycle",
+      "Co-developed a full-stack student productivity platform used for academic planning, deadlines, and campus navigation",
+      "Built the frontend with Next.js, React, TypeScript, and Tailwind CSS, including multilingual support and RTL layouts",
+      "Implemented secure auth on Supabase with TOTP-based MFA, row-level security, and rate limiting",
+      "Improved accessibility and internationalisation to align with WCAG principles and inclusive design practices",
+      "Shipped CI/CD pipelines on GitHub Actions and Vercel, integrating automated testing with Vitest and Playwright",
     ],
   },
   "cifar-10-image-classification": {
@@ -50,9 +50,9 @@ export const projects: Record<string, Project> = {
     category: "AI/ML",
     year: "Mar 2026 – Present",
     description:
-      "An end-to-end deep learning pipeline comparing custom CNN architectures against transfer learning with pretrained models on the CIFAR-10 image classification benchmark.",
+      "End-to-end deep learning image classification on CIFAR-10 — controlled comparison of custom CNNs and transfer learning, with Grad-CAM, CLI tools, and a Streamlit demo.",
     fullDescription:
-      "An end-to-end machine learning pipeline comparing custom CNN architectures trained from scratch against transfer learning with pretrained models (MobileNetV2, ResNet-18, EfficientNet-B0, ViT) on the CIFAR-10 benchmark. Includes advanced data augmentation, Grad-CAM interpretability, INT8 quantization for deployment, and an interactive Streamlit demo.",
+      "An end-to-end deep learning image classification project on the CIFAR-10 dataset, built with Python and PyTorch. Designs and evaluates a custom CNN alongside multiple training-from-scratch and transfer learning approaches under controlled conditions, including data augmentation, Grad-CAM visualisation, CLI inference tools, and a Streamlit demo app. MobileNetV2 reached 85.53% test accuracy using progressive unfreezing and cosine annealing.",
     tags: [
       "Python",
       "PyTorch",
@@ -65,10 +65,11 @@ export const projects: Record<string, Project> = {
       repo: "https://github.com/mrpouyaalavi/CIFAR-10-Image-Classification",
     },
     highlights: [
-      "Designed and implemented an end-to-end image classification pipeline to evaluate five deep learning architectures on the CIFAR-10 dataset",
-      "Compared training-from-scratch and transfer learning approaches under controlled conditions, with MobileNetV2 reaching 85.53% test accuracy and outperforming a custom CNN by nearly 30 percentage points",
-      "Applied modern training techniques, including data augmentation, cosine annealing learning rate scheduling, and progressive unfreezing, to improve convergence and generalisation",
-      "Extended the project with Grad-CAM interpretability, INT8 quantisation, command-line inference tools, and a Streamlit interface to support analysis and deployment",
+      "Built an end-to-end image classification pipeline on CIFAR-10 with Python and PyTorch",
+      "Compared training-from-scratch and transfer learning approaches under controlled conditions; MobileNetV2 reached 85.53% test accuracy",
+      "Applied progressive unfreezing, cosine annealing, and data augmentation to improve convergence and generalisation",
+      "Added Grad-CAM visualisation, INT8 quantisation, and CLI inference tools for analysis and deployment",
+      "Packaged the project as an interactive Streamlit demo app to showcase results and inference",
     ],
   },
 };
@@ -83,15 +84,14 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    title: "IT Support",
+    title: "IT & Web Developer",
     company: "SBR Group",
     period: "Oct 2023 – Dec 2024",
     type: "technical",
     description: [
-      "Designed and maintained a WordPress business website, improving mobile responsiveness and achieving faster page load times through performance and SEO optimisation",
-      "Supported internal systems and workflow automation using Monday.com, improving team coordination and reducing manual overhead",
-      "Diagnosed and resolved recurring technical issues across the website and internal systems to minimise disruption",
-      "Collaborated with stakeholders to gather requirements and ensure digital presence aligned with business needs",
+      "Designed, built, and maintained a WordPress business website, improving mobile responsiveness and page load performance through SEO and front-end optimisation",
+      "Automated internal workflows on Monday.com, reducing manual overhead and improving team coordination",
+      "Diagnosed and resolved issues across the website and internal tooling to keep day-to-day operations running smoothly",
     ],
   },
   {
@@ -100,9 +100,7 @@ export const experiences: Experience[] = [
     period: "May 2025 – Present",
     type: "customer",
     description: [
-      "Provide personalised product recommendations by understanding customer needs and room requirements",
-      "Collaborate with sales, logistics, and warehouse teams to resolve customer queries",
-      "Maintain product displays and support stock availability during busy trading periods",
+      "Customer-facing role building communication, teamwork, and problem-solving skills in a high-volume retail environment",
     ],
   },
   {
@@ -111,8 +109,7 @@ export const experiences: Experience[] = [
     period: "Dec 2024 – May 2025",
     type: "customer",
     description: [
-      "Delivered customer service in a fast-paced retail environment, processing high-volume transactions accurately",
-      "Resolved customer concerns with professionalism and empathy",
+      "Fast-paced retail role focused on customer service, collaboration, and accurate high-volume transactions",
     ],
   },
 ];
@@ -131,8 +128,7 @@ export const education: Education[] = [
     period: "Jul 2023 – Nov 2026",
     details: [
       "Specialising in AI and Web/App Development",
-      "Relevant coursework: Data Structures, Algorithms, Database Systems, Web Development, Software Engineering, AI Fundamentals",
-      "Active volunteer in the Macquarie University Buddy Program, mentoring new students",
+      "Relevant coursework: Software Engineering, Web Development, Database Systems, Data Structures & Algorithms, AI Fundamentals",
     ],
   },
   {
@@ -140,8 +136,7 @@ export const education: Education[] = [
     institution: "TAFE NSW",
     period: "Jul 2022 – Jul 2023",
     details: [
-      "Built hands-on skills in HTML, CSS, PHP, JavaScript, and MySQL",
-      "Practical development projects including WordPress sites with SEO and hosting configuration",
+      "Foundations in HTML, CSS, JavaScript, PHP, and MySQL through hands-on web projects",
     ],
   },
 ];
@@ -154,27 +149,29 @@ export interface SkillGroup {
 export const skillGroups: SkillGroup[] = [
   {
     label: "Languages",
-    skills: ["Java", "Python", "JavaScript", "TypeScript", "SQL", "HTML/CSS"],
+    skills: ["Python", "TypeScript", "JavaScript", "Java", "SQL", "HTML/CSS"],
   },
   {
-    label: "Frameworks",
-    skills: ["React", "Next.js", "Tailwind CSS", "Node.js"],
+    label: "Frontend",
+    skills: ["React", "Next.js", "Tailwind CSS"],
   },
   {
-    label: "Backend & DB",
-    skills: ["Supabase", "PostgreSQL", "REST APIs", "Node.js"],
+    label: "Backend & Data",
+    skills: ["Supabase", "Node.js", "PostgreSQL", "REST APIs"],
   },
   {
-    label: "DevOps & Tools",
-    skills: ["Git", "GitHub Actions", "Vercel", "Postman", "WordPress"],
+    label: "ML / AI",
+    skills: ["PyTorch", "scikit-learn", "Jupyter", "Grad-CAM"],
   },
   {
-    label: "Testing & QA",
-    skills: ["Vitest", "Playwright", "Test-Driven Development", "E2E Testing"],
-  },
-  {
-    label: "CS Fundamentals",
-    skills: ["Data Structures & Algorithms", "OOP", "Software Design Patterns"],
+    label: "Testing & DevOps",
+    skills: [
+      "Git",
+      "GitHub Actions",
+      "Vercel",
+      "Docker",
+      "Vitest",
+      "Playwright",
+    ],
   },
 ];
-

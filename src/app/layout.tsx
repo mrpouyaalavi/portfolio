@@ -17,20 +17,24 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Pouya Alavi Naeini | Full-Stack Developer",
+    default:
+      "Pouya Alavi Naeini | Full-Stack Developer — Next.js, React, TypeScript",
     template: "%s | Pouya Alavi Naeini",
   },
   description:
-    "Final-year IT student at Macquarie University specialising in AI and Web/App Development. Building modern, accessible web applications with Next.js, React, TypeScript, and Supabase.",
+    "Full-stack developer and final-year IT student at Macquarie University, graduating November 2026. Building web apps with Next.js, React, TypeScript, and Supabase, with applied AI/ML work in Python and PyTorch.",
   keywords: [
     "Full-Stack Developer",
-    "React",
     "Next.js",
+    "React",
     "TypeScript",
     "Supabase",
+    "PyTorch",
+    "Applied AI",
     "Web Development",
     "Pouya Alavi Naeini",
-    "Software Developer Sydney",
+    "Junior Developer Sydney",
+    "Graduate Developer",
     "Macquarie University",
   ],
   authors: [{ name: "Pouya Alavi Naeini", url: SITE_URL }],
@@ -39,16 +43,18 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_AU",
     url: SITE_URL,
-    title: "Pouya Alavi Naeini | Full-Stack Developer",
+    title:
+      "Pouya Alavi Naeini | Full-Stack Developer — Next.js, React, TypeScript",
     description:
-      "Building modern web applications with Next.js, React, TypeScript, and Supabase. Based in Sydney, Australia.",
+      "Full-stack developer building web apps with Next.js, React, TypeScript, and Supabase, with applied AI/ML in Python and PyTorch. Based in Sydney, Australia.",
     siteName: SITE_NAME,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pouya Alavi Naeini | Full-Stack Developer",
+    title:
+      "Pouya Alavi Naeini | Full-Stack Developer — Next.js, React, TypeScript",
     description:
-      "Building modern web applications with Next.js, React, TypeScript, and Supabase.",
+      "Full-stack developer building web apps with Next.js, React, TypeScript, and Supabase. Applied AI/ML in Python and PyTorch.",
   },
   metadataBase: new URL(SITE_URL),
 };
@@ -67,15 +73,15 @@ export default function RootLayout({
     address: {
       "@type": "PostalAddress",
       addressLocality: "Sydney",
-      addressRegion: "NSW",
       addressCountry: "AU",
     },
     knowsAbout: [
-      { "@type": "Thing", name: "React & Next.js" },
+      { "@type": "Thing", name: "Next.js & React" },
       { "@type": "Thing", name: "TypeScript & JavaScript" },
       { "@type": "Thing", name: "Full-Stack Web Development" },
       { "@type": "Thing", name: "Supabase & PostgreSQL" },
       { "@type": "Thing", name: "Tailwind CSS" },
+      { "@type": "Thing", name: "Applied AI & PyTorch" },
       { "@type": "Thing", name: "CI/CD & DevOps" },
     ],
     sameAs: [GITHUB_URL, LINKEDIN_URL],
