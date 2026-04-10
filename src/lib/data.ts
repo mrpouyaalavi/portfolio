@@ -34,21 +34,21 @@ export const projects: Record<string, Project> = {
     ],
     links: {
       repo: "https://github.com/mrpouyaalavi/syllabus-sync",
-      demo: "https://syllabus-sync-ashy.vercel.app",
+      demo: "https://syllabus-sync-mq.vercel.app",
     },
     highlights: [
-      "Co-developed a full-stack student productivity platform used for academic planning, deadlines, and campus navigation",
-      "Built the frontend with Next.js, React, TypeScript, and Tailwind CSS, including multilingual support and RTL layouts",
-      "Implemented secure auth on Supabase with TOTP-based MFA, row-level security, and rate limiting",
-      "Improved accessibility and internationalisation to align with WCAG principles and inclusive design practices",
-      "Shipped CI/CD pipelines on GitHub Actions and Vercel, integrating automated testing with Vitest and Playwright",
+      "Co-developed a full-stack student productivity platform for Macquarie University students, with features for academic planning, deadlines, and campus navigation",
+      "Built multilingual and responsive user experiences, including RTL layout support and mobile-first design",
+      "Implemented secure authentication with TOTP-based MFA, row-level security, rate limiting, and test coverage to improve reliability and user security",
+      "Added accessibility and internationalisation improvements aligned with inclusive design and WCAG principles",
+      "Deployed the project through GitHub Actions and Vercel, integrating CI/CD practices across testing, security, and release workflows",
     ],
   },
   "cifar-10-image-classification": {
     slug: "cifar-10-image-classification",
     title: "CIFAR-10 Image Classification",
     category: "AI/ML",
-    year: "Mar 2026 – Present",
+    year: "Apr 2026 – Present",
     description:
       "End-to-end deep learning image classification on CIFAR-10 — controlled comparison of custom CNNs and transfer learning, with Grad-CAM, CLI tools, and a live Streamlit demo.",
     fullDescription:
@@ -66,11 +66,11 @@ export const projects: Record<string, Project> = {
       demo: "https://cifar10.pouyaalavi.dev",
     },
     highlights: [
-      "Built an end-to-end image classification pipeline on CIFAR-10 with Python and PyTorch",
-      "Compared training-from-scratch and transfer learning approaches under controlled conditions; MobileNetV2 reached 85.53% test accuracy",
-      "Applied progressive unfreezing, cosine annealing, and data augmentation to improve convergence and generalisation",
-      "Added Grad-CAM visualisation, INT8 quantisation, and CLI inference tools for analysis and deployment",
-      "Deployed the project as an interactive Streamlit demo at cifar10.pouyaalavi.dev for live inference and result exploration",
+      "Designed and implemented an end-to-end image classification pipeline to evaluate five deep learning architectures on the CIFAR-10 dataset",
+      "Compared training-from-scratch and transfer learning approaches under controlled conditions; MobileNetV2 achieved 85.53% test accuracy using progressive unfreezing and cosine annealing",
+      "Applied modern training techniques, including data augmentation, cosine annealing learning rate scheduling, and progressive unfreezing, to improve convergence and generalisation",
+      "Extended the project with Grad-CAM interpretability, INT8 quantisation, command-line inference tools, and a Streamlit interface to support analysis and deployment",
+      "Deployed the Streamlit demo at cifar10.pouyaalavi.dev for live inference and result exploration",
     ],
   },
 };
@@ -90,9 +90,9 @@ export const experiences: Experience[] = [
     period: "Oct 2023 – Dec 2024",
     type: "technical",
     description: [
-      "Designed, built, and maintained a WordPress business website, improving mobile responsiveness and page load performance through SEO and front-end optimisation",
-      "Automated internal workflows on Monday.com, reducing manual overhead and improving team coordination",
-      "Diagnosed and resolved issues across the website and internal tooling to keep day-to-day operations running smoothly",
+      "Designed and maintained the company's WordPress website, improving mobile responsiveness and page load performance through SEO and performance optimisation",
+      "Automated internal workflows using Monday.com, reducing manual coordination overhead across teams",
+      "Collaborated with stakeholders to translate business requirements into website updates and content changes",
     ],
   },
   {
@@ -101,7 +101,7 @@ export const experiences: Experience[] = [
     period: "May 2025 – Present",
     type: "customer",
     description: [
-      "Customer-facing role building communication, teamwork, and problem-solving skills in a high-volume retail environment",
+      "Customer-facing role providing product recommendations and cross-team coordination in a high-volume retail environment",
     ],
   },
   {
@@ -110,7 +110,7 @@ export const experiences: Experience[] = [
     period: "Dec 2024 – May 2025",
     type: "customer",
     description: [
-      "Fast-paced retail role focused on customer service, collaboration, and accurate high-volume transactions",
+      "Fast-paced retail experience involving high-volume transactions, customer service, and stock support during peak periods",
     ],
   },
 ];
@@ -124,12 +124,13 @@ export interface Education {
 
 export const education: Education[] = [
   {
-    degree: "Bachelor of Information Technology",
+    degree: "Bachelor of Information Technology (AI & Web and App Development)",
     institution: "Macquarie University",
     period: "Jul 2023 – Nov 2026",
     details: [
-      "Specialising in AI and Web/App Development",
-      "Relevant coursework: Software Engineering, Web Development, Database Systems, Data Structures & Algorithms, AI Fundamentals",
+      "WAM: 74",
+      "Relevant coursework: Data Structures, Algorithms, Database Systems, Web Development, Software Engineering, and AI Fundamentals",
+      "Volunteer, Macquarie University Buddy Program — supporting new students in their transition to university life",
     ],
   },
   {
@@ -137,7 +138,8 @@ export const education: Education[] = [
     institution: "TAFE NSW",
     period: "Jul 2022 – Jul 2023",
     details: [
-      "Foundations in HTML, CSS, JavaScript, PHP, and MySQL through hands-on web projects",
+      "Built hands-on foundations in HTML, CSS, JavaScript, PHP, and MySQL through practical web development projects.",
+      "Developed responsive websites and worked with database-driven functionality, building a strong foundation for full-stack development.",
     ],
   },
 ];

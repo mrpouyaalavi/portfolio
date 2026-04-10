@@ -120,11 +120,12 @@ export function ResumeClient() {
                 Final-year IT student at Macquarie University, graduating in
                 November 2026, with hands-on experience building full-stack
                 web applications using Next.js, React, TypeScript, and
-                Supabase. Co-developed Syllabus Sync, a student productivity
-                platform, and built a CIFAR-10 image classification app with
-                Python, PyTorch, and Streamlit. Strong foundation in software
-                development, testing, accessibility, and user-centred design.
-                Open to graduate and junior full-stack roles.
+                Supabase. Built and deployed projects including Syllabus
+                Sync, a student productivity platform, and a CIFAR-10 image
+                classification app using Python, PyTorch, and Streamlit.
+                Strong foundation in software development, testing,
+                accessibility, and user-centred design. Open to graduate and
+                junior full-stack roles.
               </p>
             </section>
           </AnimatedSection>
