@@ -50,9 +50,9 @@ export const projects: Record<string, Project> = {
     category: "AI/ML",
     year: "Mar 2026 – Present",
     description:
-      "End-to-end deep learning image classification on CIFAR-10 — controlled comparison of custom CNNs and transfer learning, with Grad-CAM, CLI tools, and a Streamlit demo.",
+      "End-to-end deep learning image classification on CIFAR-10 — controlled comparison of custom CNNs and transfer learning, with Grad-CAM, CLI tools, and a live Streamlit demo.",
     fullDescription:
-      "An end-to-end deep learning image classification project on the CIFAR-10 dataset, built with Python and PyTorch. Designs and evaluates a custom CNN alongside multiple training-from-scratch and transfer learning approaches under controlled conditions, including data augmentation, Grad-CAM visualisation, CLI inference tools, and a Streamlit demo app. MobileNetV2 reached 85.53% test accuracy using progressive unfreezing and cosine annealing.",
+      "An end-to-end deep learning image classification project on the CIFAR-10 dataset, built with Python and PyTorch. Designs and evaluates a custom CNN alongside multiple training-from-scratch and transfer learning approaches under controlled conditions, including data augmentation, Grad-CAM visualisation, CLI inference tools, and an interactive Streamlit demo deployed at cifar10.pouyaalavi.dev. MobileNetV2 reached 85.53% test accuracy using progressive unfreezing and cosine annealing.",
     tags: [
       "Python",
       "PyTorch",
@@ -63,13 +63,14 @@ export const projects: Record<string, Project> = {
     ],
     links: {
       repo: "https://github.com/mrpouyaalavi/CIFAR-10-Image-Classification",
+      demo: "https://cifar10.pouyaalavi.dev",
     },
     highlights: [
       "Built an end-to-end image classification pipeline on CIFAR-10 with Python and PyTorch",
       "Compared training-from-scratch and transfer learning approaches under controlled conditions; MobileNetV2 reached 85.53% test accuracy",
       "Applied progressive unfreezing, cosine annealing, and data augmentation to improve convergence and generalisation",
       "Added Grad-CAM visualisation, INT8 quantisation, and CLI inference tools for analysis and deployment",
-      "Packaged the project as an interactive Streamlit demo app to showcase results and inference",
+      "Deployed the project as an interactive Streamlit demo at cifar10.pouyaalavi.dev for live inference and result exploration",
     ],
   },
 };
