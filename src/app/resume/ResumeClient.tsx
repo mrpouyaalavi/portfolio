@@ -122,10 +122,9 @@ export function ResumeClient() {
                 web applications using Next.js, React, TypeScript, and
                 Supabase. Built and deployed projects including Syllabus
                 Sync, a student productivity platform, and a CIFAR-10 image
-                classification app using Python, PyTorch, and Streamlit.
-                Strong foundation in software development, testing,
-                accessibility, and user-centred design. Open to graduate and
-                junior full-stack roles.
+                classification app using Python, PyTorch, and Gradio. Strong
+                foundation in software development, testing, accessibility,
+                and user-centred design.
               </p>
             </section>
           </AnimatedSection>
@@ -218,17 +217,50 @@ export function ResumeClient() {
             </section>
           </AnimatedSection>
 
-          {/* Experience */}
+          {/* Technical Experience */}
           <AnimatedSection variants={fadeInUp}>
             <section className="space-y-4">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-8 h-8 rounded-lg bg-warm/10 border border-warm/20 flex items-center justify-center">
                   <Briefcase size={16} className="text-warm" />
                 </div>
-                <h3 className="text-lg font-bold text-foreground">Experience</h3>
+                <h3 className="text-lg font-bold text-foreground">Technical Experience</h3>
               </div>
               <div className="space-y-4">
-                {experiences.map((exp) => (
+                {experiences.filter((e) => e.type === "technical").map((exp) => (
+                  <div key={`${exp.company}-${exp.title}`} className="glass-card p-5">
+                    <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
+                      <div>
+                        <h4 className="font-semibold text-foreground">{exp.title}</h4>
+                        <p className="text-sm text-accent-light">{exp.company}</p>
+                      </div>
+                      <span className="text-xs text-text-muted">{exp.period}</span>
+                    </div>
+                    <ul className="space-y-1.5 mt-2">
+                      {exp.description.map((d) => (
+                        <li key={d} className="flex items-start gap-2 text-sm text-text-secondary">
+                          <span className="text-accent mt-1 shrink-0">▸</span>
+                          {d}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </section>
+          </AnimatedSection>
+
+          {/* Customer Experience */}
+          <AnimatedSection variants={fadeInUp}>
+            <section className="space-y-4">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 rounded-lg bg-warm/10 border border-warm/20 flex items-center justify-center">
+                  <Users size={16} className="text-warm" />
+                </div>
+                <h3 className="text-lg font-bold text-foreground">Customer Experience</h3>
+              </div>
+              <div className="space-y-4">
+                {experiences.filter((e) => e.type === "customer").map((exp) => (
                   <div key={`${exp.company}-${exp.title}`} className="glass-card p-5">
                     <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
                       <div>

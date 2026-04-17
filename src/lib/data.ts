@@ -50,14 +50,15 @@ export const projects: Record<string, Project> = {
     category: "AI/ML",
     year: "Apr 2026 – Present",
     description:
-      "End-to-end deep learning image classification on CIFAR-10 — controlled comparison of custom CNNs and transfer learning, with Grad-CAM, CLI tools, and a live Streamlit demo.",
+      "An end-to-end deep learning image classification project on the CIFAR-10 dataset, built with Python and PyTorch. Compares a custom CNN, MobileNetV2, and ResNet-18 under controlled training and transfer learning settings, with data augmentation, Grad-CAM visualisation, CLI inference tools, and a Gradio demo deployed on Hugging Face Spaces. MobileNetV2 achieved 86.91% test accuracy.",
     fullDescription:
-      "An end-to-end deep learning image classification project on the CIFAR-10 dataset, built with Python and PyTorch. Designs and evaluates a custom CNN alongside multiple training-from-scratch and transfer learning approaches under controlled conditions, including data augmentation, Grad-CAM visualisation, CLI inference tools, and an interactive Streamlit demo deployed at cifar10.pouyaalavi.dev. MobileNetV2 reached 85.53% test accuracy using progressive unfreezing and cosine annealing.",
+      "An end-to-end deep learning image classification project on the CIFAR-10 dataset, built with Python and PyTorch. Compares a custom CNN, MobileNetV2, and ResNet-18 under controlled training and transfer learning settings, with data augmentation, Grad-CAM visualisation, CLI inference tools, and a Gradio demo deployed on Hugging Face Spaces. MobileNetV2 achieved 86.91% test accuracy.",
     tags: [
       "Python",
       "PyTorch",
       "scikit-learn",
-      "Streamlit",
+      "Gradio",
+      "Hugging Face Spaces",
       "Jupyter",
       "Grad-CAM",
     ],
@@ -66,11 +67,10 @@ export const projects: Record<string, Project> = {
       demo: "https://cifar10.pouyaalavi.dev",
     },
     highlights: [
-      "Designed and implemented an end-to-end image classification pipeline to evaluate five deep learning architectures on the CIFAR-10 dataset",
-      "Compared training-from-scratch and transfer learning approaches under controlled conditions; MobileNetV2 achieved 85.53% test accuracy using progressive unfreezing and cosine annealing",
-      "Applied modern training techniques, including data augmentation, cosine annealing learning rate scheduling, and progressive unfreezing, to improve convergence and generalisation",
-      "Extended the project with Grad-CAM interpretability, INT8 quantisation, command-line inference tools, and a Streamlit interface to support analysis and deployment",
-      "Deployed the Streamlit demo at cifar10.pouyaalavi.dev for live inference and result exploration",
+      "Designed and implemented an end-to-end image classification pipeline to evaluate five deep learning architectures on the CIFAR-10 dataset using Python and PyTorch.",
+      "Compared training-from-scratch and transfer learning approaches under controlled conditions; MobileNetV2 achieved 86.91% test accuracy, outperforming a custom CNN and a ResNet-18 baseline.",
+      "Applied modern training techniques, including data augmentation, cosine annealing learning rate scheduling, and progressive unfreezing, to improve convergence and generalisation.",
+      "Extended the project with Grad-CAM, INT8 quantisation experiments, command-line inference tools, and a Gradio demo deployed on Hugging Face Spaces to support analysis and deployment.",
     ],
   },
 };

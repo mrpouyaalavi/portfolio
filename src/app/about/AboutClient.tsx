@@ -72,9 +72,9 @@ export function AboutClient() {
                 <span className="text-accent-light font-medium">
                   CIFAR-10 image classification
                 </span>{" "}
-                project that compares custom CNNs and transfer learning under
-                controlled conditions, with Grad-CAM interpretability and a
-                Streamlit demo.
+                project that compares a custom CNN, MobileNetV2, and ResNet-18
+                under controlled conditions, with Grad-CAM interpretability and
+                a Gradio demo on Hugging Face Spaces.
               </p>
               <p className="text-text-secondary leading-relaxed">
                 I care about accessibility, testing, and user-centred design,
