@@ -18,12 +18,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default:
-      "Pouya Alavi Naeini | Full-Stack Developer — Next.js, React, TypeScript",
+      "Pouya Alavi Naeini | Graduate Full-Stack Developer — Next.js, React, TypeScript, Supabase",
     template: "%s | Pouya Alavi Naeini",
   },
   description:
-    "Full-stack developer and final-year IT student at Macquarie University, graduating November 2026. Building web apps with Next.js, React, TypeScript, and Supabase, with applied AI/ML work in Python and PyTorch.",
+    "Graduate full-stack developer and final-year IT student at Macquarie University, graduating November 2026. Building modern web apps with Next.js, React, TypeScript, and Supabase, with practical AI features in Python and PyTorch. Based in Sydney, Australia.",
   keywords: [
+    "Graduate Full-Stack Developer",
     "Full-Stack Developer",
     "Next.js",
     "React",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     "Web Development",
     "Pouya Alavi Naeini",
     "Junior Developer Sydney",
-    "Graduate Developer",
+    "Graduate Developer Sydney",
     "Macquarie University",
   ],
   authors: [{ name: "Pouya Alavi Naeini", url: SITE_URL }],
@@ -44,17 +45,17 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: SITE_URL,
     title:
-      "Pouya Alavi Naeini | Full-Stack Developer — Next.js, React, TypeScript",
+      "Pouya Alavi Naeini | Graduate Full-Stack Developer — Next.js, React, TypeScript, Supabase",
     description:
-      "Full-stack developer building web apps with Next.js, React, TypeScript, and Supabase, with applied AI/ML in Python and PyTorch. Based in Sydney, Australia.",
+      "Graduate full-stack developer focused on modern web apps and practical AI features. Next.js, React, TypeScript, and Supabase. Based in Sydney, Australia.",
     siteName: SITE_NAME,
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Pouya Alavi Naeini | Full-Stack Developer — Next.js, React, TypeScript",
+      "Pouya Alavi Naeini | Graduate Full-Stack Developer — Next.js, React, TypeScript, Supabase",
     description:
-      "Full-stack developer building web apps with Next.js, React, TypeScript, and Supabase. Applied AI/ML in Python and PyTorch.",
+      "Graduate full-stack developer focused on modern web apps and practical AI features. Based in Sydney, Australia.",
   },
   metadataBase: new URL(SITE_URL),
 };
@@ -69,7 +70,7 @@ export default function RootLayout({
     "@type": "Person",
     name: "Pouya Alavi Naeini",
     url: SITE_URL,
-    jobTitle: "Full-Stack Developer",
+    jobTitle: "Graduate Full-Stack Developer",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Sydney",

@@ -99,10 +99,10 @@ export default function Home() {
                 <span className="text-gradient">Pouya</span>
               </h1>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-text-secondary">
-                Full-Stack Developer
+                Graduate Full-Stack Developer
               </h2>
               <p className="text-sm sm:text-base text-text-muted font-medium">
-                Final-Year IT Student · Next.js, React, TypeScript
+                Final-Year IT Student · Next.js, React, TypeScript, Supabase
               </p>
             </motion.div>
 
@@ -206,7 +206,7 @@ export default function Home() {
                   <div className="w-full h-full rounded-full overflow-hidden bg-white ring-2 ring-border-subtle">
                     <Image
                       src="/pouya-profile.jpeg"
-                      alt="Pouya Alavi Naeini — Full-Stack Developer"
+                      alt="Pouya Alavi Naeini — Graduate Full-Stack Developer"
                       width={400}
                       height={400}
                       priority
@@ -421,12 +421,12 @@ export default function Home() {
 
             <Sparkles className="w-8 h-8 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Open to Graduate &amp; Junior Roles
+              Open to Graduate &amp; Junior Software Roles
             </h2>
             <p className="text-text-secondary max-w-lg mx-auto mb-8 leading-relaxed">
-              I&apos;m graduating in November 2026 and looking for full-stack
-              software roles — locally in Sydney or longer-term abroad. Happy
-              to chat about projects, internships, or interesting problems.
+              I&apos;m graduating in November 2026 and looking for graduate or
+              junior software roles in Sydney. Happy to chat about projects,
+              internships, or interesting problems.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link

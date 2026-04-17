@@ -38,48 +38,48 @@ export function AboutClient() {
                 Pouya Alavi Naeini
               </h1>
               <p className="text-xl text-accent-light font-medium">
-                Full-Stack Developer
+                Graduate Full-Stack Developer
               </p>
               <p className="text-sm text-text-muted font-medium">
-                Final-Year IT Student · Next.js, React, TypeScript
+                Final-Year IT Student · Next.js, React, TypeScript, Supabase
               </p>
             </div>
 
             <div className="glass-card p-6 md:p-8 space-y-4">
               <p className="text-text-secondary leading-relaxed">
-                I&apos;m a developer focused on building full-stack web
-                applications with{" "}
-                <span className="text-foreground">
-                  Next.js, React, TypeScript, and Supabase
-                </span>
-                , with a secondary interest in applied AI/ML using{" "}
-                <span className="text-foreground">Python and PyTorch</span>.
                 I&apos;m a final-year Bachelor of Information Technology
                 student at{" "}
                 <span className="text-foreground font-medium">
                   Macquarie University
                 </span>
-                , graduating in November 2026.
+                , graduating in November 2026, with a focus on full-stack web
+                development and a secondary interest in applied AI/ML. I build
+                modern web applications with{" "}
+                <span className="text-foreground">
+                  Next.js, React, TypeScript, and Supabase
+                </span>
+                , and I enjoy turning real user problems into polished,
+                practical products.
               </p>
               <p className="text-text-secondary leading-relaxed">
                 My flagship projects are{" "}
                 <span className="text-accent-light font-medium">
                   Syllabus Sync
                 </span>
-                , a collaboratively built student productivity platform with
-                MFA, row-level security, multilingual/RTL support, and CI/CD on
-                Vercel; and a{" "}
+                , a student productivity platform built with features like MFA,
+                row-level security, multilingual/RTL support, and CI/CD on
+                Vercel, and a{" "}
                 <span className="text-accent-light font-medium">
-                  CIFAR-10 image classification
+                  CIFAR-10 deep learning project
                 </span>{" "}
-                project that compares a custom CNN, MobileNetV2, and ResNet-18
-                under controlled conditions, with Grad-CAM interpretability and
-                a Gradio demo on Hugging Face Spaces.
+                comparing a custom CNN, MobileNetV2, and ResNet-18 with
+                Grad-CAM interpretability and a Gradio demo on Hugging Face
+                Spaces.
               </p>
               <p className="text-text-secondary leading-relaxed">
                 I care about accessibility, testing, and user-centred design,
-                and I&apos;m currently looking for graduate or junior
-                full-stack roles — locally in Sydney or longer term abroad.
+                and I&apos;m currently looking for graduate or junior software
+                roles in Sydney.
               </p>
             </div>
 

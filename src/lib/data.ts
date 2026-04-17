@@ -90,9 +90,9 @@ export const experiences: Experience[] = [
     period: "Oct 2023 – Dec 2024",
     type: "technical",
     description: [
-      "Designed and maintained the company's WordPress website, improving mobile responsiveness and page load performance through SEO and performance optimisation",
-      "Automated internal workflows using Monday.com, reducing manual coordination overhead across teams",
-      "Collaborated with stakeholders to translate business requirements into website updates and content changes",
+      "Designed and maintained the company WordPress website, improving mobile responsiveness, page speed, and on-page SEO",
+      "Automated internal workflows using Monday.com, reducing manual coordination and improving team efficiency",
+      "Worked with stakeholders to translate business needs into website updates and digital process improvements",
     ],
   },
   {
@@ -101,7 +101,8 @@ export const experiences: Experience[] = [
     period: "May 2025 – Present",
     type: "customer",
     description: [
-      "Customer-facing role providing product recommendations and cross-team coordination in a high-volume retail environment",
+      "Delivered customer-focused support in a fast-paced retail environment, helping customers make informed product decisions",
+      "Coordinated with colleagues across departments to resolve product, stock, and service issues efficiently",
     ],
   },
   {
@@ -110,7 +111,8 @@ export const experiences: Experience[] = [
     period: "Dec 2024 – May 2025",
     type: "customer",
     description: [
-      "Fast-paced retail experience involving high-volume transactions, customer service, and stock support during peak periods",
+      "Supported customers and store operations in a high-volume retail environment during peak trading periods",
+      "Built adaptability, speed, and attention to detail through customer service and stock support",
     ],
   },
 ];
@@ -130,7 +132,7 @@ export const education: Education[] = [
     details: [
       "WAM: 74",
       "Relevant coursework: Data Structures, Algorithms, Database Systems, Web Development, Software Engineering, and AI Fundamentals",
-      "Volunteer, Macquarie University Buddy Program — supporting new students in their transition to university life",
+      "Volunteer, Macquarie University Buddy Program — supporting new students in their transition to university",
     ],
   },
   {
@@ -138,8 +140,8 @@ export const education: Education[] = [
     institution: "TAFE NSW",
     period: "Jul 2022 – Jul 2023",
     details: [
-      "Built hands-on foundations in HTML, CSS, JavaScript, PHP, and MySQL through practical web development projects.",
-      "Developed responsive websites and worked with database-driven functionality, building a strong foundation for full-stack development.",
+      "Built hands-on foundations in HTML, CSS, JavaScript, PHP, and MySQL through practical web development projects",
+      "Developed responsive websites and database-driven functionality, building a strong foundation for full-stack development",
     ],
   },
 ];

@@ -63,7 +63,7 @@ export function ResumeClient() {
                     Pouya Alavi Naeini
                   </h2>
                   <p className="text-lg text-accent-light font-medium mb-4">
-                    Full-Stack Developer · Final-Year IT Student
+                    Graduate Full-Stack Developer · Final-Year IT Student
                   </p>
                   <div className="flex flex-col gap-2 text-text-secondary text-sm">
                     <div className="flex items-center gap-2">

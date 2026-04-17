@@ -4,11 +4,11 @@ import { ResumeClient } from "./ResumeClient";
 export const metadata: Metadata = {
   title: "Resume",
   description:
-    "Resume of Pouya Alavi Naeini — full-stack developer focused on Next.js, React, TypeScript, and Supabase, with applied AI/ML in Python and PyTorch.",
+    "Resume of Pouya Alavi Naeini — graduate full-stack developer focused on Next.js, React, TypeScript, and Supabase, with practical AI features in Python and PyTorch. Based in Sydney, Australia.",
   openGraph: {
     title: "Resume | Pouya Alavi Naeini",
     description:
-      "Full-stack developer focused on Next.js, React, TypeScript, and Supabase. Applied AI/ML with Python and PyTorch.",
+      "Graduate full-stack developer focused on Next.js, React, TypeScript, and Supabase. Practical AI features with Python and PyTorch.",
   },
 };
 
