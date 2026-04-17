@@ -30,7 +30,7 @@ export const projects: Record<string, Project> = {
       "Tailwind CSS",
       "Supabase",
       "Vitest",
-      "Playwright",
+      "GitHub Actions",
     ],
     links: {
       repo: "https://github.com/mrpouyaalavi/syllabus-sync",
@@ -46,7 +46,7 @@ export const projects: Record<string, Project> = {
   },
   "cifar-10-image-classification": {
     slug: "cifar-10-image-classification",
-    title: "CIFAR-10 Image Classification",
+    title: "CIFAR-10 Image Classification with PyTorch",
     category: "AI/ML",
     year: "Apr 2026 – Present",
     description:
@@ -59,7 +59,6 @@ export const projects: Record<string, Project> = {
       "scikit-learn",
       "Gradio",
       "Hugging Face Spaces",
-      "Jupyter",
       "Grad-CAM",
     ],
     links: {
@@ -68,9 +67,9 @@ export const projects: Record<string, Project> = {
     },
     highlights: [
       "Designed and implemented an end-to-end image classification pipeline to evaluate five deep learning architectures on the CIFAR-10 dataset using Python and PyTorch.",
-      "Compared training-from-scratch and transfer learning approaches under controlled conditions; MobileNetV2 achieved 86.91% test accuracy, outperforming a custom CNN and a ResNet-18 baseline.",
+      "Compared training-from-scratch and transfer learning approaches under controlled conditions; MobileNetV2 achieved 86.91% test accuracy, outperforming the custom CNN and ResNet-18 baseline.",
       "Applied modern training techniques, including data augmentation, cosine annealing learning rate scheduling, and progressive unfreezing, to improve convergence and generalisation.",
-      "Extended the project with Grad-CAM, INT8 quantisation experiments, command-line inference tools, and a Gradio demo deployed on Hugging Face Spaces to support analysis and deployment.",
+      "Extended the project with Grad-CAM interpretability, INT8 quantisation, command-line inference tools, and a Gradio demo deployed on Hugging Face Spaces.",
     ],
   },
 };
@@ -90,9 +89,9 @@ export const experiences: Experience[] = [
     period: "Oct 2023 – Dec 2024",
     type: "technical",
     description: [
-      "Designed and maintained the company WordPress website, improving mobile responsiveness, page speed, and on-page SEO",
-      "Automated internal workflows using Monday.com, reducing manual coordination and improving team efficiency",
-      "Worked with stakeholders to translate business needs into website updates and digital process improvements",
+      "Designed and maintained the company's WordPress website, improving mobile responsiveness and page load performance through SEO and performance optimisation",
+      "Automated internal workflows using Monday.com, reducing manual coordination overhead across teams",
+      "Collaborated with stakeholders to translate business requirements into website updates and content changes",
     ],
   },
   {
@@ -101,8 +100,7 @@ export const experiences: Experience[] = [
     period: "May 2025 – Present",
     type: "customer",
     description: [
-      "Delivered customer-focused support in a fast-paced retail environment, helping customers make informed product decisions",
-      "Coordinated with colleagues across departments to resolve product, stock, and service issues efficiently",
+      "Delivered customer-focused support and product guidance in a high-volume retail environment, collaborating across teams to support stock availability and smooth store operations",
     ],
   },
   {
@@ -111,8 +109,7 @@ export const experiences: Experience[] = [
     period: "Dec 2024 – May 2025",
     type: "customer",
     description: [
-      "Supported customers and store operations in a high-volume retail environment during peak trading periods",
-      "Built adaptability, speed, and attention to detail through customer service and stock support",
+      "Delivered customer service in a fast-paced retail environment, supporting transactions, stock handling, and customer needs during peak trading periods",
     ],
   },
 ];
@@ -166,7 +163,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "ML / AI",
-    skills: ["PyTorch", "scikit-learn", "Jupyter", "Grad-CAM"],
+    skills: ["PyTorch", "scikit-learn", "Jupyter", "Gradio"],
   },
   {
     label: "Testing & DevOps",

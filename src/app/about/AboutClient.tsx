@@ -38,10 +38,10 @@ export function AboutClient() {
                 Pouya Alavi Naeini
               </h1>
               <p className="text-xl text-accent-light font-medium">
-                Graduate Full-Stack Developer
+                Full-Stack Developer
               </p>
               <p className="text-sm text-text-muted font-medium">
-                Final-Year IT Student · Next.js, React, TypeScript, Supabase
+                Final-Year IT Student · Next.js, React, TypeScript
               </p>
             </div>
 

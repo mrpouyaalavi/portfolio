@@ -99,10 +99,10 @@ export default function Home() {
                 <span className="text-gradient">Pouya</span>
               </h1>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-text-secondary">
-                Graduate Full-Stack Developer
+                Full-Stack Developer
               </h2>
               <p className="text-sm sm:text-base text-text-muted font-medium">
-                Final-Year IT Student · Next.js, React, TypeScript, Supabase
+                Final-Year IT Student · Next.js, React, TypeScript
               </p>
             </motion.div>
 
@@ -206,7 +206,7 @@ export default function Home() {
                   <div className="w-full h-full rounded-full overflow-hidden bg-white ring-2 ring-border-subtle">
                     <Image
                       src="/pouya-profile.jpeg"
-                      alt="Pouya Alavi Naeini — Graduate Full-Stack Developer"
+                      alt="Pouya Alavi Naeini — Full-Stack Developer"
                       width={400}
                       height={400}
                       priority

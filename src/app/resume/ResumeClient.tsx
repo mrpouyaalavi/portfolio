@@ -63,7 +63,7 @@ export function ResumeClient() {
                     Pouya Alavi Naeini
                   </h2>
                   <p className="text-lg text-accent-light font-medium mb-4">
-                    Graduate Full-Stack Developer · Final-Year IT Student
+                    Full-Stack Developer · Final-Year IT Student
                   </p>
                   <div className="flex flex-col gap-2 text-text-secondary text-sm">
                     <div className="flex items-center gap-2">
@@ -122,9 +122,9 @@ export function ResumeClient() {
                 web applications using Next.js, React, TypeScript, and
                 Supabase. Built and deployed projects including Syllabus
                 Sync, a student productivity platform, and a CIFAR-10 image
-                classification app using Python, PyTorch, and Gradio. Strong
-                foundation in software development, testing, accessibility,
-                and user-centred design.
+                classification app using Python, PyTorch, Gradio, and Hugging
+                Face Spaces. Strong foundation in software development,
+                testing, accessibility, and user-centred design.
               </p>
             </section>
           </AnimatedSection>

@@ -1,5 +1,5 @@
 export const SITE_URL = "https://pouyaalavi.dev";
-export const SITE_NAME = "Pouya Alavi Naeini — Graduate Full-Stack Developer";
+export const SITE_NAME = "Pouya Alavi Naeini — Full-Stack Developer";
 
 export const CONTACT_EMAIL = "pouya@pouyaalavi.dev";
 export const PHONE = "0451 519 624";
