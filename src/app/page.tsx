@@ -325,7 +325,7 @@ export default function Home() {
               {
                 icon: Database,
                 title: "Applied AI & ML",
-                desc: "Building practical ML pipelines in Python and PyTorch — controlled experiments, Grad-CAM interpretability, and Streamlit demos.",
+                desc: "Building practical ML pipelines in Python and PyTorch — controlled experiments, Grad-CAM interpretability, and Gradio demos on Hugging Face Spaces.",
                 color: "text-secondary",
                 bg: "bg-secondary/10",
                 border: "border-secondary/20",
