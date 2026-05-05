@@ -32,7 +32,7 @@ export function ResumeClient() {
           <div className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <p className="text-xs font-medium text-accent tracking-widest uppercase mb-2">
-                Curriculum Vitae
+                Profile
               </p>
               <h1 className="text-3xl md:text-4xl font-bold text-foreground">Resume</h1>
             </div>
@@ -107,25 +107,23 @@ export function ResumeClient() {
             </div>
           </AnimatedSection>
 
-          {/* Professional Summary */}
+          {/* Overview */}
           <AnimatedSection variants={fadeInUp}>
             <section className="space-y-3">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-8 h-8 rounded-lg bg-accent/10 border border-accent/20 flex items-center justify-center">
                   <Users size={16} className="text-accent" />
                 </div>
-                <h3 className="text-lg font-bold text-foreground">Professional Summary</h3>
+                <h3 className="text-lg font-bold text-foreground">Overview</h3>
               </div>
               <p className="text-text-secondary leading-relaxed">
-                Final-year Information Technology student at Macquarie
-                University with hands-on experience building software and
-                full-stack web applications using JavaScript, TypeScript,
-                Python, React, Next.js, and SQL-based systems. Built and
-                deployed projects, including Syllabus Sync and a CIFAR-10 image
-                classification application. Interested in graduate and
-                early-career software roles where I can contribute through
-                practical problem-solving, reliable development practices, and
-                strong technical collaboration.
+                Final-year IT student at Macquarie University (Bachelor of
+                Information Technology — AI &amp; Web and App Development),
+                graduating November 2026. Focused on full-stack web development
+                with React, Next.js, TypeScript, and PostgreSQL, and also
+                working with Python and PyTorch on applied ML projects. Looking
+                for graduate and early-career software engineering roles in
+                Sydney.
               </p>
             </section>
           </AnimatedSection>
@@ -182,14 +180,9 @@ export function ResumeClient() {
                     <p className="text-xs text-accent-light font-medium mb-3">
                       {project.tags.join(" · ")}
                     </p>
-                    <ul className="space-y-2 text-sm text-text-secondary">
-                      {project.highlights.map((h) => (
-                        <li key={h} className="flex items-start gap-2">
-                          <span className="text-accent mt-1 shrink-0">▸</span>
-                          {h}
-                        </li>
-                      ))}
-                    </ul>
+                    <p className="text-sm text-text-secondary leading-relaxed">
+                      {project.description}
+                    </p>
                     <div className="flex gap-3 mt-4">
                       {project.links.repo && (
                         <a
@@ -234,11 +227,14 @@ export function ResumeClient() {
                       <div>
                         <h4 className="font-semibold text-foreground">{exp.title}</h4>
                         <p className="text-sm text-accent-light">{exp.company}</p>
+                        {exp.note && (
+                          <p className="text-xs text-text-muted mt-0.5">{exp.note}</p>
+                        )}
                       </div>
                       <span className="text-xs text-text-muted">{exp.period}</span>
                     </div>
                     <ul className="space-y-1.5 mt-2">
-                      {exp.description.map((d) => (
+                      {exp.description.slice(0, 2).map((d) => (
                         <li key={d} className="flex items-start gap-2 text-sm text-text-secondary">
                           <span className="text-accent mt-1 shrink-0">▸</span>
                           {d}
@@ -267,11 +263,14 @@ export function ResumeClient() {
                       <div>
                         <h4 className="font-semibold text-foreground">{exp.title}</h4>
                         <p className="text-sm text-accent-light">{exp.company}</p>
+                        {exp.note && (
+                          <p className="text-xs text-text-muted mt-0.5">{exp.note}</p>
+                        )}
                       </div>
                       <span className="text-xs text-text-muted">{exp.period}</span>
                     </div>
                     <ul className="space-y-1.5 mt-2">
-                      {exp.description.map((d) => (
+                      {exp.description.slice(0, 1).map((d) => (
                         <li key={d} className="flex items-start gap-2 text-sm text-text-secondary">
                           <span className="text-accent mt-1 shrink-0">▸</span>
                           {d}
@@ -302,7 +301,7 @@ export function ResumeClient() {
                     </div>
                     <p className="text-sm text-accent-light mb-2">{edu.institution}</p>
                     <ul className="space-y-1">
-                      {edu.details.map((d) => (
+                      {edu.details.slice(0, 1).map((d) => (
                         <li key={d} className="text-sm text-text-secondary">
                           • {d}
                         </li>

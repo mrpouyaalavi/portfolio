@@ -41,46 +41,37 @@ export function AboutClient() {
                 Software Engineer
               </p>
               <p className="text-sm text-text-muted font-medium">
-                Final-Year IT Student · Next.js, React, TypeScript
+                Final-Year IT Student · Macquarie University
               </p>
             </div>
 
             <div className="glass-card p-6 md:p-8 space-y-4">
               <p className="text-text-secondary leading-relaxed">
-                I&apos;m a final-year Bachelor of Information Technology
-                student at{" "}
+                I&apos;m a final-year IT student at{" "}
                 <span className="text-foreground font-medium">
                   Macquarie University
                 </span>
-                , graduating in November 2026, with a focus on full-stack web
-                development and a secondary interest in applied AI/ML. I build
-                software and modern web applications with{" "}
-                <span className="text-foreground">
-                  JavaScript, TypeScript, Python, React, Next.js, and SQL-based systems
-                </span>
-                , and I enjoy turning real user problems into practical,
-                reliable products.
+                , graduating November 2026. My degree is in AI &amp; Web and
+                App Development — full-stack web is my primary focus.
               </p>
               <p className="text-text-secondary leading-relaxed">
-                My flagship projects are{" "}
+                I care about software that holds up over time: clean interfaces,
+                sensible data models, and code that other engineers can pick up
+                and continue. My work includes authentication, access control,
+                testing, and CI/CD — not just UI.
+              </p>
+              <p className="text-text-secondary leading-relaxed">
+                My projects include{" "}
                 <span className="text-accent-light font-medium">
                   Syllabus Sync
-                </span>
-                , a student productivity platform built with features like MFA,
-                row-level security, multilingual/RTL support, and CI/CD on
-                Vercel, and a{" "}
-                <span className="text-accent-light font-medium">
-                  CIFAR-10 deep learning project
                 </span>{" "}
-                comparing a custom CNN, MobileNetV2, and ResNet-18 with
-                Grad-CAM interpretability and a Gradio demo on Hugging Face
-                Spaces.
-              </p>
-              <p className="text-text-secondary leading-relaxed">
-                I care about practical problem-solving, reliable development
-                practices, accessibility, testing, and strong technical
-                collaboration. I&apos;m currently looking for graduate or
-                early-career software roles in Sydney.
+                — a production-ready student platform with MFA, row-level
+                security, and CI/CD — and a{" "}
+                <span className="text-accent-light font-medium">
+                  CIFAR-10 classifier comparison
+                </span>{" "}
+                with Grad-CAM interpretability and a live demo. I&apos;m
+                looking for graduate and early-career roles in Sydney.
               </p>
             </div>
 
@@ -93,7 +84,7 @@ export function AboutClient() {
                 <GraduationCap size={12} /> Macquarie University · November 2026
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-accent/8 border border-accent/20 text-accent text-xs font-medium">
-                <Heart size={12} /> Open to graduate &amp; early-career roles
+                <Heart size={12} /> Available for graduate roles · Graduating November 2026
               </span>
             </div>
 
@@ -163,8 +154,8 @@ export function AboutClient() {
             {/* Stats */}
             {[
               { value: "November 2026", label: "Graduating", color: "text-accent" },
-              { value: "Software", label: "Focus", color: "text-secondary" },
-              { value: "Applied AI", label: "Secondary", color: "text-warm" },
+              { value: "Full-Stack", label: "Focus", color: "text-secondary" },
+              { value: "AI/ML", label: "Secondary", color: "text-warm" },
             ].map((s) => (
               <div
                 key={s.label}
@@ -234,6 +225,9 @@ export function AboutClient() {
                         {exp.title}
                       </h3>
                       <p className="text-sm text-accent-light">{exp.company}</p>
+                      {exp.note && (
+                        <p className="text-xs text-text-muted mt-0.5">{exp.note}</p>
+                      )}
                     </div>
                     <div className="flex items-center gap-2">
                       <span

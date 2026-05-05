@@ -20,9 +20,9 @@ export const projects: Record<string, Project> = {
     category: "Full-Stack",
     year: "Dec 2025 – Present",
     description:
-      "A collaborative full-stack productivity platform for Macquarie University students — academic planning, deadlines, and campus navigation in one place.",
+      "A full-stack student productivity platform for Macquarie University students — academic planning, deadline tracking, and campus navigation, with MFA, row-level security, and CI/CD.",
     fullDescription:
-      "Syllabus Sync is a full-stack productivity platform co-developed for Macquarie University students, designed to support academic planning, deadlines, and campus navigation. Built with Next.js, React, TypeScript, Tailwind CSS, and Supabase, it ships with multilingual support and RTL layouts, TOTP-based MFA, row-level security, accessibility improvements, and CI/CD workflows via GitHub Actions and Vercel.",
+      "Syllabus Sync is a full-stack student productivity platform built for Macquarie University. It brings academic planning, deadline tracking, and campus navigation into a single app. The stack includes Next.js, React, TypeScript, Tailwind CSS, and Supabase — with TOTP-based MFA, row-level security, rate limiting, internationalisation, RTL layout support, accessibility improvements, and end-to-end CI/CD.",
     tags: [
       "Next.js",
       "React",
@@ -37,11 +37,11 @@ export const projects: Record<string, Project> = {
       demo: "https://syllabus-sync-mq.vercel.app",
     },
     highlights: [
-      "Co-developed a full-stack student productivity platform for Macquarie University students, with features for academic planning, deadlines, and campus navigation",
-      "Built multilingual and responsive user experiences, including RTL layout support and mobile-first design",
-      "Implemented secure authentication with TOTP-based MFA, row-level security, rate limiting, and test coverage to improve reliability and user security",
-      "Added accessibility and internationalisation improvements aligned with inclusive design and WCAG principles",
-      "Deployed the project through GitHub Actions and Vercel, integrating CI/CD practices across testing, security, and release workflows",
+      "Co-developed planning, deadline tracking, and campus navigation features for Macquarie University students",
+      "Built responsive multilingual interfaces, including RTL layout support and mobile-first flows",
+      "Implemented TOTP-based MFA, row-level security, rate limiting, and tests to improve reliability and user security",
+      "Improved accessibility and internationalisation across core user flows",
+      "Set up GitHub Actions and Vercel workflows for testing, security checks, and deployment",
     ],
   },
   "cifar-10-image-classification": {
@@ -50,9 +50,9 @@ export const projects: Record<string, Project> = {
     category: "AI/ML",
     year: "Apr 2026 – Present",
     description:
-      "An end-to-end Python application for evaluating multiple deep learning architectures on the CIFAR-10 dataset, with deployed models in a live interactive Gradio demo.",
+      "An applied ML project evaluating Custom CNN, MobileNetV2, and ResNet-18 on CIFAR-10, with Grad-CAM interpretability and a live Gradio demo. Best result: 87.48% test accuracy with ResNet-18.",
     fullDescription:
-      "CIFAR-10 Image Classification is an end-to-end Python application for evaluating multiple deep learning architectures on the CIFAR-10 dataset. Built with Python, PyTorch, scikit-learn, and Gradio, it compares model performance through structured experimentation and ships three models in a live interactive demo, with Grad-CAM interpretability, INT8 quantisation, command-line inference tools, and deployment on Hugging Face Spaces.",
+      "An applied machine learning project that trains, evaluates, and compares three CIFAR-10 classifiers — a Custom CNN, MobileNetV2, and ResNet-18. Built with Python, PyTorch, and scikit-learn, it includes Grad-CAM for visual interpretability, INT8 quantisation for model efficiency, CLI inference tools, and a live interactive demo hosted on Hugging Face Spaces via Gradio. ResNet-18 achieved 87.48% test accuracy.",
     tags: [
       "Python",
       "PyTorch",
@@ -66,10 +66,10 @@ export const projects: Record<string, Project> = {
       demo: "https://cifar10.pouyaalavi.dev",
     },
     highlights: [
-      "Designed and implemented an end-to-end Python application to evaluate multiple deep learning architectures on the CIFAR-10 dataset, with three models deployed in a live interactive demo",
-      "Compared model performance under controlled conditions using measurable outcomes and improved results through structured experimentation and iteration",
-      "Extended the project with Grad-CAM interpretability, INT8 quantisation, command-line inference tools, and a deployed Gradio application on Hugging Face Spaces",
-      "Applied modern training techniques, including data augmentation, cosine annealing learning rate scheduling, and progressive unfreezing, to improve convergence and generalisation",
+      "Built an end-to-end Python pipeline for training, evaluating, and comparing CIFAR-10 classifiers — ResNet-18 achieved 87.48% test accuracy",
+      "Applied data augmentation, cosine annealing, and progressive unfreezing across all three model architectures",
+      "Added Grad-CAM visual interpretability, INT8 quantisation, and CLI inference tools to the evaluation workflow",
+      "Deployed a live interactive demo on Hugging Face Spaces using Gradio",
     ],
   },
 };
@@ -78,6 +78,7 @@ export interface Experience {
   title: string;
   company: string;
   period: string;
+  note?: string;
   description: string[];
   type: "technical" | "customer";
 }
@@ -87,12 +88,12 @@ export const experiences: Experience[] = [
     title: "IT & Web Developer",
     company: "SBR Group",
     period: "October 2023 - December 2024",
+    note: "Started as a 3-month intern and was subsequently retained in a paid role",
     type: "technical",
     description: [
-      "Started as a 3-month intern and was subsequently retained in a paid role",
-      "Designed and maintained the company's WordPress website, improving mobile responsiveness and page load performance through SEO and performance optimisation",
-      "Automated internal workflows using Monday.com, reducing manual coordination overhead across teams",
-      "Collaborated with stakeholders to translate business requirements into website updates and content changes",
+      "Maintained and improved the company WordPress site, focusing on responsiveness, performance, and SEO",
+      "Automated internal coordination workflows using Monday.com, reducing repetitive manual work for the team",
+      "Collaborated with stakeholders to gather requirements and ship practical improvements to the site and internal processes",
     ],
   },
   {
@@ -101,8 +102,8 @@ export const experiences: Experience[] = [
     period: "May 2025 - Present",
     type: "customer",
     description: [
-      "Worked in a fast-paced team environment, supporting customers and collaborating with colleagues to resolve issues efficiently",
-      "Developed strong communication, teamwork, and adaptability skills through day-to-day customer-facing problem-solving",
+      "Applied communication, teamwork, and problem-solving skills in a fast-paced, high-volume retail environment",
+      "Collaborated with colleagues to support customers, resolve issues, and keep store operations running smoothly",
     ],
   },
   {
@@ -111,8 +112,7 @@ export const experiences: Experience[] = [
     period: "December 2024 - May 2025",
     type: "customer",
     description: [
-      "Delivered customer service in a fast-paced retail environment, supporting transactions and day-to-day customer needs",
-      "Contributed during peak trading periods through stock handling, teamwork, and maintaining smooth store operations",
+      "Developed attention to detail and adaptability through customer service, transactions, and stock management",
     ],
   },
 ];
@@ -130,8 +130,8 @@ export const education: Education[] = [
     institution: "Macquarie University",
     period: "July 2023 - November 2026",
     details: [
-      "Relevant coursework: Software Engineering, Data Structures, Algorithms, Database Systems, Web Development, and AI Fundamentals",
-      "Volunteer, Macquarie University Buddy Program - supporting new students in their transition to university life",
+      "Focused on software engineering, web development, databases, algorithms, and AI fundamentals",
+      "Volunteer, Macquarie University Buddy Program",
     ],
   },
   {
@@ -139,8 +139,7 @@ export const education: Education[] = [
     institution: "TAFE NSW",
     period: "July 2022 - July 2023",
     details: [
-      "Built hands-on foundations in HTML, CSS, JavaScript, PHP, and MySQL through practical web development projects",
-      "Developed responsive websites and worked with database-driven functionality, building a strong foundation for full-stack development",
+      "Built practical foundations in web development, programming, and database-backed applications",
     ],
   },
 ];
@@ -153,11 +152,11 @@ export interface SkillGroup {
 export const skillGroups: SkillGroup[] = [
   {
     label: "Languages",
-    skills: ["Python", "TypeScript", "JavaScript", "Java", "SQL", "HTML/CSS"],
+    skills: ["TypeScript", "JavaScript", "Python", "Java", "SQL", "HTML/CSS"],
   },
   {
-    label: "Software & Systems",
-    skills: ["REST APIs", "OOP", "Data Structures", "Algorithms", "Debugging"],
+    label: "CS Fundamentals",
+    skills: ["Data Structures", "Algorithms", "OOP", "REST APIs", "Debugging"],
   },
   {
     label: "Frontend",
@@ -165,16 +164,10 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Backend & Data",
-    skills: [
-      "Node.js",
-      "PostgreSQL",
-      "Supabase",
-      "Data Handling",
-      "System Integration",
-    ],
+    skills: ["Node.js", "PostgreSQL", "Supabase"],
   },
   {
-    label: "ML / AI",
+    label: "Applied AI/ML",
     skills: ["PyTorch", "scikit-learn", "Jupyter", "Gradio"],
   },
   {

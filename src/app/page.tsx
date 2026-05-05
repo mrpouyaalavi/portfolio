@@ -83,7 +83,7 @@ export default function Home() {
                 <span className="relative rounded-full h-2 w-2 bg-success" />
               </span>
               <span className="text-xs font-medium text-text-secondary">
-                Open to graduate &amp; early-career software roles · Sydney
+                Available for graduate roles · Graduating November 2026
               </span>
             </motion.div>
 
@@ -102,7 +102,7 @@ export default function Home() {
                 Software Engineer
               </h2>
               <p className="text-sm sm:text-base text-text-muted font-medium">
-                Final-Year IT Student · Next.js, React, TypeScript
+                Final-Year IT Student · Macquarie University
               </p>
             </motion.div>
 
@@ -113,20 +113,18 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg text-text-secondary leading-relaxed max-w-xl mb-6"
             >
-              I build software and full-stack web applications with{" "}
-              <span className="text-accent-light">JavaScript</span>,{" "}
+              I build full-stack web applications with{" "}
               <span className="text-accent-light">React</span>,{" "}
+              <span className="text-accent-light">Next.js</span>,{" "}
               <span className="text-accent-light">TypeScript</span>, and{" "}
-              <span className="text-accent-light">Next.js</span>, alongside{" "}
-              <span className="text-accent-light">SQL-based systems</span> and
-              applied AI/ML work in{" "}
-              <span className="text-accent-light">Python</span> and{" "}
-              <span className="text-accent-light">PyTorch</span>. Final-year IT
-              student at{" "}
+              <span className="text-accent-light">SQL-backed systems</span>.
+              My projects include testing, CI/CD, and practical security
+              features such as authentication and access control. Final-year
+              IT student at{" "}
               <span className="text-foreground font-medium">
                 Macquarie University
               </span>
-              , graduating November 2026.
+              , graduating November&nbsp;2026.
             </motion.p>
 
             {/* Info chips */}
@@ -167,7 +165,7 @@ export default function Home() {
                 href="/resume"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-overlay hover:bg-overlay-strong text-foreground text-sm font-semibold rounded-xl border border-border-default hover:border-border-accent transition-all duration-300"
               >
-                <Download size={16} /> Download Resume
+                <Download size={16} /> Resume
               </Link>
               <div className="flex items-center gap-2 ml-2">
                 <a
@@ -305,7 +303,7 @@ export default function Home() {
       ═══════════════════════════════════ */}
       <AnimatedSection>
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-          <SectionHeading number="02" label="Expertise" title="What I Do" />
+          <SectionHeading number="02" label="Focus" title="What I Do" />
 
           <motion.div
             variants={staggerContainer}
@@ -317,24 +315,24 @@ export default function Home() {
             {[
               {
                 icon: Code2,
-                title: "Software & Full-Stack Apps",
-                desc: "Building practical software and web applications with JavaScript, TypeScript, Python, React, Next.js, REST APIs, and SQL-based systems.",
+                title: "Full-Stack Development",
+                desc: "Building web applications with React, Next.js, TypeScript, and SQL-backed APIs — from UI to database.",
                 color: "text-accent",
                 bg: "bg-accent/10",
                 border: "border-accent/20",
               },
               {
                 icon: Database,
-                title: "Applied AI & ML",
-                desc: "Building practical ML pipelines in Python and PyTorch — controlled experiments, Grad-CAM interpretability, and Gradio demos on Hugging Face Spaces.",
+                title: "Applied AI/ML",
+                desc: "Training, evaluating, and comparing models with Python, PyTorch, and scikit-learn — with interactive demos via Gradio.",
                 color: "text-secondary",
                 bg: "bg-secondary/10",
                 border: "border-secondary/20",
               },
               {
                 icon: Layers,
-                title: "Testing & DevOps",
-                desc: "CI/CD on GitHub Actions and Vercel, with Vitest and Playwright keeping the feedback loop fast and regressions visible.",
+                title: "Testing & Delivery",
+                desc: "Writing tests, configuring CI/CD with GitHub Actions, and deploying with Vercel to keep projects reproducible and maintainable.",
                 color: "text-warm",
                 bg: "bg-warm/10",
                 border: "border-warm/20",
@@ -422,13 +420,12 @@ export default function Home() {
 
             <Sparkles className="w-8 h-8 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Open to Graduate &amp; Early-Career Software Roles
+              Open to Graduate Software Roles in Sydney
             </h2>
             <p className="text-text-secondary max-w-lg mx-auto mb-8 leading-relaxed">
-              I&apos;m graduating in November 2026 and looking for graduate or
-              early-career software roles in Sydney where I can contribute
-              through practical problem-solving, reliable development, and
-              strong technical collaboration.
+              I&apos;m looking for teams where I can contribute to real product
+              work, grow alongside experienced engineers, and keep building
+              solid software fundamentals.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link

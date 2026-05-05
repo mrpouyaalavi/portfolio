@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Pouya Alavi Naeini",
   },
   description:
-    "Software engineer and final-year IT student at Macquarie University, graduating November 2026. Building software and full-stack web applications with JavaScript, TypeScript, Python, React, Next.js, and SQL-based systems. Based in Sydney, Australia.",
+    "Software engineer and final-year IT student at Macquarie University, graduating November 2026. Focused on full-stack web development with a secondary interest in applied AI/ML. Based in Sydney, Australia.",
   keywords: [
     "Software Engineer",
     "Full-Stack Web Applications",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title:
       "Pouya Alavi Naeini | Software Engineer - Next.js, React, TypeScript",
     description:
-      "Software engineer building software and full-stack web applications with JavaScript, TypeScript, Python, React, Next.js, and SQL-based systems. Based in Sydney, Australia.",
+      "Software engineer and final-year IT student focused on full-stack web development and applied AI/ML. Based in Sydney, Australia.",
     siteName: SITE_NAME,
   },
   twitter: {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title:
       "Pouya Alavi Naeini | Software Engineer - Next.js, React, TypeScript",
     description:
-      "Software engineer building software and full-stack web applications with JavaScript, TypeScript, Python, React, Next.js, and SQL-based systems.",
+      "Software engineer and final-year IT student focused on full-stack web development and applied AI/ML.",
   },
   metadataBase: new URL(SITE_URL),
 };

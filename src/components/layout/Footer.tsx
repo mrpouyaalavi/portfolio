@@ -29,9 +29,8 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed max-w-xs">
-              Software engineer building software and full-stack web
-              applications with JavaScript, TypeScript, Python, React, Next.js,
-              and SQL-based systems. Based in Sydney, Australia.
+              Full-stack software engineer and final-year IT student at
+              Macquarie University. Based in Sydney, graduating November 2026.
             </p>
             <div className="flex items-center gap-3">
               <motion.a

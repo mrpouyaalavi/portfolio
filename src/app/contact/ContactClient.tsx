@@ -24,9 +24,9 @@ export function ContactClient() {
               Let&apos;s <span className="text-gradient">Connect</span>
             </h1>
             <p className="text-text-secondary max-w-md mx-auto">
-              Open to graduate and early-career software roles,
-              collaborations, and interesting side projects. The fastest way
-              to reach me is email.
+              Open to graduate and early-career software roles in Sydney.
+              Email is the fastest way to reach me — I aim to reply within 24
+              hours.
             </p>
           </div>
         </AnimatedSection>
@@ -72,7 +72,7 @@ export function ContactClient() {
                 id="subject"
                 name="subject"
                 type="text"
-                placeholder="What's this about?"
+                  placeholder="What's this regarding?"
                 className="w-full px-4 py-3 rounded-xl bg-overlay-subtle border border-border-subtle text-foreground placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/30 transition-all"
               />
             </div>
@@ -84,7 +84,7 @@ export function ContactClient() {
                 id="body"
                 name="body"
                 rows={5}
-                placeholder="Tell me about your project or idea..."
+                  placeholder="Hi Pouya, I'm reaching out about..."
                 className="w-full px-4 py-3 rounded-xl bg-overlay-subtle border border-border-subtle text-foreground placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/30 transition-all resize-none"
               />
             </div>
