@@ -117,13 +117,15 @@ export function ResumeClient() {
                 <h3 className="text-lg font-bold text-foreground">Overview</h3>
               </div>
               <p className="text-text-secondary leading-relaxed">
-                Final-year IT student at Macquarie University (Bachelor of
-                Information Technology — AI &amp; Web and App Development),
-                graduating November 2026. Focused on full-stack web development
-                with React, Next.js, TypeScript, and PostgreSQL, and also
-                working with Python and PyTorch on applied ML projects. Looking
-                for graduate and early-career software engineering roles in
-                Sydney.
+                Final-year Information Technology student at Macquarie
+                University with hands-on experience building software and
+                full-stack web applications using JavaScript, TypeScript,
+                Python, React, Next.js, and SQL-based systems. Built and
+                deployed projects, including Syllabus Sync and a CIFAR-10
+                image classification application. Interested in graduate and
+                early-career software roles where I can contribute through
+                practical problem-solving, reliable development practices, and
+                strong technical collaboration.
               </p>
             </section>
           </AnimatedSection>

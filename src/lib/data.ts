@@ -91,9 +91,9 @@ export const experiences: Experience[] = [
     note: "Started as a 3-month intern and was subsequently retained in a paid role",
     type: "technical",
     description: [
-      "Maintained and improved the company WordPress site, focusing on responsiveness, performance, and SEO",
-      "Automated internal coordination workflows using Monday.com, reducing repetitive manual work for the team",
-      "Collaborated with stakeholders to gather requirements and ship practical improvements to the site and internal processes",
+      "Designed and maintained the company's WordPress website, improving mobile responsiveness and page load performance through SEO and performance optimisation",
+      "Automated internal workflows using Monday.com, reducing manual coordination overhead across teams",
+      "Collaborated with stakeholders to translate business requirements into website updates and content changes",
     ],
   },
   {
@@ -102,8 +102,8 @@ export const experiences: Experience[] = [
     period: "May 2025 - Present",
     type: "customer",
     description: [
-      "Applied communication, teamwork, and problem-solving skills in a fast-paced, high-volume retail environment",
-      "Collaborated with colleagues to support customers, resolve issues, and keep store operations running smoothly",
+      "Worked in a fast-paced team environment, supporting customers and collaborating with colleagues to resolve issues efficiently",
+      "Developed strong communication, teamwork, and adaptability skills through day-to-day customer-facing problem-solving",
     ],
   },
   {
@@ -112,7 +112,8 @@ export const experiences: Experience[] = [
     period: "December 2024 - May 2025",
     type: "customer",
     description: [
-      "Developed attention to detail and adaptability through customer service, transactions, and stock management",
+      "Delivered customer service in a fast-paced retail environment, supporting transactions and day-to-day customer needs",
+      "Contributed during peak trading periods through stock handling, teamwork, and maintaining smooth store operations",
     ],
   },
 ];
@@ -130,8 +131,8 @@ export const education: Education[] = [
     institution: "Macquarie University",
     period: "July 2023 - November 2026",
     details: [
-      "Focused on software engineering, web development, databases, algorithms, and AI fundamentals",
-      "Volunteer, Macquarie University Buddy Program",
+      "Relevant coursework: Software Engineering, Data Structures, Algorithms, Database Systems, Web Development, and AI Fundamentals",
+      "Volunteer, Macquarie University Buddy Program — supporting new students in their transition to university life",
     ],
   },
   {
@@ -139,7 +140,8 @@ export const education: Education[] = [
     institution: "TAFE NSW",
     period: "July 2022 - July 2023",
     details: [
-      "Built practical foundations in web development, programming, and database-backed applications",
+      "Built hands-on foundations in HTML, CSS, JavaScript, PHP, and MySQL through practical web development projects",
+      "Developed responsive websites and worked with database-driven functionality, building a strong foundation for full-stack development",
     ],
   },
 ];
@@ -152,11 +154,11 @@ export interface SkillGroup {
 export const skillGroups: SkillGroup[] = [
   {
     label: "Languages",
-    skills: ["TypeScript", "JavaScript", "Python", "Java", "SQL", "HTML/CSS"],
+    skills: ["Python", "TypeScript", "JavaScript", "Java", "SQL", "HTML/CSS"],
   },
   {
-    label: "CS Fundamentals",
-    skills: ["Data Structures", "Algorithms", "OOP", "REST APIs", "Debugging"],
+    label: "Software & Systems",
+    skills: ["REST APIs", "OOP", "Data Structures", "Algorithms", "Debugging"],
   },
   {
     label: "Frontend",
@@ -164,10 +166,10 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Backend & Data",
-    skills: ["Node.js", "PostgreSQL", "Supabase"],
+    skills: ["Node.js", "PostgreSQL", "Supabase", "Data Handling", "System Integration"],
   },
   {
-    label: "Applied AI/ML",
+    label: "ML/AI",
     skills: ["PyTorch", "scikit-learn", "Jupyter", "Gradio"],
   },
   {
