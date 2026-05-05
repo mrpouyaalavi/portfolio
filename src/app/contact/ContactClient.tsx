@@ -24,9 +24,9 @@ export function ContactClient() {
               Let&apos;s <span className="text-gradient">Connect</span>
             </h1>
             <p className="text-text-secondary max-w-md mx-auto">
-              Open to graduate and junior full-stack roles, collaborations,
-              and interesting side projects. The fastest way to reach me is
-              email.
+              Open to graduate and early-career software roles,
+              collaborations, and interesting side projects. The fastest way
+              to reach me is email.
             </p>
           </div>
         </AnimatedSection>
@@ -158,4 +158,3 @@ export function ContactClient() {
     </div>
   );
 }
-

@@ -4,15 +4,14 @@ import { AboutClient } from "./AboutClient";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Full-stack developer building web apps with Next.js, React, TypeScript, and Supabase, with applied AI/ML in Python and PyTorch. Final-year IT student at Macquarie University, based in Sydney, Australia.",
+    "Software engineer and final-year IT student at Macquarie University, building software and full-stack web applications with JavaScript, TypeScript, Python, React, Next.js, and SQL-based systems.",
   openGraph: {
     title: "About | Pouya Alavi Naeini",
     description:
-      "Full-stack developer focused on Next.js, React, TypeScript, and Supabase, with applied AI/ML in Python and PyTorch.",
+      "Software engineer focused on JavaScript, TypeScript, Python, React, Next.js, SQL-based systems, and applied AI/ML.",
   },
 };
 
 export default function AboutPage() {
   return <AboutClient />;
 }
-

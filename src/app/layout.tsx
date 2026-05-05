@@ -18,13 +18,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default:
-      "Pouya Alavi Naeini | Full-Stack Developer — Next.js, React, TypeScript",
+      "Pouya Alavi Naeini | Software Engineer - Next.js, React, TypeScript",
     template: "%s | Pouya Alavi Naeini",
   },
   description:
-    "Full-stack developer and final-year IT student at Macquarie University, graduating November 2026. Building web apps with Next.js, React, TypeScript, and Supabase, with applied AI/ML work in Python and PyTorch. Based in Sydney, Australia.",
+    "Software engineer and final-year IT student at Macquarie University, graduating November 2026. Building software and full-stack web applications with JavaScript, TypeScript, Python, React, Next.js, and SQL-based systems. Based in Sydney, Australia.",
   keywords: [
-    "Full-Stack Developer",
+    "Software Engineer",
+    "Full-Stack Web Applications",
     "Next.js",
     "React",
     "TypeScript",
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     "Applied AI",
     "Web Development",
     "Pouya Alavi Naeini",
-    "Junior Developer Sydney",
+    "Early-Career Developer Sydney",
     "Graduate Developer Sydney",
     "Macquarie University",
   ],
@@ -44,17 +45,17 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: SITE_URL,
     title:
-      "Pouya Alavi Naeini | Full-Stack Developer — Next.js, React, TypeScript",
+      "Pouya Alavi Naeini | Software Engineer - Next.js, React, TypeScript",
     description:
-      "Full-stack developer building web apps with Next.js, React, TypeScript, and Supabase, with applied AI/ML in Python and PyTorch. Based in Sydney, Australia.",
+      "Software engineer building software and full-stack web applications with JavaScript, TypeScript, Python, React, Next.js, and SQL-based systems. Based in Sydney, Australia.",
     siteName: SITE_NAME,
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Pouya Alavi Naeini | Full-Stack Developer — Next.js, React, TypeScript",
+      "Pouya Alavi Naeini | Software Engineer - Next.js, React, TypeScript",
     description:
-      "Full-stack developer building web apps with Next.js, React, TypeScript, and Supabase. Applied AI/ML in Python and PyTorch.",
+      "Software engineer building software and full-stack web applications with JavaScript, TypeScript, Python, React, Next.js, and SQL-based systems.",
   },
   metadataBase: new URL(SITE_URL),
 };
@@ -69,7 +70,7 @@ export default function RootLayout({
     "@type": "Person",
     name: "Pouya Alavi Naeini",
     url: SITE_URL,
-    jobTitle: "Full-Stack Developer",
+    jobTitle: "Software Engineer",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Sydney",

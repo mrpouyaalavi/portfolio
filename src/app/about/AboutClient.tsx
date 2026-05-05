@@ -38,7 +38,7 @@ export function AboutClient() {
                 Pouya Alavi Naeini
               </h1>
               <p className="text-xl text-accent-light font-medium">
-                Full-Stack Developer
+                Software Engineer
               </p>
               <p className="text-sm text-text-muted font-medium">
                 Final-Year IT Student · Next.js, React, TypeScript
@@ -54,12 +54,12 @@ export function AboutClient() {
                 </span>
                 , graduating in November 2026, with a focus on full-stack web
                 development and a secondary interest in applied AI/ML. I build
-                modern web applications with{" "}
+                software and modern web applications with{" "}
                 <span className="text-foreground">
-                  Next.js, React, TypeScript, and Supabase
+                  JavaScript, TypeScript, Python, React, Next.js, and SQL-based systems
                 </span>
-                , and I enjoy turning real user problems into polished,
-                practical products.
+                , and I enjoy turning real user problems into practical,
+                reliable products.
               </p>
               <p className="text-text-secondary leading-relaxed">
                 My flagship projects are{" "}
@@ -77,9 +77,10 @@ export function AboutClient() {
                 Spaces.
               </p>
               <p className="text-text-secondary leading-relaxed">
-                I care about accessibility, testing, and user-centred design,
-                and I&apos;m currently looking for graduate or junior software
-                roles in Sydney.
+                I care about practical problem-solving, reliable development
+                practices, accessibility, testing, and strong technical
+                collaboration. I&apos;m currently looking for graduate or
+                early-career software roles in Sydney.
               </p>
             </div>
 
@@ -89,10 +90,10 @@ export function AboutClient() {
                 <MapPin size={12} /> Sydney, Australia
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-overlay-subtle border border-border-subtle text-text-muted text-xs font-medium">
-                <GraduationCap size={12} /> Macquarie University · Nov 2026
+                <GraduationCap size={12} /> Macquarie University · November 2026
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-accent/8 border border-accent/20 text-accent text-xs font-medium">
-                <Heart size={12} /> Open to graduate &amp; junior roles
+                <Heart size={12} /> Open to graduate &amp; early-career roles
               </span>
             </div>
 
@@ -161,8 +162,8 @@ export function AboutClient() {
 
             {/* Stats */}
             {[
-              { value: "Nov 2026", label: "Graduating", color: "text-accent" },
-              { value: "Full-Stack", label: "Focus", color: "text-secondary" },
+              { value: "November 2026", label: "Graduating", color: "text-accent" },
+              { value: "Software", label: "Focus", color: "text-secondary" },
               { value: "Applied AI", label: "Secondary", color: "text-warm" },
             ].map((s) => (
               <div
@@ -307,4 +308,3 @@ export function AboutClient() {
     </div>
   );
 }
-

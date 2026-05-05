@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Typing animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=700&color=7C3AED&center=true&vCenter=true&width=860&lines=Pouya+Alavi+Naeini+%E2%80%94+Full-Stack+Developer;Modern+Portfolio+%C2%B7+Next.js+16+%C2%B7+React+19;System+Theme+%C2%B7+Glass+UI+%C2%B7+Framer+Motion;Sydney%2C+NSW+%C2%B7+Open+to+Opportunities)](https://pouyaalavi.dev)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=700&color=7C3AED&center=true&vCenter=true&width=860&lines=Pouya+Alavi+Naeini+%E2%80%94+Software+Engineer;Modern+Portfolio+%C2%B7+Next.js+16+%C2%B7+React+19;System+Theme+%C2%B7+Glass+UI+%C2%B7+Framer+Motion;Sydney%2C+NSW+%C2%B7+Open+to+Opportunities)](https://pouyaalavi.dev)
 
 <!-- Badges -->
 ![Next.js](https://img.shields.io/badge/Next.js_16-000?style=for-the-badge&logo=nextdotjs)
@@ -21,7 +21,7 @@
 
 > **A performance-first, theme-adaptive portfolio built with Next.js 16, React 19, and Tailwind CSS 4 — showcasing projects, skills, and experience with polished glass-morphism UI and smooth scroll-driven animations.**
 
-A modern, professional portfolio website for **Pouya Alavi Naeini**, a full-stack developer and final-year IT student at Macquarie University. The site features system-aware light/dark theming, animated page transitions, a glass-card design system, SEO optimisation with structured data, and a fully responsive layout from 360px to ultrawide.
+A modern, professional portfolio website for **Pouya Alavi Naeini**, a software engineer and final-year IT student at Macquarie University. The site features system-aware light/dark theming, animated page transitions, a glass-card design system, SEO optimisation with structured data, and a fully responsive layout from 360px to ultrawide.
 
 **[🔗 Live Site](https://www.pouyaalavi.dev)** &nbsp;·&nbsp; **[💼 LinkedIn](https://linkedin.com/in/pouya-alavi)** &nbsp;·&nbsp; **[🐙 GitHub](https://github.com/mrpouyaalavi)**
 
@@ -235,10 +235,10 @@ This project is open source and available under the [MIT License](./LICENSE).
 ### `> ping --author`
 
 ```
-> Target     : Pouya Alavi Naeini — Full-Stack Developer
+> Target     : Pouya Alavi Naeini - Software Engineer
 > University : Macquarie University, Sydney, NSW
 > Graduating : November 2026
-> Status     : [●] ONLINE — open to grad & junior opportunities
+> Status     : [●] ONLINE — open to graduate and early-career software opportunities
 ```
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-7c3aed?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=0a0a0f)](https://www.linkedin.com/in/pouya-alavi/)

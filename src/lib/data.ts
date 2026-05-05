@@ -46,13 +46,13 @@ export const projects: Record<string, Project> = {
   },
   "cifar-10-image-classification": {
     slug: "cifar-10-image-classification",
-    title: "CIFAR-10 Image Classification with PyTorch",
+    title: "CIFAR-10 Image Classification",
     category: "AI/ML",
     year: "Apr 2026 – Present",
     description:
-      "An end-to-end deep learning image classification project on the CIFAR-10 dataset, built with Python and PyTorch. Compares a custom CNN, MobileNetV2, and ResNet-18 under controlled training and transfer learning settings, with data augmentation, Grad-CAM visualisation, CLI inference tools, and a Gradio demo deployed on Hugging Face Spaces. MobileNetV2 achieved 86.91% test accuracy.",
+      "An end-to-end Python application for evaluating multiple deep learning architectures on the CIFAR-10 dataset, with deployed models in a live interactive Gradio demo.",
     fullDescription:
-      "An end-to-end deep learning image classification project on the CIFAR-10 dataset, built with Python and PyTorch. Compares a custom CNN, MobileNetV2, and ResNet-18 under controlled training and transfer learning settings, with data augmentation, Grad-CAM visualisation, CLI inference tools, and a Gradio demo deployed on Hugging Face Spaces. MobileNetV2 achieved 86.91% test accuracy.",
+      "CIFAR-10 Image Classification is an end-to-end Python application for evaluating multiple deep learning architectures on the CIFAR-10 dataset. Built with Python, PyTorch, scikit-learn, and Gradio, it compares model performance through structured experimentation and ships three models in a live interactive demo, with Grad-CAM interpretability, INT8 quantisation, command-line inference tools, and deployment on Hugging Face Spaces.",
     tags: [
       "Python",
       "PyTorch",
@@ -66,10 +66,10 @@ export const projects: Record<string, Project> = {
       demo: "https://cifar10.pouyaalavi.dev",
     },
     highlights: [
-      "Designed and implemented an end-to-end image classification pipeline to evaluate five deep learning architectures on the CIFAR-10 dataset using Python and PyTorch.",
-      "Compared training-from-scratch and transfer learning approaches under controlled conditions; MobileNetV2 achieved 86.91% test accuracy, outperforming the custom CNN and ResNet-18 baseline.",
-      "Applied modern training techniques, including data augmentation, cosine annealing learning rate scheduling, and progressive unfreezing, to improve convergence and generalisation.",
-      "Extended the project with Grad-CAM interpretability, INT8 quantisation, command-line inference tools, and a Gradio demo deployed on Hugging Face Spaces.",
+      "Designed and implemented an end-to-end Python application to evaluate multiple deep learning architectures on the CIFAR-10 dataset, with three models deployed in a live interactive demo",
+      "Compared model performance under controlled conditions using measurable outcomes and improved results through structured experimentation and iteration",
+      "Extended the project with Grad-CAM interpretability, INT8 quantisation, command-line inference tools, and a deployed Gradio application on Hugging Face Spaces",
+      "Applied modern training techniques, including data augmentation, cosine annealing learning rate scheduling, and progressive unfreezing, to improve convergence and generalisation",
     ],
   },
 };
@@ -86,9 +86,10 @@ export const experiences: Experience[] = [
   {
     title: "IT & Web Developer",
     company: "SBR Group",
-    period: "Oct 2023 – Dec 2024",
+    period: "October 2023 - December 2024",
     type: "technical",
     description: [
+      "Started as a 3-month intern and was subsequently retained in a paid role",
       "Designed and maintained the company's WordPress website, improving mobile responsiveness and page load performance through SEO and performance optimisation",
       "Automated internal workflows using Monday.com, reducing manual coordination overhead across teams",
       "Collaborated with stakeholders to translate business requirements into website updates and content changes",
@@ -97,19 +98,21 @@ export const experiences: Experience[] = [
   {
     title: "Sales Co-Worker",
     company: "IKEA",
-    period: "May 2025 – Present",
+    period: "May 2025 - Present",
     type: "customer",
     description: [
-      "Delivered customer-focused support and product guidance in a high-volume retail environment, collaborating across teams to support stock availability and smooth store operations",
+      "Worked in a fast-paced team environment, supporting customers and collaborating with colleagues to resolve issues efficiently",
+      "Developed strong communication, teamwork, and adaptability skills through day-to-day customer-facing problem-solving",
     ],
   },
   {
     title: "Sales Assistant",
     company: "Zara",
-    period: "Dec 2024 – May 2025",
+    period: "December 2024 - May 2025",
     type: "customer",
     description: [
-      "Delivered customer service in a fast-paced retail environment, supporting transactions, stock handling, and customer needs during peak trading periods",
+      "Delivered customer service in a fast-paced retail environment, supporting transactions and day-to-day customer needs",
+      "Contributed during peak trading periods through stock handling, teamwork, and maintaining smooth store operations",
     ],
   },
 ];
@@ -125,20 +128,19 @@ export const education: Education[] = [
   {
     degree: "Bachelor of Information Technology (AI & Web and App Development)",
     institution: "Macquarie University",
-    period: "Jul 2023 – Nov 2026",
+    period: "July 2023 - November 2026",
     details: [
-      "WAM: 74",
-      "Relevant coursework: Data Structures, Algorithms, Database Systems, Web Development, Software Engineering, and AI Fundamentals",
-      "Volunteer, Macquarie University Buddy Program — supporting new students in their transition to university",
+      "Relevant coursework: Software Engineering, Data Structures, Algorithms, Database Systems, Web Development, and AI Fundamentals",
+      "Volunteer, Macquarie University Buddy Program - supporting new students in their transition to university life",
     ],
   },
   {
     degree: "Certificate IV in Information Technology (Programming)",
     institution: "TAFE NSW",
-    period: "Jul 2022 – Jul 2023",
+    period: "July 2022 - July 2023",
     details: [
       "Built hands-on foundations in HTML, CSS, JavaScript, PHP, and MySQL through practical web development projects",
-      "Developed responsive websites and database-driven functionality, building a strong foundation for full-stack development",
+      "Developed responsive websites and worked with database-driven functionality, building a strong foundation for full-stack development",
     ],
   },
 ];
@@ -154,12 +156,22 @@ export const skillGroups: SkillGroup[] = [
     skills: ["Python", "TypeScript", "JavaScript", "Java", "SQL", "HTML/CSS"],
   },
   {
+    label: "Software & Systems",
+    skills: ["REST APIs", "OOP", "Data Structures", "Algorithms", "Debugging"],
+  },
+  {
     label: "Frontend",
     skills: ["React", "Next.js", "Tailwind CSS"],
   },
   {
     label: "Backend & Data",
-    skills: ["Supabase", "Node.js", "PostgreSQL", "REST APIs"],
+    skills: [
+      "Node.js",
+      "PostgreSQL",
+      "Supabase",
+      "Data Handling",
+      "System Integration",
+    ],
   },
   {
     label: "ML / AI",
@@ -174,6 +186,7 @@ export const skillGroups: SkillGroup[] = [
       "Docker",
       "Vitest",
       "Playwright",
+      "CI/CD",
     ],
   },
 ];

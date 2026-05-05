@@ -63,7 +63,7 @@ export function ResumeClient() {
                     Pouya Alavi Naeini
                   </h2>
                   <p className="text-lg text-accent-light font-medium mb-4">
-                    Full-Stack Developer · Final-Year IT Student
+                    Software Engineer · Final-Year IT Student
                   </p>
                   <div className="flex flex-col gap-2 text-text-secondary text-sm">
                     <div className="flex items-center gap-2">
@@ -117,14 +117,15 @@ export function ResumeClient() {
                 <h3 className="text-lg font-bold text-foreground">Professional Summary</h3>
               </div>
               <p className="text-text-secondary leading-relaxed">
-                Final-year IT student at Macquarie University, graduating in
-                November 2026, with hands-on experience building full-stack
-                web applications using Next.js, React, TypeScript, and
-                Supabase. Built and deployed projects including Syllabus
-                Sync, a student productivity platform, and a CIFAR-10 image
-                classification app using Python, PyTorch, Gradio, and Hugging
-                Face Spaces. Strong foundation in software development,
-                testing, accessibility, and user-centred design.
+                Final-year Information Technology student at Macquarie
+                University with hands-on experience building software and
+                full-stack web applications using JavaScript, TypeScript,
+                Python, React, Next.js, and SQL-based systems. Built and
+                deployed projects, including Syllabus Sync and a CIFAR-10 image
+                classification application. Interested in graduate and
+                early-career software roles where I can contribute through
+                practical problem-solving, reliable development practices, and
+                strong technical collaboration.
               </p>
             </section>
           </AnimatedSection>
@@ -317,4 +318,3 @@ export function ResumeClient() {
     </div>
   );
 }
-

@@ -41,7 +41,7 @@ const TICKER = [
   "Docker",
   "Vitest",
   "Playwright",
-  "Full-Stack Development",
+  "Software Engineering",
   "Applied AI & ML",
   "Sydney, Australia",
 ];
@@ -83,7 +83,7 @@ export default function Home() {
                 <span className="relative rounded-full h-2 w-2 bg-success" />
               </span>
               <span className="text-xs font-medium text-text-secondary">
-                Open to graduate &amp; junior roles · Sydney, Australia
+                Open to graduate &amp; early-career software roles · Sydney
               </span>
             </motion.div>
 
@@ -99,7 +99,7 @@ export default function Home() {
                 <span className="text-gradient">Pouya</span>
               </h1>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-text-secondary">
-                Full-Stack Developer
+                Software Engineer
               </h2>
               <p className="text-sm sm:text-base text-text-muted font-medium">
                 Final-Year IT Student · Next.js, React, TypeScript
@@ -113,12 +113,13 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg text-text-secondary leading-relaxed max-w-xl mb-6"
             >
-              I build full-stack web apps with{" "}
-              <span className="text-accent-light">Next.js</span>,{" "}
+              I build software and full-stack web applications with{" "}
+              <span className="text-accent-light">JavaScript</span>,{" "}
               <span className="text-accent-light">React</span>,{" "}
               <span className="text-accent-light">TypeScript</span>, and{" "}
-              <span className="text-accent-light">Supabase</span>, with applied
-              AI/ML work in{" "}
+              <span className="text-accent-light">Next.js</span>, alongside{" "}
+              <span className="text-accent-light">SQL-based systems</span> and
+              applied AI/ML work in{" "}
               <span className="text-accent-light">Python</span> and{" "}
               <span className="text-accent-light">PyTorch</span>. Final-year IT
               student at{" "}
@@ -136,7 +137,7 @@ export default function Home() {
               className="flex flex-wrap gap-2 mb-8"
             >
               {[
-                { icon: GraduationCap, text: "Macquarie University · Nov 2026" },
+                { icon: GraduationCap, text: "Macquarie University · November 2026" },
                 { icon: MapPin, text: "Sydney, Australia" },
               ].map(({ icon: Icon, text }) => (
                 <span
@@ -206,7 +207,7 @@ export default function Home() {
                   <div className="w-full h-full rounded-full overflow-hidden bg-white ring-2 ring-border-subtle">
                     <Image
                       src="/pouya-profile.jpeg"
-                      alt="Pouya Alavi Naeini — Full-Stack Developer"
+                      alt="Pouya Alavi Naeini - Software Engineer"
                       width={400}
                       height={400}
                       priority
@@ -316,8 +317,8 @@ export default function Home() {
             {[
               {
                 icon: Code2,
-                title: "Full-Stack Web Apps",
-                desc: "Shipping end-to-end features with Next.js, React, TypeScript, Tailwind CSS, and Supabase — from schema and auth to the UI users see.",
+                title: "Software & Full-Stack Apps",
+                desc: "Building practical software and web applications with JavaScript, TypeScript, Python, React, Next.js, REST APIs, and SQL-based systems.",
                 color: "text-accent",
                 bg: "bg-accent/10",
                 border: "border-accent/20",
@@ -421,12 +422,13 @@ export default function Home() {
 
             <Sparkles className="w-8 h-8 text-accent mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Open to Graduate &amp; Junior Software Roles
+              Open to Graduate &amp; Early-Career Software Roles
             </h2>
             <p className="text-text-secondary max-w-lg mx-auto mb-8 leading-relaxed">
               I&apos;m graduating in November 2026 and looking for graduate or
-              junior software roles in Sydney. Happy to chat about projects,
-              internships, or interesting problems.
+              early-career software roles in Sydney where I can contribute
+              through practical problem-solving, reliable development, and
+              strong technical collaboration.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
