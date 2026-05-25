@@ -35,9 +35,9 @@ A modern, professional portfolio website for **Pouya Alavi Naeini**, a software 
 
 ```
 ╔══════════════════════════════════════════════════════════════════════╗
-║  🌓  System-aware light & dark theme — zero-flash, CSS-only         ║
+║  🌓  System-aware light & dark theme — zero-flash, CSS-only          ║
 ║  🎨  Glass-morphism design system with accent glow effects           ║
-║  ⚡  Next.js 16 App Router — static generation, optimised images     ║
+║  ⚡  Next.js 16 App Router — static generation, optimised images      ║ 
 ║  🎬  Scroll-driven animations via Framer Motion (stagger, parallax)  ║
 ║  📱  Fully responsive: 360px mobile → 2560px ultrawide               ║
 ║  🔍  SEO: JSON-LD structured data, Open Graph, meta tags             ║
