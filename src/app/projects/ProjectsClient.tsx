@@ -26,9 +26,9 @@ export function ProjectsClient() {
       <AnimatedSection variants={fadeInUp}>
         <SectionHeading label="Portfolio" title="Projects" />
         <p className="text-text-secondary -mt-8 mb-12 max-w-xl">
-          A focused selection of projects across full-stack web development and
-          applied AI/ML. Each is open-source — source and live demos linked
-          where available.
+          A focused selection of projects across full-stack web development,
+          mobile development, and applied AI/ML. Each project is open-source,
+          with source code and live demos linked where available.
         </p>
       </AnimatedSection>
 

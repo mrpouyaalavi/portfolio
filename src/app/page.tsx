@@ -32,6 +32,7 @@ const TICKER = [
   "TypeScript",
   "Tailwind CSS",
   "Supabase",
+  "Flutter",
   "PostgreSQL",
   "Node.js",
   "Python",
@@ -41,7 +42,7 @@ const TICKER = [
   "Docker",
   "Vitest",
   "Playwright",
-  "Software Engineering",
+  "MQ Incubator",
   "Applied AI & ML",
   "Sydney, Australia",
 ];
@@ -118,13 +119,15 @@ export default function Home() {
               <span className="text-accent-light">Next.js</span>,{" "}
               <span className="text-accent-light">TypeScript</span>, and{" "}
               <span className="text-accent-light">SQL-backed systems</span>.
-              My projects include testing, CI/CD, and practical security
-              features such as authentication and access control. Final-year
-              IT student at{" "}
+              Co-founder of{" "}
               <span className="text-foreground font-medium">
-                Macquarie University
+                Syllabus Sync &amp; MQ Navigation
               </span>
-              , graduating November&nbsp;2026.
+              , accepted into the{" "}
+              <span className="text-foreground font-medium">
+                Macquarie University Incubator
+              </span>
+              . Final-year IT student graduating November&nbsp;2026.
             </motion.p>
 
             {/* Info chips */}

@@ -64,7 +64,18 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
             className="flex items-center gap-1.5 text-xs font-medium text-text-secondary hover:text-accent transition-colors relative z-10"
             onClick={(e) => e.stopPropagation()}
           >
-            <GithubIcon size={14} /> GitHub
+            <GithubIcon size={14} /> {project.links.repoLabel ?? "GitHub"}
+          </a>
+        )}
+        {project.links.repoAlt && (
+          <a
+            href={project.links.repoAlt}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-xs font-medium text-text-secondary hover:text-accent transition-colors relative z-10"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <GithubIcon size={14} /> {project.links.repoAltLabel ?? "GitHub"}
           </a>
         )}
         {project.links.demo && (

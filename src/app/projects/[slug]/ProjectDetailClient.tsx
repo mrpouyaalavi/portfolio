@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import Image from "next/image";
+import { ArrowLeft, ExternalLink, ImageIcon } from "lucide-react";
 import { GithubIcon } from "@/components/ui/Icons";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
@@ -58,7 +59,17 @@ export function ProjectDetailClient({ project }: { project: Project }) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-overlay-subtle text-text-secondary text-sm font-medium border border-border-subtle hover:border-accent/30 hover:text-accent transition-colors"
               >
-                <GithubIcon size={14} /> View Source
+                <GithubIcon size={14} /> {project.links.repoLabel ?? "View Source"}
+              </a>
+            )}
+            {project.links.repoAlt && (
+              <a
+                href={project.links.repoAlt}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-overlay-subtle text-text-secondary text-sm font-medium border border-border-subtle hover:border-accent/30 hover:text-accent transition-colors"
+              >
+                <GithubIcon size={14} /> {project.links.repoAltLabel ?? "View Source"}
               </a>
             )}
           </div>
@@ -95,6 +106,46 @@ export function ProjectDetailClient({ project }: { project: Project }) {
             ))}
           </ul>
         </motion.div>
+
+        {/* Screenshots — only rendered when the field is present */}
+        {project.screenshots !== undefined && (
+          <motion.div variants={fadeInUp} className="glass-card p-6">
+            <h2 className="text-sm font-semibold text-text-muted uppercase tracking-wider mb-4">
+              Screenshots
+            </h2>
+
+            {project.screenshots.length === 0 ? (
+              /* Placeholder slots — ready for real images */
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[0, 1].map((i) => (
+                  <div
+                    key={i}
+                    className="aspect-[9/16] sm:aspect-video rounded-xl border-2 border-dashed border-border-subtle bg-overlay-subtle flex flex-col items-center justify-center gap-3 text-text-muted"
+                  >
+                    <ImageIcon size={28} className="opacity-40" />
+                    <span className="text-xs font-medium tracking-wide uppercase opacity-60">
+                      Screenshot coming soon
+                    </span>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              /* Real screenshots */
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {project.screenshots.map((src, i) => (
+                  <div key={src} className="relative aspect-video rounded-xl overflow-hidden border border-border-subtle">
+                    <Image
+                      src={src}
+                      alt={`${project.title} screenshot ${i + 1}`}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
+          </motion.div>
+        )}
       </motion.div>
     </motion.div>
   );

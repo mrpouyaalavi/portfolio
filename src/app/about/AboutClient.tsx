@@ -1,13 +1,13 @@
 "use client";
 
-import { Mail, MapPin, GraduationCap, Heart } from "lucide-react";
+import { Mail, MapPin, GraduationCap, Heart, Trophy } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GITHUB_URL, LINKEDIN_URL, CONTACT_EMAIL } from "@/lib/constants";
-import { skillGroups, experiences, education } from "@/lib/data";
+import { skillGroups, experiences, education, leadership } from "@/lib/data";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -51,8 +51,8 @@ export function AboutClient() {
                 <span className="text-foreground font-medium">
                   Macquarie University
                 </span>
-                , graduating November 2026. My degree is in AI &amp; Web and
-                App Development — full-stack web is my primary focus.
+                , graduating November 2026, majoring in Artificial Intelligence
+                and Web/App Development — full-stack web is my primary focus.
               </p>
               <p className="text-text-secondary leading-relaxed">
                 I care about software that holds up over time: clean interfaces,
@@ -64,14 +64,23 @@ export function AboutClient() {
                 My projects include{" "}
                 <span className="text-accent-light font-medium">
                   Syllabus Sync
-                </span>{" "}
-                — a production-ready student platform with MFA, row-level
-                security, and CI/CD — and a{" "}
+                </span>
+                , a full-stack student experience platform,{" "}
                 <span className="text-accent-light font-medium">
-                  CIFAR-10 classifier comparison
+                  MQ Navigation / Open Day App
+                </span>
+                , a mobile-first campus wayfinding prototype, and a{" "}
+                <span className="text-accent-light font-medium">
+                  CIFAR-10 deep learning comparison
                 </span>{" "}
-                with Grad-CAM interpretability and a live demo. I&apos;m
-                looking for graduate and early-career roles in Sydney.
+                with Grad-CAM interpretability and a live demo. Syllabus Sync
+                and MQ Navigation led to acceptance into the{" "}
+                <span className="text-foreground font-medium">
+                  Macquarie University Incubator
+                </span>{" "}
+                for further validation, mentoring, and development. I am
+                currently looking for graduate and early-career software,
+                technology, and IT roles in Sydney.
               </p>
             </div>
 
@@ -259,9 +268,50 @@ export function AboutClient() {
           </motion.div>
         </AnimatedSection>
 
+        {/* ─── LEADERSHIP & PROGRAMS ─── */}
+        <AnimatedSection>
+          <SectionHeading number="03" label="Leadership" title="Leadership &amp; Programs" />
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            className="space-y-4"
+          >
+            {leadership.map((item) => (
+              <motion.div key={`${item.organization}-${item.title}`} variants={fadeInUp}>
+                <div className="glass-card p-6 hover:scale-[1.01] transition-transform">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-3">
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm text-accent-light">{item.organization}</p>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-secondary/10 text-secondary border border-secondary/20">
+                        Leadership
+                      </span>
+                      <span className="text-xs text-text-muted">{item.period}</span>
+                    </div>
+                  </div>
+                  <ul className="space-y-1.5">
+                    {item.description.map((d) => (
+                      <li key={d} className="flex items-start gap-2 text-sm text-text-secondary">
+                        <span className="text-accent mt-1 shrink-0">▸</span>
+                        {d}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </AnimatedSection>
+
         {/* ─── EDUCATION ─── */}
         <AnimatedSection>
-          <SectionHeading number="03" label="Academic" title="Education" />
+          <SectionHeading number="04" label="Academic" title="Education" />
           <motion.div
             variants={staggerContainer}
             initial="hidden"

@@ -9,13 +9,14 @@ import {
   GraduationCap,
   Code2,
   Users,
+  Trophy,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { CONTACT_EMAIL, GITHUB_URL, LINKEDIN_URL, PHONE } from "@/lib/constants";
-import { experiences, education, skillGroups, projects } from "@/lib/data";
+import { experiences, education, skillGroups, projects, leadership } from "@/lib/data";
 import { SITE_URL } from "@/lib/constants";
 
 export function ResumeClient() {
@@ -117,15 +118,17 @@ export function ResumeClient() {
                 <h3 className="text-lg font-bold text-foreground">Overview</h3>
               </div>
               <p className="text-text-secondary leading-relaxed">
-                Final-year Information Technology student at Macquarie
-                University with hands-on experience building software and
-                full-stack web applications using JavaScript, TypeScript,
-                Python, React, Next.js, and SQL-based systems. Built and
-                deployed projects, including Syllabus Sync and a CIFAR-10
-                image classification application. Interested in graduate and
-                early-career software roles where I can contribute through
-                practical problem-solving, reliable development practices, and
-                strong technical collaboration.
+                Final-year Bachelor of Information Technology student at
+                Macquarie University, majoring in Artificial Intelligence and
+                Web/App Development, with hands-on experience building
+                full-stack web applications, data-driven projects, and
+                user-focused digital products. Co-founder of Syllabus Sync /
+                MQ Navigation, accepted into the Macquarie University
+                Incubator for startup validation and development. Interested
+                in graduate and early-career software, technology, and IT
+                roles where I can contribute through practical
+                problem-solving, reliable development practices, technical
+                collaboration, and product-minded engineering.
               </p>
             </section>
           </AnimatedSection>
@@ -171,7 +174,7 @@ export function ResumeClient() {
                 <h3 className="text-lg font-bold text-foreground">Projects</h3>
               </div>
               <div className="space-y-4">
-                {Object.values(projects).map((project) => (
+                {Object.values(projects).filter((p) => !p.resumeHide).map((project) => (
                   <div key={project.slug} className="glass-card p-6">
                     <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-3">
                       <h4 className="text-lg font-semibold text-foreground">
@@ -193,7 +196,17 @@ export function ResumeClient() {
                           rel="noopener noreferrer"
                           className="text-xs text-accent hover:text-accent-light transition-colors flex items-center gap-1"
                         >
-                          <GithubIcon size={12} /> GitHub
+                          <GithubIcon size={12} /> {project.links.repoLabel ?? "GitHub"}
+                        </a>
+                      )}
+                      {project.links.repoAlt && (
+                        <a
+                          href={project.links.repoAlt}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs text-accent hover:text-accent-light transition-colors flex items-center gap-1"
+                        >
+                          <GithubIcon size={12} /> {project.links.repoAltLabel ?? "GitHub"}
                         </a>
                       )}
                       {project.links.demo && (
@@ -237,6 +250,39 @@ export function ResumeClient() {
                     </div>
                     <ul className="space-y-1.5 mt-2">
                       {exp.description.slice(0, 2).map((d) => (
+                        <li key={d} className="flex items-start gap-2 text-sm text-text-secondary">
+                          <span className="text-accent mt-1 shrink-0">▸</span>
+                          {d}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </section>
+          </AnimatedSection>
+
+          {/* Leadership & Programs */}
+          <AnimatedSection variants={fadeInUp}>
+            <section className="space-y-4">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 rounded-lg bg-secondary/10 border border-secondary/20 flex items-center justify-center">
+                  <Trophy size={16} className="text-secondary" />
+                </div>
+                <h3 className="text-lg font-bold text-foreground">Leadership &amp; Programs</h3>
+              </div>
+              <div className="space-y-4">
+                {leadership.map((item) => (
+                  <div key={`${item.organization}-${item.title}`} className="glass-card p-5">
+                    <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
+                      <div>
+                        <h4 className="font-semibold text-foreground">{item.title}</h4>
+                        <p className="text-sm text-accent-light">{item.organization}</p>
+                      </div>
+                      <span className="text-xs text-text-muted">{item.period}</span>
+                    </div>
+                    <ul className="space-y-1.5 mt-2">
+                      {item.description.map((d) => (
                         <li key={d} className="flex items-start gap-2 text-sm text-text-secondary">
                           <span className="text-accent mt-1 shrink-0">▸</span>
                           {d}
