@@ -222,11 +222,11 @@ export interface Leadership {
 
 export const leadership: Leadership[] = [
   {
-    title: "Startup Founder / Incubator Member",
+    title: "Startup Founder",
     organization: "Macquarie University Incubator",
     period: "May 2026 – Present",
     description: [
-      "Co-founded Syllabus Sync and MQ Navigation, student-led initiatives accepted into the Macquarie University Incubator, participating in the EDUCATE accelerator program with access to startup validation support, founder education, mentoring, and the MQ innovation ecosystem",
+      "Co-founded Syllabus Sync and MQ Navigation, student-led initiatives accepted into the Macquarie University Incubator. Participating in the EDUCATE accelerator program with access to startup validation support, founder education, mentoring, and the MQ innovation ecosystem.",
     ],
   },
   {
