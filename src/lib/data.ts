@@ -115,7 +115,7 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    title: "IT & Web Developer",
+    title: "Web Developer",
     company: "SBR Group",
     period: "October 2023 - December 2024",
     note: "Started as a 3-month intern and was subsequently retained in a paid role",
@@ -202,6 +202,8 @@ export const skillGroups: SkillGroup[] = [
   {
     label: "Professional",
     skills: [
+      "Product Development",
+      "Startup Development",
       "Technical Documentation",
       "Teamwork",
       "Communication",
@@ -224,7 +226,7 @@ export const leadership: Leadership[] = [
     organization: "Macquarie University Incubator",
     period: "May 2026 – Present",
     description: [
-      "Accepted into the Macquarie University Incubator for Syllabus Sync / MQ Navigation, receiving access to founder education, mentoring, startup validation support, and the MQ innovation ecosystem",
+      "Co-founded Syllabus Sync and MQ Navigation, student-led initiatives accepted into the Macquarie University Incubator, participating in the EDUCATE accelerator program with access to startup validation support, founder education, mentoring, and the MQ innovation ecosystem",
     ],
   },
   {

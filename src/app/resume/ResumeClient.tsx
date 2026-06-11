@@ -121,14 +121,15 @@ export function ResumeClient() {
                 Final-year Bachelor of Information Technology student at
                 Macquarie University, majoring in Artificial Intelligence and
                 Web/App Development, with hands-on experience building
-                full-stack web applications, data-driven projects, and
-                user-focused digital products. Co-founder of Syllabus Sync /
-                MQ Navigation, accepted into the Macquarie University
-                Incubator for startup validation and development. Interested
-                in graduate and early-career software, technology, and IT
-                roles where I can contribute through practical
-                problem-solving, reliable development practices, technical
-                collaboration, and product-minded engineering.
+                full-stack web applications and applied AI/ML projects.
+                Co-founder of Syllabus Sync and MQ Navigation, student-led
+                initiatives accepted into the Macquarie University Incubator,
+                where I&apos;m participating in the EDUCATE accelerator program
+                with access to startup validation support, founder education,
+                and mentoring. Interested in graduate and early-career
+                software, technology, and IT roles where I can contribute
+                through practical problem-solving, reliable engineering
+                practices, and product-minded collaboration.
               </p>
             </section>
           </AnimatedSection>

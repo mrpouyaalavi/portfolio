@@ -41,7 +41,7 @@ export function AboutClient() {
                 Software Engineer
               </p>
               <p className="text-sm text-text-muted font-medium">
-                Final-Year IT Student · Macquarie University
+                Final-Year IT Student · Full-Stack Web & Applied AI · Macquarie University
               </p>
             </div>
 
@@ -65,7 +65,8 @@ export function AboutClient() {
                 <span className="text-accent-light font-medium">
                   Syllabus Sync
                 </span>
-                , a full-stack student experience platform,{" "}
+                , a student-led full-stack platform for Macquarie University
+                students,{" "}
                 <span className="text-accent-light font-medium">
                   MQ Navigation / Open Day App
                 </span>
@@ -74,13 +75,14 @@ export function AboutClient() {
                   CIFAR-10 deep learning comparison
                 </span>{" "}
                 with Grad-CAM interpretability and a live demo. Syllabus Sync
-                and MQ Navigation led to acceptance into the{" "}
+                and MQ Navigation were accepted into the{" "}
                 <span className="text-foreground font-medium">
                   Macquarie University Incubator
-                </span>{" "}
-                for further validation, mentoring, and development. I am
-                currently looking for graduate and early-career software,
-                technology, and IT roles in Sydney.
+                </span>
+                , where I&apos;m participating in the EDUCATE accelerator
+                program with access to startup validation support, founder
+                education, and mentoring. I am currently looking for graduate
+                and early-career software, technology, and IT roles in Sydney.
               </p>
             </div>
 

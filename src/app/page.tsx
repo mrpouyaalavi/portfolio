@@ -103,7 +103,7 @@ export default function Home() {
                 Software Engineer
               </h2>
               <p className="text-sm sm:text-base text-text-muted font-medium">
-                Final-Year IT Student · Macquarie University
+                Final-Year IT Student · Full-Stack Web & Applied AI
               </p>
             </motion.div>
 
@@ -123,11 +123,11 @@ export default function Home() {
               <span className="text-foreground font-medium">
                 Syllabus Sync &amp; MQ Navigation
               </span>
-              , accepted into the{" "}
+              , student-led initiatives accepted into the{" "}
               <span className="text-foreground font-medium">
                 Macquarie University Incubator
               </span>
-              . Final-year IT student graduating November&nbsp;2026.
+              . Graduating November&nbsp;2026.
             </motion.p>
 
             {/* Info chips */}

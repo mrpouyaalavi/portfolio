@@ -18,24 +18,26 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default:
-      "Pouya Alavi Naeini | Software Engineer - Next.js, React, TypeScript",
+      "Pouya Alavi Naeini | Software Engineer – Full-Stack Web & Applied AI",
     template: "%s | Pouya Alavi Naeini",
   },
   description:
-    "Software engineer and final-year IT student at Macquarie University, graduating November 2026. Focused on full-stack web development with a secondary interest in applied AI/ML. Based in Sydney, Australia.",
+    "Final-year IT student at Macquarie University and software engineer focused on full-stack web development and applied AI/ML. Co-founder of Syllabus Sync and MQ Navigation, student-led initiatives accepted into the Macquarie University Incubator. Graduating November 2026, based in Sydney, Australia.",
   keywords: [
     "Software Engineer",
-    "Full-Stack Web Applications",
+    "Full-Stack Developer",
     "Next.js",
     "React",
     "TypeScript",
+    "Flutter",
+    "Applied AI",
+    "Machine Learning",
     "Supabase",
     "PyTorch",
-    "Applied AI",
     "Web Development",
     "Pouya Alavi Naeini",
-    "Early-Career Developer Sydney",
     "Graduate Developer Sydney",
+    "Early-Career Developer Sydney",
     "Macquarie University",
   ],
   authors: [{ name: "Pouya Alavi Naeini", url: SITE_URL }],
@@ -45,17 +47,17 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: SITE_URL,
     title:
-      "Pouya Alavi Naeini | Software Engineer - Next.js, React, TypeScript",
+      "Pouya Alavi Naeini | Software Engineer – Full-Stack Web & Applied AI",
     description:
-      "Software engineer and final-year IT student focused on full-stack web development and applied AI/ML. Based in Sydney, Australia.",
+      "Software engineer and final-year IT student focused on full-stack web development and applied AI/ML. Co-founder of student-led initiatives accepted into the Macquarie University Incubator. Based in Sydney, Australia.",
     siteName: SITE_NAME,
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Pouya Alavi Naeini | Software Engineer - Next.js, React, TypeScript",
+      "Pouya Alavi Naeini | Software Engineer – Full-Stack Web & Applied AI",
     description:
-      "Software engineer and final-year IT student focused on full-stack web development and applied AI/ML.",
+      "Software engineer and final-year IT student focused on full-stack web development and applied AI/ML. Co-founder of Syllabus Sync and MQ Navigation, accepted into the MQ Incubator.",
   },
   metadataBase: new URL(SITE_URL),
 };
@@ -80,10 +82,12 @@ export default function RootLayout({
       { "@type": "Thing", name: "Next.js & React" },
       { "@type": "Thing", name: "TypeScript & JavaScript" },
       { "@type": "Thing", name: "Full-Stack Web Development" },
+      { "@type": "Thing", name: "Flutter & Mobile Development" },
       { "@type": "Thing", name: "Supabase & PostgreSQL" },
       { "@type": "Thing", name: "Tailwind CSS" },
       { "@type": "Thing", name: "Applied AI & PyTorch" },
       { "@type": "Thing", name: "CI/CD & DevOps" },
+      { "@type": "Thing", name: "Product-Minded Engineering" },
     ],
     sameAs: [GITHUB_URL, LINKEDIN_URL],
   }).replace(/</g, "\\u003c");
