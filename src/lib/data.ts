@@ -46,7 +46,7 @@ export const projects: Record<string, Project> = {
     ],
     links: {
       repo: "https://github.com/mrpouyaalavi/syllabus-sync",
-      demo: "https://syllabus-sync-mq.vercel.app",
+      demo: "https://syllabus-sync.app",
     },
     highlights: [
       "Co-developed a full-stack student experience platform for Macquarie University students, supporting academic planning, deadlines, events, campus support, and student productivity",

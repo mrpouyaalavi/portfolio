@@ -216,7 +216,7 @@ A production-ready, full-stack platform that unifies academic scheduling, deadli
 | **Stack** | Next.js 16 · React 19 · TypeScript · Supabase · Tailwind CSS |
 | **Security** | WebAuthn (Passkeys), TOTP MFA, Row-Level Security, CSRF protection |
 | **Scale** | 503 tests · 19 languages · WCAG 2.1 AA · CI/CD via GitHub Actions |
-| **Links** | [Live Demo](https://syllabus-sync-ashy.vercel.app) · [Source](https://github.com/mrpouyaalavi/syllabus-sync) |
+| **Links** | [Live Demo](https://syllabus-sync.app) · [Source](https://github.com/mrpouyaalavi/syllabus-sync) |
 
 <br/>
 
