@@ -4,11 +4,11 @@ import { ProjectsClient } from "./ProjectsClient";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "A collection of projects built by Pouya Alavi Naeini — from full-stack platforms to development tools.",
+    "Projects by Pouya Alavi Naeini — full-stack web platforms, Flutter mobile apps, and applied AI/ML research.",
   openGraph: {
     title: "Projects | Pouya Alavi Naeini",
     description:
-      "A collection of projects built by Pouya Alavi Naeini — from full-stack platforms to development tools.",
+      "Projects by Pouya Alavi Naeini — full-stack web platforms, Flutter mobile apps, and applied AI/ML research.",
   },
 };
 

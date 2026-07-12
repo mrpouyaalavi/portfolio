@@ -9,14 +9,13 @@ import {
   GraduationCap,
   Code2,
   Users,
-  Trophy,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { CONTACT_EMAIL, GITHUB_URL, LINKEDIN_URL, PHONE } from "@/lib/constants";
-import { experiences, education, skillGroups, projects, leadership } from "@/lib/data";
+import { experiences, education, skillGroups, projects } from "@/lib/data";
 import { SITE_URL } from "@/lib/constants";
 
 export function ResumeClient() {
@@ -64,7 +63,7 @@ export function ResumeClient() {
                     Pouya Alavi Naeini
                   </h2>
                   <p className="text-lg text-accent-light font-medium mb-4">
-                    Software Engineer · Final-Year IT Student
+                    Graduate Software Engineer · Full-Stack, Mobile &amp; Applied AI
                   </p>
                   <div className="flex flex-col gap-2 text-text-secondary text-sm">
                     <div className="flex items-center gap-2">
@@ -251,39 +250,6 @@ export function ResumeClient() {
                     </div>
                     <ul className="space-y-1.5 mt-2">
                       {exp.description.slice(0, 2).map((d) => (
-                        <li key={d} className="flex items-start gap-2 text-sm text-text-secondary">
-                          <span className="text-accent mt-1 shrink-0">▸</span>
-                          {d}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </section>
-          </AnimatedSection>
-
-          {/* Leadership & Programs */}
-          <AnimatedSection variants={fadeInUp}>
-            <section className="space-y-4">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 rounded-lg bg-secondary/10 border border-secondary/20 flex items-center justify-center">
-                  <Trophy size={16} className="text-secondary" />
-                </div>
-                <h3 className="text-lg font-bold text-foreground">Leadership &amp; Programs</h3>
-              </div>
-              <div className="space-y-4">
-                {leadership.map((item) => (
-                  <div key={`${item.organization}-${item.title}`} className="glass-card p-5">
-                    <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
-                      <div>
-                        <h4 className="font-semibold text-foreground">{item.title}</h4>
-                        <p className="text-sm text-accent-light">{item.organization}</p>
-                      </div>
-                      <span className="text-xs text-text-muted">{item.period}</span>
-                    </div>
-                    <ul className="space-y-1.5 mt-2">
-                      {item.description.map((d) => (
                         <li key={d} className="flex items-start gap-2 text-sm text-text-secondary">
                           <span className="text-accent mt-1 shrink-0">▸</span>
                           {d}

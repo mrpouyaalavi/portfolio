@@ -1,13 +1,13 @@
 "use client";
 
-import { Mail, MapPin, GraduationCap, Heart, Trophy } from "lucide-react";
+import { Mail, MapPin, GraduationCap, Heart } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GITHUB_URL, LINKEDIN_URL, CONTACT_EMAIL } from "@/lib/constants";
-import { skillGroups, experiences, education, leadership } from "@/lib/data";
+import { skillGroups, experiences, education } from "@/lib/data";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -41,7 +41,7 @@ export function AboutClient() {
                 Software Engineer
               </p>
               <p className="text-sm text-text-muted font-medium">
-                Final-Year IT Student · Full-Stack Web & Applied AI · Macquarie University
+                Full-Stack, Mobile & Applied AI · Macquarie University
               </p>
             </div>
 
@@ -52,25 +52,27 @@ export function AboutClient() {
                   Macquarie University
                 </span>
                 , graduating November 2026, majoring in Artificial Intelligence
-                and Web/App Development — full-stack web is my primary focus.
+                and Web/App Development. My primary focus is full-stack web and
+                mobile development, with a strong interest in applied AI/ML.
               </p>
               <p className="text-text-secondary leading-relaxed">
                 I care about software that holds up over time: clean interfaces,
                 sensible data models, and code that other engineers can pick up
-                and continue. My work includes authentication, access control,
-                testing, and CI/CD — not just UI.
+                and continue. My work includes authentication, row-level
+                security, automated testing, and CI/CD — not just UI.
               </p>
               <p className="text-text-secondary leading-relaxed">
-                My projects include{" "}
+                My projects include the{" "}
                 <span className="text-accent-light font-medium">
-                  Syllabus Sync
+                  Syllabus Sync Ecosystem
                 </span>
-                , a student-led full-stack platform for Macquarie University
-                students,{" "}
+                , a student-led web and mobile platform for Macquarie University
+                students (web in Next.js, mobile in Flutter),{" "}
                 <span className="text-accent-light font-medium">
-                  MQ Navigation / Open Day App
+                  Sylla
                 </span>
-                , a mobile-first campus wayfinding prototype, and a{" "}
+                , an AI-powered study assistant with streaming chat and
+                reusable study tools, and a{" "}
                 <span className="text-accent-light font-medium">
                   CIFAR-10 deep learning comparison
                 </span>{" "}
@@ -95,7 +97,7 @@ export function AboutClient() {
                 <GraduationCap size={12} /> Macquarie University · November 2026
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-accent/8 border border-accent/20 text-accent text-xs font-medium">
-                <Heart size={12} /> Available for graduate roles · Graduating November 2026
+                <Heart size={12} /> Available for graduate roles
               </span>
             </div>
 
@@ -164,9 +166,9 @@ export function AboutClient() {
 
             {/* Stats */}
             {[
-              { value: "November 2026", label: "Graduating", color: "text-accent" },
-              { value: "Full-Stack", label: "Focus", color: "text-secondary" },
-              { value: "AI/ML", label: "Secondary", color: "text-warm" },
+              { value: "Nov 2026", label: "Graduating", color: "text-accent" },
+              { value: "Web + Mobile", label: "Focus", color: "text-secondary" },
+              { value: "Applied AI", label: "Strength", color: "text-warm" },
             ].map((s) => (
               <div
                 key={s.label}
@@ -196,7 +198,7 @@ export function AboutClient() {
             {skillGroups.map((group) => (
               <motion.div key={group.label} variants={fadeInUp}>
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-                  <div className="w-32 shrink-0 pt-1">
+                  <div className="w-36 shrink-0 pt-1">
                     <span className="text-xs font-semibold text-text-muted uppercase tracking-wider">
                       {group.label}
                     </span>
@@ -270,50 +272,9 @@ export function AboutClient() {
           </motion.div>
         </AnimatedSection>
 
-        {/* ─── LEADERSHIP & PROGRAMS ─── */}
-        <AnimatedSection>
-          <SectionHeading number="03" label="Leadership" title="Leadership &amp; Programs" />
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            className="space-y-4"
-          >
-            {leadership.map((item) => (
-              <motion.div key={`${item.organization}-${item.title}`} variants={fadeInUp}>
-                <div className="glass-card p-6 hover:scale-[1.01] transition-transform">
-                  <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-3">
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        {item.title}
-                      </h3>
-                      <p className="text-sm text-accent-light">{item.organization}</p>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-secondary/10 text-secondary border border-secondary/20">
-                        Leadership
-                      </span>
-                      <span className="text-xs text-text-muted">{item.period}</span>
-                    </div>
-                  </div>
-                  <ul className="space-y-1.5">
-                    {item.description.map((d) => (
-                      <li key={d} className="flex items-start gap-2 text-sm text-text-secondary">
-                        <span className="text-accent mt-1 shrink-0">▸</span>
-                        {d}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </AnimatedSection>
-
         {/* ─── EDUCATION ─── */}
         <AnimatedSection>
-          <SectionHeading number="04" label="Academic" title="Education" />
+          <SectionHeading number="03" label="Academic" title="Education" />
           <motion.div
             variants={staggerContainer}
             initial="hidden"

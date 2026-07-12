@@ -5,10 +5,9 @@ import Image from "next/image";
 import {
   ArrowRight,
   Download,
-
   Code2,
   Database,
-  Layers,
+  Smartphone,
   Sparkles,
   MapPin,
   GraduationCap,
@@ -30,19 +29,19 @@ const TICKER = [
   "Next.js",
   "React",
   "TypeScript",
+  "Flutter",
+  "Dart",
   "Tailwind CSS",
   "Supabase",
-  "Flutter",
   "PostgreSQL",
   "Node.js",
   "Python",
   "PyTorch",
+  "Vercel AI SDK",
   "GitHub Actions",
   "Vercel",
-  "Docker",
   "Vitest",
   "Playwright",
-  "MQ Incubator",
   "Applied AI & ML",
   "Sydney, Australia",
 ];
@@ -103,7 +102,7 @@ export default function Home() {
                 Software Engineer
               </h2>
               <p className="text-sm sm:text-base text-text-muted font-medium">
-                Final-Year IT Student · Full-Stack Web & Applied AI
+                Full-Stack, Mobile & Applied AI · Graduating November 2026
               </p>
             </motion.div>
 
@@ -114,20 +113,24 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg text-text-secondary leading-relaxed max-w-xl mb-6"
             >
-              I build full-stack web applications with{" "}
+              I build full-stack web and mobile applications using{" "}
               <span className="text-accent-light">React</span>,{" "}
               <span className="text-accent-light">Next.js</span>,{" "}
-              <span className="text-accent-light">TypeScript</span>, and{" "}
-              <span className="text-accent-light">SQL-backed systems</span>.
+              <span className="text-accent-light">Flutter</span>, and{" "}
+              <span className="text-accent-light">TypeScript</span>.
               Co-founder of{" "}
               <span className="text-foreground font-medium">
-                Syllabus Sync &amp; MQ Navigation
+                Syllabus Sync
+              </span>
+              {" "}and{" "}
+              <span className="text-foreground font-medium">
+                MQ Navigation
               </span>
               , student-led initiatives accepted into the{" "}
               <span className="text-foreground font-medium">
                 Macquarie University Incubator
               </span>
-              . Graduating November&nbsp;2026.
+              .
             </motion.p>
 
             {/* Info chips */}
@@ -138,7 +141,7 @@ export default function Home() {
               className="flex flex-wrap gap-2 mb-8"
             >
               {[
-                { icon: GraduationCap, text: "Macquarie University · November 2026" },
+                { icon: GraduationCap, text: "Macquarie University · BIT, Nov 2026" },
                 { icon: MapPin, text: "Sydney, Australia" },
               ].map(({ icon: Icon, text }) => (
                 <span
@@ -319,23 +322,23 @@ export default function Home() {
               {
                 icon: Code2,
                 title: "Full-Stack Development",
-                desc: "Building web applications with React, Next.js, TypeScript, and SQL-backed APIs — from UI to database.",
+                desc: "Building web applications with React, Next.js, TypeScript, and Supabase — with authentication, row-level security, and CI/CD.",
                 color: "text-accent",
                 bg: "bg-accent/10",
                 border: "border-accent/20",
               },
               {
-                icon: Database,
-                title: "Applied AI/ML",
-                desc: "Training, evaluating, and comparing models with Python, PyTorch, and scikit-learn — with interactive demos via Gradio.",
+                icon: Smartphone,
+                title: "Mobile Development",
+                desc: "Building cross-platform mobile apps with Flutter and Dart — including campus navigation, deep linking, automated testing, and CI/CD.",
                 color: "text-secondary",
                 bg: "bg-secondary/10",
                 border: "border-secondary/20",
               },
               {
-                icon: Layers,
-                title: "Testing & Delivery",
-                desc: "Writing tests, configuring CI/CD with GitHub Actions, and deploying with Vercel to keep projects reproducible and maintainable.",
+                icon: Database,
+                title: "Applied AI/ML",
+                desc: "Training and evaluating models with Python, PyTorch, and Vercel AI SDK — with streaming interfaces, Grad-CAM interpretability, and live demos.",
                 color: "text-warm",
                 bg: "bg-warm/10",
                 border: "border-warm/20",

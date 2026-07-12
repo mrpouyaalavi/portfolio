@@ -18,11 +18,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default:
-      "Pouya Alavi Naeini | Software Engineer – Full-Stack Web & Applied AI",
+      "Pouya Alavi Naeini | Graduate Software Engineer – Full-Stack, Mobile & Applied AI",
     template: "%s | Pouya Alavi Naeini",
   },
   description:
-    "Final-year IT student at Macquarie University and software engineer focused on full-stack web development and applied AI/ML. Co-founder of Syllabus Sync and MQ Navigation, student-led initiatives accepted into the Macquarie University Incubator. Graduating November 2026, based in Sydney, Australia.",
+    "Graduate software engineer and final-year IT student at Macquarie University, building full-stack web and mobile applications with React, Next.js, Flutter and TypeScript. Co-founder of the Syllabus Sync Ecosystem, a student-led initiative accepted into the Macquarie University Incubator. Graduating November 2026, based in Sydney, Australia.",
   keywords: [
     "Software Engineer",
     "Full-Stack Developer",
@@ -47,17 +47,17 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: SITE_URL,
     title:
-      "Pouya Alavi Naeini | Software Engineer – Full-Stack Web & Applied AI",
+      "Pouya Alavi Naeini | Graduate Software Engineer – Full-Stack, Mobile & Applied AI",
     description:
-      "Software engineer and final-year IT student focused on full-stack web development and applied AI/ML. Co-founder of student-led initiatives accepted into the Macquarie University Incubator. Based in Sydney, Australia.",
+      "Graduate software engineer focused on full-stack web, mobile development and applied AI/ML. Co-founder of the Syllabus Sync Ecosystem, a student-led initiative accepted into the Macquarie University Incubator. Based in Sydney, Australia.",
     siteName: SITE_NAME,
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Pouya Alavi Naeini | Software Engineer – Full-Stack Web & Applied AI",
+      "Pouya Alavi Naeini | Graduate Software Engineer – Full-Stack, Mobile & Applied AI",
     description:
-      "Software engineer and final-year IT student focused on full-stack web development and applied AI/ML. Co-founder of Syllabus Sync and MQ Navigation, accepted into the MQ Incubator.",
+      "Graduate software engineer focused on full-stack web, mobile and applied AI/ML. Co-founder of the Syllabus Sync Ecosystem, accepted into the Macquarie University Incubator.",
   },
   metadataBase: new URL(SITE_URL),
 };
@@ -72,7 +72,7 @@ export default function RootLayout({
     "@type": "Person",
     name: "Pouya Alavi Naeini",
     url: SITE_URL,
-    jobTitle: "Software Engineer",
+    jobTitle: "Graduate Software Engineer",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Sydney",
