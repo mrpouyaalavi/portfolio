@@ -49,7 +49,7 @@ export function ProjectDetailClient({ project }: { project: Project }) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-accent/10 text-accent text-sm font-medium border border-accent/20 hover:bg-accent/20 transition-colors"
               >
-                <ExternalLink size={14} /> Live Demo
+                <ExternalLink size={14} /> {project.links.demoLabel ?? "Live Demo"}
               </a>
             )}
             {project.links.repo && (

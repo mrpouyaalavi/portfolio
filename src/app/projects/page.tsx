@@ -4,11 +4,14 @@ import { ProjectsClient } from "./ProjectsClient";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Projects by Pouya Alavi Naeini — full-stack web platforms, Flutter mobile apps, and applied AI/ML research.",
+"Full-stack web, Flutter mobile and applied AI projects by Sydney-based graduate software engineer Pouya Alavi Naeini.",
+  alternates: {
+    canonical: "/projects",
+  },
   openGraph: {
     title: "Projects | Pouya Alavi Naeini",
     description:
-      "Projects by Pouya Alavi Naeini — full-stack web platforms, Flutter mobile apps, and applied AI/ML research.",
+      "Full-stack web, Flutter mobile and applied AI projects by Sydney-based graduate software engineer Pouya Alavi Naeini.",
   },
 };
 

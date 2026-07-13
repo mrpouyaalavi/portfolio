@@ -29,8 +29,9 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed max-w-xs">
-              Full-stack software engineer and final-year IT student at
-              Macquarie University. Based in Sydney, graduating November 2026.
+              Graduate Software Engineer focused on full-stack web, Flutter
+              mobile and applied AI. Australian citizen based in Sydney,
+              graduating from Macquarie University in November 2026.
             </p>
             <div className="flex items-center gap-3">
               <motion.a
@@ -102,7 +103,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-10 pt-6 border-t border-border-subtle flex items-center justify-between">
           <p className="text-xs text-text-muted">
-            &copy; {new Date().getFullYear()} Pouya Alavi Naeini. All rights reserved.
+            &copy; 2026 Pouya Alavi Naeini. All rights reserved.
           </p>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

@@ -6,7 +6,6 @@ import {
   ArrowRight,
   Download,
   Code2,
-  Database,
   Smartphone,
   Sparkles,
   MapPin,
@@ -26,24 +25,24 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 /* ─── Ticker ─── */
 const TICKER = [
-  "Next.js",
-  "React",
   "TypeScript",
+"React",
+  "Next.js",
   "Flutter",
   "Dart",
-  "Tailwind CSS",
-  "Supabase",
-  "PostgreSQL",
-  "Node.js",
   "Python",
   "PyTorch",
+  "Supabase",
+  "PostgreSQL",
+  "Tailwind CSS",
+  "Node.js",
+  "REST APIs",
   "Vercel AI SDK",
-  "GitHub Actions",
-  "Vercel",
   "Vitest",
   "Playwright",
-  "Applied AI & ML",
-  "Sydney, Australia",
+  "GitHub Actions",
+  "CI/CD",
+  "Accessibility",
 ];
 
 export default function Home() {
@@ -83,7 +82,8 @@ export default function Home() {
                 <span className="relative rounded-full h-2 w-2 bg-success" />
               </span>
               <span className="text-xs font-medium text-text-secondary">
-                Available for graduate roles · Graduating November 2026
+                Available for graduate roles · Australian citizen · Graduating
+                November 2026
               </span>
             </motion.div>
 
@@ -99,10 +99,10 @@ export default function Home() {
                 <span className="text-gradient">Pouya</span>
               </h1>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-text-secondary">
-                Software Engineer
+                Graduate Software Engineer
               </h2>
               <p className="text-sm sm:text-base text-text-muted font-medium">
-                Full-Stack, Mobile & Applied AI · Graduating November 2026
+Full-Stack, Mobile & Applied AI · Graduating November 2026
               </p>
             </motion.div>
 
@@ -113,20 +113,18 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg text-text-secondary leading-relaxed max-w-xl mb-6"
             >
-              I build full-stack web and mobile applications using{" "}
+I build accessible full-stack web applications, Flutter mobile
+              products and applied AI experiences using{" "}
+              <span className="text-accent-light">TypeScript</span>,{" "}
               <span className="text-accent-light">React</span>,{" "}
               <span className="text-accent-light">Next.js</span>,{" "}
-              <span className="text-accent-light">Flutter</span>, and{" "}
-              <span className="text-accent-light">TypeScript</span>.
-              Co-founder of{" "}
+              <span className="text-accent-light">Flutter</span> and{" "}
+              <span className="text-accent-light">Python</span>. I am the
+              co-founder of the{" "}
               <span className="text-foreground font-medium">
-                Syllabus Sync
+                Syllabus Sync ecosystem
               </span>
-              {" "}and{" "}
-              <span className="text-foreground font-medium">
-                MQ Navigation
-              </span>
-              , student-led initiatives accepted into the{" "}
+              , selected for the{" "}
               <span className="text-foreground font-medium">
                 Macquarie University Incubator
               </span>
@@ -141,7 +139,10 @@ export default function Home() {
               className="flex flex-wrap gap-2 mb-8"
             >
               {[
-                { icon: GraduationCap, text: "Macquarie University · BIT, Nov 2026" },
+{
+                  icon: GraduationCap,
+                  text: "Macquarie University · Bachelor of Information Technology · November 2026",
+                },
                 { icon: MapPin, text: "Sydney, Australia" },
               ].map(({ icon: Icon, text }) => (
                 <span
@@ -165,13 +166,13 @@ export default function Home() {
                 href="/projects"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent/90 text-white text-sm font-semibold rounded-xl transition-all duration-300 shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30"
               >
-                See Projects <ArrowRight size={16} />
+                View Projects <ArrowRight size={16} />
               </Link>
               <Link
                 href="/resume"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-overlay hover:bg-overlay-strong text-foreground text-sm font-semibold rounded-xl border border-border-default hover:border-border-accent transition-all duration-300"
               >
-                <Download size={16} /> Resume
+                <Download size={16} /> View Resume
               </Link>
               <div className="flex items-center gap-2 ml-2">
                 <a
@@ -211,7 +212,7 @@ export default function Home() {
                   <div className="w-full h-full rounded-full overflow-hidden bg-white ring-2 ring-border-subtle">
                     <Image
                       src="/pouya-profile.jpeg"
-                      alt="Pouya Alavi Naeini - Software Engineer"
+                      alt="Pouya Alavi Naeini, Graduate Software Engineer"
                       width={400}
                       height={400}
                       priority
@@ -247,19 +248,31 @@ export default function Home() {
       {/* ═══════════════════════════════════
           TECH TICKER
       ═══════════════════════════════════ */}
-      <div className="border-y border-border-subtle bg-surface-1/50 py-3 overflow-hidden">
+      <div
+        className="border-y border-border-subtle bg-surface-1/50 py-3 overflow-hidden"
+        role="marquee"
+        aria-label="Technologies I work with"
+      >
         <motion.div
           className="flex whitespace-nowrap"
           animate={{ x: ["0%", "-50%"] }}
           transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
         >
-          {[...TICKER, ...TICKER].map((item, i) => (
-            <span key={i} className="flex items-center shrink-0">
-              <span className="text-xs font-medium text-text-muted tracking-wide px-6">
-                {item}
-              </span>
-              <span className="text-accent/40 text-[8px]">●</span>
-            </span>
+          {[0, 1].map((copy) => (
+            <div
+              key={copy}
+              className="flex shrink-0"
+              aria-hidden={copy === 1 ? "true" : undefined}
+            >
+              {TICKER.map((item) => (
+                <span key={item} className="flex items-center shrink-0">
+                  <span className="text-xs font-medium text-text-muted tracking-wide px-6">
+                    {item}
+                  </span>
+                  <span className="text-accent/40 text-[8px]">●</span>
+                </span>
+              ))}
+            </div>
           ))}
         </motion.div>
       </div>
@@ -322,7 +335,7 @@ export default function Home() {
               {
                 icon: Code2,
                 title: "Full-Stack Development",
-                desc: "Building web applications with React, Next.js, TypeScript, and Supabase — with authentication, row-level security, and CI/CD.",
+"Building accessible, database-driven web applications using React, Next.js, TypeScript, Supabase and PostgreSQL, with authentication, secure data access, testing and CI/CD.",
                 color: "text-accent",
                 bg: "bg-accent/10",
                 border: "border-accent/20",
@@ -330,15 +343,15 @@ export default function Home() {
               {
                 icon: Smartphone,
                 title: "Mobile Development",
-                desc: "Building cross-platform mobile apps with Flutter and Dart — including campus navigation, deep linking, automated testing, and CI/CD.",
+"Building cross-platform Flutter applications with Dart, responsive interfaces, app navigation, deep linking, local data and automated testing.",
                 color: "text-secondary",
                 bg: "bg-secondary/10",
                 border: "border-secondary/20",
               },
               {
-                icon: Database,
-                title: "Applied AI/ML",
-                desc: "Training and evaluating models with Python, PyTorch, and Vercel AI SDK — with streaming interfaces, Grad-CAM interpretability, and live demos.",
+icon: Sparkles,
+                title: "Applied AI",
+                desc: "Developing AI-assisted product experiences and machine-learning projects using Python, PyTorch and the Vercel AI SDK, with streaming interfaces, model evaluation, interpretability and live deployments.",
                 color: "text-warm",
                 bg: "bg-warm/10",
                 border: "border-warm/20",
@@ -429,9 +442,10 @@ export default function Home() {
               Open to Graduate Software Roles in Sydney
             </h2>
             <p className="text-text-secondary max-w-lg mx-auto mb-8 leading-relaxed">
-              I&apos;m looking for teams where I can contribute to real product
-              work, grow alongside experienced engineers, and keep building
-              solid software fundamentals.
+              I am looking for graduate and junior engineering roles where I can
+              contribute to real product development, learn from experienced
+              engineers and continue strengthening my software-engineering
+              fundamentals across web, mobile and applied AI.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
@@ -444,9 +458,13 @@ export default function Home() {
                 href="/about"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-overlay hover:bg-overlay-strong text-foreground text-sm font-semibold rounded-xl border border-border-default hover:border-border-accent transition-all duration-300"
               >
-                Learn More About Me
+                About Me
               </Link>
             </div>
+            <p className="relative mt-6 text-xs text-text-muted">
+              Australian citizen · Available for Sydney-based on-site, hybrid and
+              remote opportunities
+            </p>
           </div>
         </section>
       </AnimatedSection>

@@ -9,6 +9,8 @@ import {
   GraduationCap,
   Code2,
   Users,
+Trophy,
+  Globe,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
@@ -70,10 +72,25 @@ export function ResumeClient() {
                       <MapPin size={14} className="text-text-muted" /> Sydney, Australia
                     </div>
                     <div className="flex items-center gap-2">
-                      <Mail size={14} className="text-text-muted" /> {CONTACT_EMAIL}
+                      <Globe size={14} className="text-text-muted" /> Australian citizen
                     </div>
                     <div className="flex items-center gap-2">
-                      <Phone size={14} className="text-text-muted" /> {PHONE}
+                      <Mail size={14} className="text-text-muted" />{" "}
+                      <a
+                        href={`mailto:${CONTACT_EMAIL}`}
+                        className="hover:text-accent transition-colors"
+                      >
+                        {CONTACT_EMAIL}
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone size={14} className="text-text-muted" />{" "}
+                      <a
+                        href={`tel:${PHONE.replace(/\s+/g, "")}`}
+                        className="hover:text-accent transition-colors"
+                      >
+                        {PHONE}
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -119,16 +136,14 @@ export function ResumeClient() {
               <p className="text-text-secondary leading-relaxed">
                 Final-year Bachelor of Information Technology student at
                 Macquarie University, majoring in Artificial Intelligence and
-                Web/App Development, with hands-on experience building
-                full-stack web applications and applied AI/ML projects.
-                Co-founder of Syllabus Sync and MQ Navigation, student-led
-                initiatives accepted into the Macquarie University Incubator,
-                where I&apos;m participating in the EDUCATE accelerator program
-                with access to startup validation support, founder education,
-                and mentoring. Interested in graduate and early-career
-                software, technology, and IT roles where I can contribute
-                through practical problem-solving, reliable engineering
-                practices, and product-minded collaboration.
+                Web and Mobile Application Development, with hands-on experience
+                building full-stack web applications, Flutter mobile products
+                and applied AI projects. Experienced with TypeScript, React,
+                Next.js, Flutter, Python, Supabase, PostgreSQL and PyTorch,
+                alongside API integration, accessibility, automated testing and
+                CI/CD. Co-founder and developer of the Syllabus Sync ecosystem,
+                selected for the Macquarie University Incubator. Seeking graduate
+                and junior software-engineering opportunities in Sydney.
               </p>
             </section>
           </AnimatedSection>
@@ -216,7 +231,7 @@ export function ResumeClient() {
                           rel="noopener noreferrer"
                           className="text-xs text-accent hover:text-accent-light transition-colors flex items-center gap-1"
                         >
-                          Live Demo ↗
+                          {project.links.demoLabel ?? "Live Demo"} ↗
                         </a>
                       )}
                     </div>

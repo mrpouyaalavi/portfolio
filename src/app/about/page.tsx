@@ -4,11 +4,14 @@ import { AboutClient } from "./AboutClient";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Graduate software engineer and final-year IT student at Macquarie University, building full-stack web and mobile applications with React, Next.js, Flutter and TypeScript.",
+"Australian citizen and final-year Bachelor of Information Technology student at Macquarie University, working across full-stack web, Flutter mobile and applied AI. Co-founder of the Syllabus Sync ecosystem, graduating November 2026.",
+  alternates: {
+    canonical: "/about",
+  },
   openGraph: {
     title: "About | Pouya Alavi Naeini",
     description:
-      "Graduate software engineer focused on full-stack web, mobile development and applied AI/ML. Co-founder of the Syllabus Sync Ecosystem, accepted into the Macquarie University Incubator.",
+      "Australian graduate software engineer in Sydney, working across full-stack web, Flutter mobile and applied AI. Co-founder of the Syllabus Sync ecosystem, graduating November 2026.",
   },
 };
 

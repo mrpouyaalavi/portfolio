@@ -24,11 +24,12 @@ export function ProjectsClient() {
       </div>
 
       <AnimatedSection variants={fadeInUp}>
-        <SectionHeading label="Portfolio" title="Projects" />
+        <SectionHeading as="h1" label="Portfolio" title="Projects" />
         <p className="text-text-secondary -mt-8 mb-12 max-w-xl">
-          A focused selection of projects across full-stack web development,
-          mobile development, and applied AI/ML. Each project is open-source,
-          with source code and live demos linked where available.
+          A focused selection of product and engineering work across full-stack
+          web development, Flutter mobile development and applied AI. Source
+          code, live deployments and technical details are included where
+          publicly available.
         </p>
       </AnimatedSection>
 

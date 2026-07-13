@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Get in touch with Pouya Alavi Naeini. Open to collaborations, opportunities, and conversations.",
+  alternates: {
+    canonical: "/contact",
+  },
   openGraph: {
     title: "Contact | Pouya Alavi Naeini",
     description:

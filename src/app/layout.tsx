@@ -3,7 +3,13 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { GITHUB_URL, LINKEDIN_URL, SITE_URL, SITE_NAME } from "@/lib/constants";
+import {
+  CONTACT_EMAIL,
+  GITHUB_URL,
+  LINKEDIN_URL,
+  SITE_URL,
+  SITE_NAME,
+} from "@/lib/constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,17 +21,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_DESCRIPTION =
+  "Australian graduate software engineer based in Sydney, building full-stack web applications, Flutter mobile products and applied AI experiences with TypeScript, React, Next.js, Flutter and Python.";
+
 export const metadata: Metadata = {
   title: {
-    default:
-      "Pouya Alavi Naeini | Graduate Software Engineer – Full-Stack, Mobile & Applied AI",
+default: "Pouya Alavi Naeini | Graduate Software Engineer",
     template: "%s | Pouya Alavi Naeini",
   },
-  description:
-    "Graduate software engineer and final-year IT student at Macquarie University, building full-stack web and mobile applications with React, Next.js, Flutter and TypeScript. Co-founder of the Syllabus Sync Ecosystem, a student-led initiative accepted into the Macquarie University Incubator. Graduating November 2026, based in Sydney, Australia.",
+  description: SITE_DESCRIPTION,
   keywords: [
-    "Software Engineer",
+    "Graduate Software Engineer",
     "Full-Stack Developer",
+    "Frontend Developer",
+    "Flutter Developer",
     "Next.js",
     "React",
     "TypeScript",
@@ -37,27 +46,34 @@ export const metadata: Metadata = {
     "Web Development",
     "Pouya Alavi Naeini",
     "Graduate Developer Sydney",
-    "Early-Career Developer Sydney",
     "Macquarie University",
   ],
   authors: [{ name: "Pouya Alavi Naeini", url: SITE_URL }],
   creator: "Pouya Alavi Naeini",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_AU",
     url: SITE_URL,
-    title:
-      "Pouya Alavi Naeini | Graduate Software Engineer – Full-Stack, Mobile & Applied AI",
-    description:
-      "Graduate software engineer focused on full-stack web, mobile development and applied AI/ML. Co-founder of the Syllabus Sync Ecosystem, a student-led initiative accepted into the Macquarie University Incubator. Based in Sydney, Australia.",
+title: "Pouya Alavi Naeini | Graduate Software Engineer",
+    description: SITE_DESCRIPTION,
     siteName: SITE_NAME,
+    images: [
+      {
+        url: "/pouya-profile.jpeg",
+        width: 400,
+        height: 400,
+        alt: "Pouya Alavi Naeini",
+      },
+    ],
   },
   twitter: {
-    card: "summary_large_image",
-    title:
-      "Pouya Alavi Naeini | Graduate Software Engineer – Full-Stack, Mobile & Applied AI",
-    description:
-      "Graduate software engineer focused on full-stack web, mobile and applied AI/ML. Co-founder of the Syllabus Sync Ecosystem, accepted into the Macquarie University Incubator.",
+card: "summary",
+    title: "Pouya Alavi Naeini | Graduate Software Engineer",
+    description: SITE_DESCRIPTION,
+    images: ["/pouya-profile.jpeg"],
   },
   metadataBase: new URL(SITE_URL),
 };
@@ -72,22 +88,24 @@ export default function RootLayout({
     "@type": "Person",
     name: "Pouya Alavi Naeini",
     url: SITE_URL,
+email: `mailto:${CONTACT_EMAIL}`,
     jobTitle: "Graduate Software Engineer",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Sydney",
-      addressCountry: "AU",
+      addressCountry: "Australia",
+    },
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "Macquarie University",
     },
     knowsAbout: [
-      { "@type": "Thing", name: "Next.js & React" },
-      { "@type": "Thing", name: "TypeScript & JavaScript" },
-      { "@type": "Thing", name: "Full-Stack Web Development" },
-      { "@type": "Thing", name: "Flutter & Mobile Development" },
-      { "@type": "Thing", name: "Supabase & PostgreSQL" },
-      { "@type": "Thing", name: "Tailwind CSS" },
-      { "@type": "Thing", name: "Applied AI & PyTorch" },
-      { "@type": "Thing", name: "CI/CD & DevOps" },
-      { "@type": "Thing", name: "Product-Minded Engineering" },
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Flutter",
+      "Python",
+      "Applied AI",
     ],
     sameAs: [GITHUB_URL, LINKEDIN_URL],
   }).replace(/</g, "\\u003c");

@@ -86,7 +86,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
             className="flex items-center gap-1.5 text-xs font-medium text-text-secondary hover:text-accent transition-colors relative z-10"
             onClick={(e) => e.stopPropagation()}
           >
-            <ExternalLink size={14} /> Live Demo
+            <ExternalLink size={14} /> {project.links.demoLabel ?? "Live Demo"}
           </a>
         )}
         <span className="ml-auto flex items-center gap-1 text-xs font-medium text-text-muted group-hover:text-accent transition-colors">

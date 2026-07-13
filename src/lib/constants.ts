@@ -1,5 +1,5 @@
 export const SITE_URL = "https://pouyaalavi.dev";
-export const SITE_NAME = "Pouya Alavi Naeini - Software Engineer";
+export const SITE_NAME = "Pouya Alavi Naeini | Graduate Software Engineer";
 
 export const CONTACT_EMAIL = "pouya@pouyaalavi.dev";
 export const PHONE = "+61 451 519 624";

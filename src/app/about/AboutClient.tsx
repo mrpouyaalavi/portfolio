@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, MapPin, GraduationCap, Heart } from "lucide-react";
+import { Mail, MapPin, GraduationCap, Heart, Globe } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
@@ -38,53 +38,59 @@ export function AboutClient() {
                 Pouya Alavi Naeini
               </h1>
               <p className="text-xl text-accent-light font-medium">
-                Software Engineer
+                Graduate Software Engineer
               </p>
               <p className="text-sm text-text-muted font-medium">
-                Full-Stack, Mobile & Applied AI · Macquarie University
+Full-Stack, Mobile & Applied AI · Macquarie University
               </p>
             </div>
 
             <div className="glass-card p-6 md:p-8 space-y-4">
               <p className="text-text-secondary leading-relaxed">
-                I&apos;m a final-year IT student at{" "}
+                I am an Australian citizen and final-year Bachelor of Information
+                Technology student at{" "}
                 <span className="text-foreground font-medium">
                   Macquarie University
                 </span>
-                , graduating November 2026, majoring in Artificial Intelligence
-                and Web/App Development. My primary focus is full-stack web and
-                mobile development, with a strong interest in applied AI/ML.
+, majoring in Artificial Intelligence and Web and Mobile
+                Application Development. I am graduating in November 2026 and
+                currently seeking graduate and junior software-engineering
+                opportunities in Sydney.
               </p>
               <p className="text-text-secondary leading-relaxed">
-                I care about software that holds up over time: clean interfaces,
-                sensible data models, and code that other engineers can pick up
-                and continue. My work includes authentication, row-level
-                security, automated testing, and CI/CD — not just UI.
+                My work spans full-stack web development, Flutter mobile
+                applications and applied AI products. I primarily work with
+                TypeScript, React, Next.js, Flutter, Dart, Python, Supabase,
+                PostgreSQL and PyTorch, with practical experience in API
+                integration, authentication, deep linking, accessibility,
+                automated testing and CI/CD.
               </p>
               <p className="text-text-secondary leading-relaxed">
-                My projects include the{" "}
+                I care about building software that is understandable,
+                maintainable and useful to real people. That means considering
+                interface quality, data design, accessibility, testing and
+                deployment rather than treating a project as only a visual
+                prototype.
+              </p>
+              <p className="text-text-secondary leading-relaxed">
+                I am the co-founder and developer of the{" "}
                 <span className="text-accent-light font-medium">
-                  Syllabus Sync Ecosystem
+                  Syllabus Sync ecosystem
                 </span>
-                , a student-led web and mobile platform for Macquarie University
-                students (web in Next.js, mobile in Flutter),{" "}
-                <span className="text-accent-light font-medium">
-                  Sylla
-                </span>
-                , an AI-powered study assistant with streaming chat and
-                reusable study tools, and a{" "}
-                <span className="text-accent-light font-medium">
-                  CIFAR-10 deep learning comparison
-                </span>{" "}
-                with Grad-CAM interpretability and a live demo. Syllabus Sync
-                and MQ Navigation were accepted into the{" "}
+                , which includes Syllabus Sync, MQ Navigation and Sylla. The
+                initiative was selected for the
                 <span className="text-foreground font-medium">
                   Macquarie University Incubator
                 </span>
-                , where I&apos;m participating in the EDUCATE accelerator
-                program with access to startup validation support, founder
-                education, and mentoring. I am currently looking for graduate
-                and early-career software, technology, and IT roles in Sydney.
+                , where I participate in founder education, customer discovery,
+                mentoring and the EDUCATE accelerator while continuing to refine
+                the product direction and technical implementation.
+              </p>
+              <p className="text-text-secondary leading-relaxed">
+                My other technical work includes an end-to-end CIFAR-10
+                image-classification project using Python and PyTorch, with model
+                comparison, transfer learning, Grad-CAM interpretability, INT8
+                quantisation and a live Gradio deployment.
               </p>
             </div>
 
@@ -95,6 +101,9 @@ export function AboutClient() {
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-overlay-subtle border border-border-subtle text-text-muted text-xs font-medium">
                 <GraduationCap size={12} /> Macquarie University · November 2026
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-overlay-subtle border border-border-subtle text-text-muted text-xs font-medium">
+                <Globe size={12} /> Australian citizen
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-accent/8 border border-accent/20 text-accent text-xs font-medium">
                 <Heart size={12} /> Available for graduate roles
@@ -166,9 +175,9 @@ export function AboutClient() {
 
             {/* Stats */}
             {[
-              { value: "Nov 2026", label: "Graduating", color: "text-accent" },
-              { value: "Web + Mobile", label: "Focus", color: "text-secondary" },
-              { value: "Applied AI", label: "Strength", color: "text-warm" },
+{ value: "Nov 2026", label: "Expected Graduation", color: "text-accent" },
+              { value: "Web + Mobile", label: "Primary Focus", color: "text-secondary" },
+              { value: "Applied AI", label: "Technical Interest", color: "text-warm" },
             ].map((s) => (
               <div
                 key={s.label}

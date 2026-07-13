@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Typing animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=700&color=7C3AED&center=true&vCenter=true&width=860&lines=Pouya+Alavi+Naeini+%E2%80%94+Software+Engineer;Modern+Portfolio+%C2%B7+Next.js+16+%C2%B7+React+19;System+Theme+%C2%B7+Glass+UI+%C2%B7+Framer+Motion;Sydney%2C+NSW+%C2%B7+Open+to+Opportunities)](https://pouyaalavi.dev)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=700&color=7C3AED&center=true&vCenter=true&width=860&lines=Pouya+Alavi+Naeini+%E2%80%94+Graduate+Software+Engineer;Full-Stack+Web+%C2%B7+Flutter+Mobile+%C2%B7+Applied+AI;Next.js+%C2%B7+React+%C2%B7+TypeScript+%C2%B7+Tailwind+CSS;Sydney%2C+Australia+%C2%B7+Australian+Citizen+%C2%B7+Graduating+November+2026;Open+to+Graduate+Software+Roles)](https://pouyaalavi.dev)
 
 <!-- Badges -->
 ![Next.js](https://img.shields.io/badge/Next.js_16-000?style=for-the-badge&logo=nextdotjs)
@@ -19,11 +19,30 @@
 
 # pouyaalavi.dev — Personal Portfolio
 
-> **A performance-first, theme-adaptive portfolio built with Next.js 16, React 19, and Tailwind CSS 4 — showcasing projects, skills, and experience with polished glass-morphism UI and smooth scroll-driven animations.**
+> **A modern personal portfolio built with Next.js, React, TypeScript and Tailwind CSS, showcasing my full-stack web, Flutter mobile and applied AI projects.**
 
-A modern, professional portfolio website for **Pouya Alavi Naeini**, a software engineer and final-year IT student at Macquarie University. The site features system-aware light/dark theming, animated page transitions, a glass-card design system, SEO optimisation with structured data, and a fully responsive layout from 360px to ultrawide.
+This repository contains the personal portfolio of **Pouya Alavi Naeini**, an Australian citizen and final-year Bachelor of Information Technology student at Macquarie University, majoring in Artificial Intelligence and Web and Mobile Application Development and graduating in November 2026.
+
+The website presents my software-engineering experience, technical projects, education and current focus across full-stack web development, Flutter mobile development and applied AI.
 
 **[🔗 Live Site](https://www.pouyaalavi.dev)** &nbsp;·&nbsp; **[💼 LinkedIn](https://linkedin.com/in/pouya-alavi)** &nbsp;·&nbsp; **[🐙 GitHub](https://github.com/mrpouyaalavi)**
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0f,30:7c3aed,60:38bdf8,100:0a0a0f&height=2" width="100%"/>
+
+<br/>
+
+## Overview
+
+This portfolio was built to present my technical work in a clear, accessible and professional way for graduate and junior software-engineering opportunities.
+
+It includes:
+- full-stack web projects built with Next.js, React, TypeScript, Supabase and PostgreSQL
+- Flutter mobile-development work
+- applied AI and machine-learning projects using Python, PyTorch and the Vercel AI SDK
+- technical experience, education and downloadable resume
+- live demos and source repositories where publicly available
 
 <br/>
 
@@ -35,14 +54,15 @@ A modern, professional portfolio website for **Pouya Alavi Naeini**, a software 
 
 ```
 ╔══════════════════════════════════════════════════════════════════════╗
-║  🌓  System-aware light & dark theme — zero-flash, CSS-only          ║
-║  🎨  Glass-morphism design system with accent glow effects           ║
-║  ⚡  Next.js 16 App Router — static generation, optimised images      ║ 
-║  🎬  Scroll-driven animations via Framer Motion (stagger, parallax)  ║
-║  📱  Fully responsive: 360px mobile → 2560px ultrawide               ║
-║  🔍  SEO: JSON-LD structured data, Open Graph, meta tags             ║
-║  ♿  Accessible: skip-to-content, semantic HTML, focus management     ║
-║  🚀  100% static — deployed on Vercel Edge in < 1s TTFB              ║
+║  🌓  System-aware light and dark theme                               ║
+║  📱  Responsive design across mobile, tablet and desktop             ║
+║  ⚡  Next.js App Router and static generation where supported         ║
+║  ♿  Accessible navigation, semantic structure and focus states       ║
+║  🎬  Reduced-motion support                                          ║
+║  🔍  SEO metadata, Open Graph and structured data                    ║
+║  🗂️  Reusable project, experience and skills data                    ║
+║  🚀  Automated deployment through Vercel                             ║
+║  ✅  TypeScript and ESLint quality checks                            ║
 ╚══════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -56,11 +76,11 @@ A modern, professional portfolio website for **Pouya Alavi Naeini**, a software 
 
 | Page | Description |
 | :--- | :--- |
-| **Home** | Hero with profile photo, animated headline, tech ticker, featured project card, expertise grid, skills & tools, and CTA |
-| **About** | Bio, profile photo, stats cards, skills breakdown, work experience timeline, and education |
-| **Projects** | Filterable project grid with hover effects, tags, and links to live demos & source |
-| **Resume** | Structured CV layout with contact info, summary, skills, featured project, experience, and education — downloadable PDF |
-| **Contact** | Contact form (mailto), email/GitHub/LinkedIn cards, and location |
+| **Home** | Graduate-software-engineer introduction, technology overview, featured projects, focus areas, skills and contact call to action |
+| **About** | Professional summary, technical focus, experience, education and availability for graduate roles |
+| **Projects** | Project gallery covering full-stack web, Flutter mobile and applied AI work, with live demos and source links where available |
+| **Resume** | Web-based resume with professional summary, skills, projects, experience, education and downloadable PDF |
+| **Contact** | Email, LinkedIn, GitHub and location information |
 
 <br/>
 
@@ -72,42 +92,16 @@ A modern, professional portfolio website for **Pouya Alavi Naeini**, a software 
 
 | Layer | Technology |
 | :--- | :--- |
-| **Framework** | Next.js 16 (App Router, Static Generation) |
-| **UI** | React 19, Tailwind CSS 4, Framer Motion |
-| **Components** | shadcn/ui (Base UI), CVA, Lucide Icons |
-| **Theming** | System `prefers-color-scheme` — CSS custom properties, zero JS |
-| **Fonts** | Geist Sans & Geist Mono (variable, self-hosted via `next/font`) |
-| **Images** | `next/image` — automatic WebP, lazy loading, priority hints |
-| **SEO** | JSON-LD Person schema, Open Graph, Twitter Cards, `robots.txt` |
-| **Deployment** | Vercel (Edge Network, automatic preview deploys) |
-| **Quality** | ESLint 9, strict TypeScript, Tailwind IntelliSense |
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0f,30:7c3aed,60:38bdf8,100:0a0a0f&height=2" width="100%"/>
-
-<br/>
-
-## 🎨 Design System
-
-The portfolio uses a custom **glass-morphism design system** with theme-adaptive tokens:
-
-### Colour Tokens
-
-| Token | Dark Mode | Light Mode |
-| :--- | :--- | :--- |
-| `--background` | `#0a0a0f` (deep midnight) | `#fafbfc` (clean white) |
-| `--accent` | `#7c3aed` (electric violet) | `#6d28d9` (deep violet) |
-| `--secondary` | `#38bdf8` (sky blue) | `#0284c7` (ocean blue) |
-| `--warm` | `#f59e0b` (amber) | `#d97706` (deep amber) |
-
-### UI Components
-
-- **Glass Cards** — Frosted-glass surfaces with gradient borders and accent-glow hover
-- **Overlay Surfaces** — 4-level adaptive overlays (`subtle`, `default`, `hover`, `strong`)
-- **Section Dividers** — Gradient lines transitioning violet → blue
-- **Dot Grid** — Subtle radial dot pattern for depth
-- **Animated Sections** — Scroll-triggered fade-in with staggered children
+| **Framework** | Next.js 16 with App Router |
+| **UI** | React 19, Tailwind CSS 4 and Framer Motion |
+| **Language** | TypeScript |
+| **Components** | Reusable custom components, CVA and Lucide Icons |
+| **Theming** | System-aware light and dark themes using CSS custom properties |
+| **Fonts** | Geist Sans and Geist Mono through `next/font` |
+| **Images** | Next.js Image optimisation |
+| **SEO** | Metadata API, Open Graph, Twitter Cards, canonical URLs and JSON-LD structured data |
+| **Deployment** | Vercel with automatic deployments |
+| **Quality** | ESLint, TypeScript, accessibility checks and production builds |
 
 <br/>
 
@@ -119,24 +113,76 @@ The portfolio uses a custom **glass-morphism design system** with theme-adaptive
 
 ```text
 src/
-├── app/                  # Next.js App Router pages & layouts
-│   ├── layout.tsx        # Root layout — fonts, navbar, footer, JSON-LD
-│   ├── page.tsx          # Home — hero, ticker, featured project, skills, CTA
-│   ├── globals.css       # Theme tokens, glass utilities, animations
-│   ├── about/            # About page — bio, photo, skills, experience, education
-│   ├── contact/          # Contact form & alternative channels
-│   ├── projects/         # Project listing + dynamic [slug] detail pages
-│   └── resume/           # Structured CV with PDF download
+├── app/                  # Next.js App Router pages and layouts
+│   ├── layout.tsx        # Root layout, metadata and shared navigation
+│   ├── page.tsx          # Home page
+│   ├── globals.css       # Theme tokens and shared styles
+│   ├── about/            # About page
+│   ├── contact/          # Contact page
+│   ├── projects/         # Project listing and dynamic [slug] detail pages
+│   ├── resume/           # Resume page with PDF download
+│   ├── sitemap.ts        # Generated sitemap
+│   └── robots.ts         # Generated robots rules
 ├── components/
-│   ├── layout/           # Navbar (scroll-aware glass) & Footer
-│   └── ui/               # AnimatedSection, SectionHeading, ProjectCard, Icons
+│   ├── layout/           # Navbar and Footer
+│   └── ui/               # Reusable interface components
 ├── lib/
 │   ├── constants.ts      # Site URL, contact info, social links
-│   ├── data.ts           # Projects, experience, education, skills data
-│   └── utils.ts          # cn(), Framer Motion variants
+│   ├── data.ts           # Shared project, experience, education and skills data
+│   └── utils.ts          # Shared utilities and Framer Motion variants
 └── public/
-    └── pouya-profile.jpeg  # Optimised 400×400 profile photo
+    └── pouya-profile.jpeg  # Public images and downloadable assets
 ```
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0f,30:7c3aed,60:38bdf8,100:0a0a0f&height=2" width="100%"/>
+
+<br/>
+
+## Design Approach
+
+The interface uses a consistent theme-aware visual system with reusable colour tokens, glass-style surfaces, responsive spacing, gradient accents and motion that respects reduced-motion preferences.
+
+The design aims to remain visually distinctive without reducing readability, accessibility or navigation clarity.
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0f,30:7c3aed,60:38bdf8,100:0a0a0f&height=2" width="100%"/>
+
+<br/>
+
+## 🧩 Key Technical Decisions
+
+| Decision | Rationale |
+| :--- | :--- |
+| **CSS-based theme handling** | Uses system preferences and CSS custom properties to provide consistent light and dark themes with minimal client-side state |
+| **Shared typed data** | Projects, experience, education and skills are stored in shared data structures to reduce repeated content across pages |
+| **Static rendering** | Portfolio pages are pre-rendered where possible to improve reliability and loading performance |
+| **Framer Motion** | Used for restrained page and section transitions while respecting reduced-motion preferences |
+| **Next.js Image** | Used for responsive image delivery and loading optimisation |
+| **Accessibility** | Semantic HTML, keyboard navigation, visible focus states and reduced-motion support are treated as core requirements |
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0f,30:7c3aed,60:38bdf8,100:0a0a0f&height=2" width="100%"/>
+
+<br/>
+
+## Accessibility and Quality
+
+The portfolio is designed with accessibility and maintainability in mind.
+
+Current quality considerations include:
+- semantic HTML and logical heading structure
+- keyboard-accessible navigation
+- visible focus states
+- skip-to-content support
+- descriptive link labels and image alt text
+- responsive layouts
+- reduced-motion support
+- TypeScript and ESLint checks
+- production-build validation
 
 <br/>
 
@@ -148,13 +194,13 @@ src/
 
 ### Prerequisites
 
-- Node.js `>=20`
-- npm `>=10`
+- Node.js
+- npm
 
 ### Setup
 
 ```bash
-# Clone
+# Clone repository
 git clone https://github.com/mrpouyaalavi/portfolio.git
 cd portfolio
 
@@ -167,20 +213,30 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-### Build & Deploy
+### Build
 
 ```bash
-# Production build
+# Run lint
+npm run lint
+
+# Run production build
 npm run build
 
-# Preview production build locally
+# Start production server
 npm start
-
-# Lint
-npm run lint
 ```
 
-The site is deployed automatically on **Vercel** via Git push.
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0f,30:7c3aed,60:38bdf8,100:0a0a0f&height=2" width="100%"/>
+
+<br/>
+
+## Deployment
+
+The production website is deployed on Vercel and connected to the repository for automatic deployments.
+
+Live site: [https://www.pouyaalavi.dev](https://www.pouyaalavi.dev)
 
 <br/>
 
@@ -188,35 +244,45 @@ The site is deployed automatically on **Vercel** via Git push.
 
 <br/>
 
-## 🧩 Key Technical Decisions
+## 📌 Featured Portfolio Projects
 
-| Decision | Rationale |
-| :--- | :--- |
-| **CSS-only theming** | `prefers-color-scheme` media queries — no JS flash, no hydration mismatch, instant theme |
-| **Overlay token system** | 4-level adaptive overlays replace hardcoded `bg-white/X`, enabling seamless dark ↔ light |
-| **Static generation** | All pages pre-rendered at build time — sub-second TTFB, zero server costs |
-| **Framer Motion** | Scroll-triggered `IntersectionObserver` animations with `prefers-reduced-motion` respect |
-| **Glass-morphism** | CSS `backdrop-filter` + gradient borders — modern aesthetic without heavy assets |
-| **`next/image`** | Automatic format negotiation (WebP/AVIF), responsive srcset, priority loading for LCP |
+### 1. Syllabus Sync — Student Experience Platform
 
-<br/>
+A connected student-experience platform for Macquarie University students, supporting academic planning, deadlines, campus information and student productivity.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a0a0f,30:7c3aed,60:38bdf8,100:0a0a0f&height=2" width="100%"/>
-
-<br/>
-
-## 📌 Featured Project
-
-### Syllabus Sync — Enterprise-Grade Campus OS
-
-A production-ready, full-stack platform that unifies academic scheduling, deadline intelligence, campus navigation, and gamified engagement for university students.
+Built with Next.js, React, TypeScript and Supabase, with accessibility, multilingual support, automated testing and CI/CD.
 
 | | |
 | :--- | :--- |
-| **Stack** | Next.js 16 · React 19 · TypeScript · Supabase · Tailwind CSS |
-| **Security** | WebAuthn (Passkeys), TOTP MFA, Row-Level Security, CSRF protection |
-| **Scale** | 503 tests · 19 languages · WCAG 2.1 AA · CI/CD via GitHub Actions |
+| **Stack** | Next.js · React · TypeScript · Supabase · Tailwind CSS |
 | **Links** | [Live Demo](https://syllabus-sync.app) · [Source](https://github.com/mrpouyaalavi/syllabus-sync) |
+
+### 2. MQ Navigation — Flutter Campus Navigation Companion
+
+A Flutter-based campus-navigation companion for students and visitors, with campus discovery, route previews, transport information and destination deep links from Syllabus Sync.
+
+| | |
+| :--- | :--- |
+| **Stack** | Flutter · Dart · GoRouter · Deep Linking · GitHub Actions |
+| **Links** | [Source](https://github.com/mrpouyaalavi/MQ_Navigation) |
+
+### 3. Sylla — AI-Powered Study Assistant
+
+An AI-assisted study application with streaming conversations, persistent history and reusable tools for summaries, explanations, flashcards, quizzes and structured study planning.
+
+| | |
+| :--- | :--- |
+| **Stack** | Next.js · React · TypeScript · Supabase · Vercel AI SDK |
+| **Links** | [Source](https://github.com/mrpouyaalavi/Sylla) |
+
+### 4. CIFAR-10 Image Classification — PyTorch Benchmark
+
+An end-to-end image-classification project comparing a custom CNN, MobileNetV2 and ResNet-18. ResNet-18 achieved 87.48% test accuracy, with Grad-CAM interpretability, INT8 quantisation, CLI inference and a live Gradio demo.
+
+| | |
+| :--- | :--- |
+| **Stack** | Python · PyTorch · torchvision · Gradio · Hugging Face Spaces |
+| **Links** | [Live Demo](https://cifar10.pouyaalavi.dev) · [Source](https://github.com/mrpouyaalavi/CIFAR-10-Image-Classification) |
 
 <br/>
 
@@ -226,7 +292,7 @@ A production-ready, full-stack platform that unifies academic scheduling, deadli
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](./LICENSE).
+No open-source licence file is currently included in this repository, so all rights are reserved by default. Individual projects linked from this portfolio may have their own separate licensing and repository visibility.
 
 <br/>
 
@@ -235,15 +301,19 @@ This project is open source and available under the [MIT License](./LICENSE).
 ### `> ping --author`
 
 ```
-> Target     : Pouya Alavi Naeini - Software Engineer
-> University : Macquarie University, Sydney, NSW
-> Graduating : November 2026
-> Status     : [●] ONLINE — open to graduate and early-career software opportunities
+> Target      : Pouya Alavi Naeini — Graduate Software Engineer
+> University  : Macquarie University
+> Degree      : Bachelor of Information Technology
+> Majors      : Artificial Intelligence and Web and Mobile Application Development
+> Graduating  : November 2026
+> Location    : Sydney, Australia
+> Citizenship : Australian citizen
+> Status      : [●] ONLINE — open to graduate and junior software-engineering opportunities
 ```
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-7c3aed?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=0a0a0f)](https://www.linkedin.com/in/pouya-alavi/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-38bdf8?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=0a0a0f)](https://github.com/mrpouyaalavi)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-34d399?style=for-the-badge&logo=vercel&logoColor=ffffff&labelColor=0a0a0f)](https://pouyaalavi.dev)
-[![Email](https://img.shields.io/badge/Email-Contact-f59e0b?style=for-the-badge&logo=gmail&logoColor=09090b&labelColor=0a0a0f)](mailto:pouyaalavi1378@gmail.com)
+[![Email](https://img.shields.io/badge/Email-Contact-f59e0b?style=for-the-badge&logo=gmail&logoColor=09090b&labelColor=0a0a0f)](mailto:pouya@pouyaalavi.dev)
 
 </div>
