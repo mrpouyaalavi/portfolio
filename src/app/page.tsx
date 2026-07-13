@@ -335,7 +335,7 @@ I build accessible full-stack web applications, Flutter mobile
               {
                 icon: Code2,
                 title: "Full-Stack Development",
-"Building accessible, database-driven web applications using React, Next.js, TypeScript, Supabase and PostgreSQL, with authentication, secure data access, testing and CI/CD.",
+                desc: "Building accessible, database-driven web applications using React, Next.js, TypeScript, Supabase and PostgreSQL, with authentication, secure data access, testing and CI/CD.",
                 color: "text-accent",
                 bg: "bg-accent/10",
                 border: "border-accent/20",
@@ -343,13 +343,13 @@ I build accessible full-stack web applications, Flutter mobile
               {
                 icon: Smartphone,
                 title: "Mobile Development",
-"Building cross-platform Flutter applications with Dart, responsive interfaces, app navigation, deep linking, local data and automated testing.",
+                desc: "Building cross-platform Flutter applications with Dart, responsive interfaces, app navigation, deep linking, local data and automated testing.",
                 color: "text-secondary",
                 bg: "bg-secondary/10",
                 border: "border-secondary/20",
               },
               {
-icon: Sparkles,
+                icon: Sparkles,
                 title: "Applied AI",
                 desc: "Developing AI-assisted product experiences and machine-learning projects using Python, PyTorch and the Vercel AI SDK, with streaming interfaces, model evaluation, interpretability and live deployments.",
                 color: "text-warm",

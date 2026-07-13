@@ -86,9 +86,6 @@ export const projects: Record<string, Project> = {
       repo: "https://github.com/mrpouyaalavi/Sylla",
     },
     highlights: [
-repo: "https://github.com/mrpouyaalavi/Sylla",
-    },
-    highlights: [
       "Built an AI-assisted study application with streaming conversations, persistent history and saved content",
       "Implemented reusable study tools for summaries, explanations, flashcards, quizzes and structured study planning",
       "Integrated the Vercel AI SDK for streaming AI interactions and Supabase for authentication and persistence",
@@ -321,5 +318,6 @@ export const leadership: Leadership[] = [
     period: "Feb 2026 – May 2026",
     description: [
       "Supported new students in their transition to university life through communication, guidance, and peer support",
+    ],
   },
 ];
