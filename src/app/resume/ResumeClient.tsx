@@ -9,8 +9,8 @@ import {
   GraduationCap,
   Code2,
   Users,
-Trophy,
   Globe,
+  ExternalLink,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
@@ -135,15 +135,16 @@ export function ResumeClient() {
               </div>
               <p className="text-text-secondary leading-relaxed">
                 Final-year Bachelor of Information Technology student at
-                Macquarie University, majoring in Artificial Intelligence and
-                Web and Mobile Application Development, with hands-on experience
-                building full-stack web applications, Flutter mobile products
-                and applied AI projects. Experienced with TypeScript, React,
-                Next.js, Flutter, Python, Supabase, PostgreSQL and PyTorch,
-                alongside API integration, accessibility, automated testing and
-                CI/CD. Co-founder and developer of the Syllabus Sync ecosystem,
-                selected for the Macquarie University Incubator. Seeking graduate
-                and junior software-engineering opportunities in Sydney.
+                Macquarie University with hands-on experience in full-stack web
+                development, Flutter mobile applications, applied AI and
+                product development. Currently a Software Intern at Calumino,
+                working with Python-based data and machine-learning workflows.
+                Co-founded the Syllabus Sync ecosystem, selected for the
+                Macquarie University Incubator. Australian citizen graduating
+                in November 2026, seeking a graduate software engineering role
+                where I can contribute to product development, solve practical
+                engineering problems and grow within an experienced technical
+                team.
               </p>
             </section>
           </AnimatedSection>
@@ -271,6 +272,30 @@ export function ResumeClient() {
                         </li>
                       ))}
                     </ul>
+                    {exp.links && (
+                      <div className="flex gap-3 mt-3">
+                        {exp.links.demo && (
+                          <a
+                            href={exp.links.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-accent hover:text-accent-light transition-colors flex items-center gap-1"
+                          >
+                            <ExternalLink size={12} /> {exp.links.demoLabel ?? "Website"}
+                          </a>
+                        )}
+                        {exp.links.repo && (
+                          <a
+                            href={exp.links.repo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-accent hover:text-accent-light transition-colors flex items-center gap-1"
+                          >
+                            <GithubIcon size={12} /> {exp.links.repoLabel ?? "GitHub"}
+                          </a>
+                        )}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

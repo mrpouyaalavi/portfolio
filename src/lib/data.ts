@@ -31,7 +31,36 @@ export interface Project {
 }
 
 export const projects: Record<string, Project> = {
-"syllabus-sync": {
+  sylla: {
+    slug: "sylla",
+    title: "Sylla — AI-Powered Study Assistant",
+    category: "Applied AI Product",
+    year: "Jul 2026 – Present",
+    description:
+      "An AI-powered study assistant with streaming responses, persistent conversation history and reusable study workflows for summaries, explanations, flashcards, quizzes and study planning. Designed to work independently and as an integrated assistant within the wider Syllabus Sync ecosystem.",
+    fullDescription:
+      "Sylla is an AI-powered study assistant built with Next.js, React, TypeScript, Tailwind CSS, Supabase and the Vercel AI SDK. It provides streaming responses, persistent conversation history and reusable study workflows, including structured tools for summaries, explanations, flashcards, quizzes and study planning. Sylla is designed to operate both independently and as an integrated assistant within the wider Syllabus Sync ecosystem.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel AI SDK",
+      "Supabase",
+      "Vitest",
+    ],
+    links: {
+      repo: "https://github.com/mrpouyaalavi/Sylla",
+      demo: "https://sylla.syllabus-sync.app",
+      demoLabel: "Live App",
+    },
+    highlights: [
+      "Built an AI-powered study assistant with streaming responses, persistent conversation history and reusable study workflows using Next.js, TypeScript, Supabase and the Vercel AI SDK",
+      "Designed and implemented structured workflows for summaries, explanations, flashcards, quizzes and study planning",
+      "Designed Sylla to operate both independently and as an integrated assistant within the wider Syllabus Sync ecosystem",
+    ],
+  },
+  "syllabus-sync": {
     slug: "syllabus-sync",
     title: "Syllabus Sync Ecosystem — Student Experience Platform",
     category: "Full-Stack Web",
@@ -44,7 +73,7 @@ export const projects: Record<string, Project> = {
       "Next.js",
       "React",
       "TypeScript",
-"Supabase",
+      "Supabase",
       "PostgreSQL",
       "Tailwind CSS",
       "Vitest",
@@ -63,44 +92,15 @@ export const projects: Record<string, Project> = {
       "Presented to Macquarie University academics and stakeholders, leading to selection for the Macquarie University Incubator for further validation, mentoring and development",
     ],
   },
-  sylla: {
-    slug: "sylla",
-    title: "Sylla — AI-Powered Study Assistant",
-    category: "Applied AI Product",
-    year: "Jul 2026 – Present",
-    description:
-      "An AI-assisted study application with streaming conversations, persistent history, saved content and reusable tools for summaries, explanations, flashcards, quizzes and structured study planning. Designed to work independently and within the Syllabus Sync ecosystem.",
-    fullDescription:
-      "Sylla is an AI-assisted study application with streaming conversations, persistent history, saved content and reusable tools for summaries, explanations, flashcards, quizzes and structured study planning. It is designed to work independently and within the Syllabus Sync ecosystem. Sylla is built with Next.js, React, TypeScript and Tailwind CSS, using the Vercel AI SDK for streaming AI interactions, Supabase for authentication and persistence, and Vitest for automated testing.",
-    tags: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Vercel AI SDK",
-      "Supabase",
-      "Vercel AI SDK",
-      "Vitest",
-    ],
-    links: {
-      repo: "https://github.com/mrpouyaalavi/Sylla",
-    },
-    highlights: [
-      "Built an AI-assisted study application with streaming conversations, persistent history and saved content",
-      "Implemented reusable study tools for summaries, explanations, flashcards, quizzes and structured study planning",
-      "Integrated the Vercel AI SDK for streaming AI interactions and Supabase for authentication and persistence",
-      "Designed the application to work independently and within the Syllabus Sync ecosystem",
-    ],
-  },
   "mq-navigation": {
     slug: "mq-navigation",
     title: "MQ Navigation — Flutter Campus Navigation Companion",
     category: "Mobile Development",
     year: "Mar 2026 – Present",
     description:
-      "A Flutter-based campus navigation companion for Macquarie University students, visitors and Open Day attendees. It supports campus discovery, route previews, transport information and destination deep links from Syllabus Sync.",
+      "A Flutter campus navigation companion supporting destination discovery, route previews, transport information and access to key university locations, with destination-based deep linking from Syllabus Sync.",
     fullDescription:
-      "MQ Navigation is a Flutter-based campus navigation companion for Macquarie University students, visitors and Open Day attendees. It supports campus discovery, route previews, transport information and destination deep links from Syllabus Sync — covering buildings, services, transport, food, parking and key campus locations. Built with Flutter and Dart, using GoRouter for navigation and deep linking, with automated Flutter tests and GitHub Actions CI. It forms the mobile layer of the Syllabus Sync ecosystem, which was selected for the Macquarie University Incubator.",
+      "MQ Navigation is a Flutter campus navigation application supporting destination discovery, route previews, transport information and access to key university locations. It implements destination-based deep linking between Syllabus Sync and the mobile app, enabling direct web-to-mobile navigation. Built with Flutter and Dart, using GoRouter for navigation and deep linking, with a mobile-first, accessibility-focused interface and automated Flutter testing via GitHub Actions CI. It forms the mobile layer of the Syllabus Sync ecosystem, which was selected for the Macquarie University Incubator.",
     tags: [
       "Flutter",
       "Dart",
@@ -113,12 +113,10 @@ export const projects: Record<string, Project> = {
       repo: "https://github.com/mrpouyaalavi/MQ_Navigation",
     },
     highlights: [
-      "Designed and built a Flutter campus navigation companion for students, visitors and Open Day attendees",
-      "Implemented campus discovery, route previews and transport information across buildings, services, food, parking and key campus locations",
-      "Added destination deep links from Syllabus Sync using GoRouter, connecting the mobile companion to the wider ecosystem",
-      "Set up automated Flutter tests and GitHub Actions CI for reliable delivery",
+      "Built a Flutter campus navigation application supporting destination discovery, route previews, transport information and access to key university locations",
+      "Implemented destination-based deep linking between Syllabus Sync and the mobile app, enabling direct web-to-mobile navigation",
+      "Improved app reliability and usability through mobile-first interface design, accessibility-focused flows and automated Flutter testing",
     ],
-    resumeHide: true,
   },
   "cifar-10-image-classification": {
     slug: "cifar-10-image-classification",
@@ -126,7 +124,7 @@ export const projects: Record<string, Project> = {
     category: "AI / Machine Learning",
     year: "Apr 2026 – Jul 2026",
     description:
-"An end-to-end image-classification project comparing a custom CNN, MobileNetV2 and ResNet-18 under controlled training and transfer-learning conditions. ResNet-18 achieved 87.48% test accuracy. The project includes Grad-CAM interpretability, INT8 quantisation, CLI inference and a live Gradio deployment.",
+      "An end-to-end image-classification project comparing a custom CNN, MobileNetV2 and ResNet-18 under controlled training and transfer-learning conditions. ResNet-18 achieved 87.48% test accuracy. The project includes Grad-CAM interpretability, INT8 quantisation, CLI inference and a live Gradio deployment.",
     fullDescription:
       "An end-to-end image-classification project comparing a custom CNN, MobileNetV2 and ResNet-18 under controlled training and transfer-learning conditions. ResNet-18 achieved 87.48% test accuracy using transfer learning, outperforming the custom CNN baseline. The project includes Grad-CAM visual interpretability, INT8 quantisation, command-line inference tools and a live Gradio demo deployed on Hugging Face Spaces.",
     tags: [
@@ -143,7 +141,7 @@ export const projects: Record<string, Project> = {
       demo: "https://cifar10.pouyaalavi.dev",
     },
     highlights: [
-"Designed and implemented an end-to-end deep learning pipeline comparing a custom CNN, MobileNetV2 and ResNet-18 under controlled conditions; ResNet-18 achieved 87.48% test accuracy using transfer learning, outperforming the custom CNN baseline",
+      "Designed and implemented an end-to-end deep learning pipeline comparing a custom CNN, MobileNetV2 and ResNet-18 under controlled conditions; ResNet-18 achieved 87.48% test accuracy using transfer learning, outperforming the custom CNN baseline",
       "Extended the project with Grad-CAM interpretability, INT8 quantisation, command-line inference tools and a Gradio demo deployed on Hugging Face Spaces",
     ],
   },
@@ -156,32 +154,55 @@ export interface Experience {
   note?: string;
   description: string[];
   type: "technical" | "customer";
+  links?: {
+    demo?: string;
+    demoLabel?: string;
+    repo?: string;
+    repoLabel?: string;
+  };
 }
 
 export const experiences: Experience[] = [
   {
-title: "Co-Founder & Software Developer",
-    company: "Syllabus Sync",
-    period: "May 2026 – Present",
-    note: "Selected for the Macquarie University Incubator",
+    title: "Software Intern",
+    company: "Calumino",
+    period: "July 2026 – Present",
     type: "technical",
     description: [
-      "Co-founded and co-developed the Syllabus Sync ecosystem, spanning full-stack web, Flutter mobile navigation and AI-assisted study tools",
-      "Contribute to product direction, frontend development, accessibility, technical planning, testing and user-facing feature delivery",
-      "Participate in founder education, customer discovery, mentoring and the EDUCATE accelerator through the Macquarie University Incubator",
-      "Collaborate with mentors and stakeholders to refine the value proposition, product strategy and technical roadmap",
+      "Contribute to the development and maintenance of internal software applications, supporting debugging, feature implementation and testing.",
+      "Work with Python-based data and machine-learning workflows, including data preparation, model testing and evaluation.",
+      "Collaborate with engineers through code reviews, technical discussions and iterative development.",
+    ],
+  },
+  {
+    title: "Software Developer & Co-Founder",
+    company: "Syllabus Sync",
+    period: "December 2025 – Present",
+    note: "Selected for the Macquarie University Incubator in May 2026",
+    type: "technical",
+    links: {
+      demo: "https://syllabus-sync.app",
+      demoLabel: "syllabus-sync.app",
+      repo: "https://github.com/mrpouyaalavi/syllabus-sync",
+      repoLabel: "GitHub",
+    },
+    description: [
+      "Co-founded and co-developed the Syllabus Sync ecosystem, integrating a full-stack web platform, Flutter mobile navigation and AI-assisted study tools.",
+      "Help drive frontend architecture, accessibility, technical planning and automated testing across user-facing features.",
+      "Implemented destination-based deep linking between Syllabus Sync and MQ Navigation, creating a connected web-to-mobile campus-navigation flow.",
+      "Participate in customer discovery, product validation, mentoring and founder development through the Macquarie University Incubator and EDUCATE accelerator.",
     ],
   },
   {
     title: "Web Developer",
     company: "SBR Group",
     period: "October 2023 – December 2024",
-note: "Promoted from a three-month internship to a paid development role",
+    note: "Promoted from a three-month internship to a paid development role",
     type: "technical",
     description: [
-      "Developed and maintained the company's WordPress website, improving mobile responsiveness, usability and page performance",
-      "Automated internal coordination workflows using Monday.com, reducing repetitive manual follow-up across teams",
-      "Collaborated with stakeholders to translate business requirements into website updates and practical digital solutions",
+      "Improved the company's WordPress website across mobile responsiveness, usability and page performance, delivering a more consistent experience across desktop and mobile.",
+      "Automated recurring internal coordination workflows using Monday.com, reducing manual follow-up and giving team members clearer visibility of task ownership and progress.",
+      "Collaborated with stakeholders to translate business requirements into practical website and workflow improvements.",
     ],
   },
   {
@@ -190,8 +211,7 @@ note: "Promoted from a three-month internship to a paid development role",
     period: "May 2025 – Present",
     type: "customer",
     description: [
-"Resolve customer enquiries through clear communication, practical problem-solving and cross-team collaboration",
-      "Support customers in identifying suitable products while coordinating with sales, logistics and warehouse teams",
+      "Resolve customer enquiries and coordinate across sales, logistics and warehouse teams in a high-volume retail environment.",
     ],
   },
   {
@@ -200,8 +220,7 @@ note: "Promoted from a three-month internship to a paid development role",
     period: "December 2024 – May 2025",
     type: "customer",
     description: [
-"Delivered customer service and supported transactions, product enquiries and stock operations in a high-volume retail environment",
-      "Developed strong communication, time-management and teamwork skills during peak trading periods",
+      "Delivered customer service and supported product enquiries, transactions and stock operations in a high-volume retail environment.",
     ],
   },
 ];
@@ -219,8 +238,8 @@ export const education: Education[] = [
     institution: "Macquarie University",
     period: "July 2023 – November 2026",
     details: [
-"Majors: Artificial Intelligence · Web and Mobile Application Development",
-      "Developed practical experience across software engineering, full-stack development, mobile applications, databases, data structures, algorithms and applied AI through project-based coursework and independent product development"
+      "Majors: Artificial Intelligence · Web and Mobile Application Development",
+      "Developed practical experience across software engineering, full-stack development, mobile applications, databases, data structures, algorithms and applied AI.",
     ],
   },
   {
@@ -228,7 +247,7 @@ export const education: Education[] = [
     institution: "TAFE NSW",
     period: "July 2022 – July 2023",
     details: [
-"Completed practical training in programming and web development, including HTML, CSS, JavaScript, PHP, MySQL, responsive design and database-driven applications"
+      "Completed practical training in HTML, CSS, JavaScript, PHP, MySQL, responsive design and database-driven application development.",
     ],
   },
 ];
@@ -241,7 +260,7 @@ export interface SkillGroup {
 export const skillGroups: SkillGroup[] = [
   {
     label: "Languages",
-skills: ["TypeScript", "JavaScript", "Python", "Dart", "SQL", "Java", "HTML", "CSS"],
+    skills: ["TypeScript", "JavaScript", "Python", "Dart", "Java", "SQL"],
   },
   {
     label: "Frontend & Mobile",
@@ -253,32 +272,29 @@ skills: ["TypeScript", "JavaScript", "Python", "Dart", "SQL", "Java", "HTML", "C
       "Responsive Design",
       "Accessibility",
       "Deep Linking",
-      "State Management",
     ],
   },
   {
     label: "Backend & Data",
     skills: [
+      "Node.js",
       "Supabase",
       "PostgreSQL",
-      "Node.js",
       "REST APIs",
       "Authentication",
       "Row-Level Security",
-      "Database-Driven Applications",
     ],
   },
   {
-    label: "Applied AI & ML",
+    label: "AI/ML",
     skills: [
       "PyTorch",
       "Vercel AI SDK",
-      "Gradio",
       "Transfer Learning",
+      "Computer Vision",
       "Model Evaluation",
       "Grad-CAM",
-      "Computer Vision",
-      "Prompt Engineering",
+      "Gradio",
     ],
   },
   {
@@ -292,32 +308,6 @@ skills: ["TypeScript", "JavaScript", "Python", "Dart", "SQL", "Java", "HTML", "C
       "Flutter Testing",
       "CI/CD",
       "Vercel",
-    ],
-  },
-];
-
-export interface Leadership {
-  title: string;
-  organization: string;
-  period: string;
-  description: string[];
-}
-
-export const leadership: Leadership[] = [
-  {
-    title: "Mentee",
-    organization: "Macquarie University Mentoring Program",
-    period: "Feb 2026 – May 2026",
-    description: [
-      "Completed a structured mentoring program focused on career planning, professional communication, goal setting, reflective practice, networking, and career decision-making",
-    ],
-  },
-  {
-    title: "Volunteer",
-    organization: "Macquarie University Buddy Program",
-    period: "Feb 2026 – May 2026",
-    description: [
-      "Supported new students in their transition to university life through communication, guidance, and peer support",
     ],
   },
 ];

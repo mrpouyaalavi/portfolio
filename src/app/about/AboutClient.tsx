@@ -66,6 +66,16 @@ Full-Stack, Mobile & Applied AI · Macquarie University
                 automated testing and CI/CD.
               </p>
               <p className="text-text-secondary leading-relaxed">
+                I&apos;m currently a{" "}
+                <span className="text-foreground font-medium">
+                  Software Intern at Calumino
+                </span>
+                , contributing to internal software applications and working
+                with Python-based data and machine-learning workflows
+                alongside engineers through code reviews and iterative
+                development.
+              </p>
+              <p className="text-text-secondary leading-relaxed">
                 I care about building software that is understandable,
                 maintainable and useful to real people. That means considering
                 interface quality, data design, accessibility, testing and

@@ -10,6 +10,7 @@ import {
   Sparkles,
   MapPin,
   GraduationCap,
+  Briefcase,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { projects, skillGroups } from "@/lib/data";
@@ -128,6 +129,10 @@ I build accessible full-stack web applications, Flutter mobile
               <span className="text-foreground font-medium">
                 Macquarie University Incubator
               </span>
+              , and currently gaining industry experience as a{" "}
+              <span className="text-foreground font-medium">
+                Software Intern at Calumino
+              </span>
               .
             </motion.p>
 
@@ -139,10 +144,11 @@ I build accessible full-stack web applications, Flutter mobile
               className="flex flex-wrap gap-2 mb-8"
             >
               {[
-{
+                {
                   icon: GraduationCap,
                   text: "Macquarie University · Bachelor of Information Technology · November 2026",
                 },
+                { icon: Briefcase, text: "Software Intern @ Calumino" },
                 { icon: MapPin, text: "Sydney, Australia" },
               ].map(({ icon: Icon, text }) => (
                 <span
