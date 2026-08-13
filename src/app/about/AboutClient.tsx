@@ -35,7 +35,7 @@ export function AboutClient() {
                 About Me
               </p>
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground leading-tight">
-                Pouya Alavi Naeini
+                Leo Alavi
               </h1>
               <p className="text-xl text-accent-light font-medium">
                 Graduate Software Engineer
@@ -171,8 +171,8 @@ Full-Stack, Mobile & Applied AI · Macquarie University
                 <div className="relative w-48 h-48 lg:w-56 lg:h-56 rounded-2xl p-0.5 bg-linear-to-br from-accent/40 via-secondary/20 to-accent/10">
                   <div className="w-full h-full rounded-2xl overflow-hidden bg-white ring-1 ring-border-subtle">
                     <Image
-                      src="/pouya-profile.jpeg"
-                      alt="Pouya Alavi Naeini"
+                      src="/leo-profile.jpeg"
+                      alt="Leo Alavi"
                       width={400}
                       height={400}
                       priority

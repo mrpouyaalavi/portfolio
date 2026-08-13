@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     title: project.title,
     description: project.description,
     openGraph: {
-      title: `${project.title} | Pouya Alavi Naeini`,
+      title: `${project.title} | Leo Alavi`,
       description: project.description,
     },
   };

@@ -4,14 +4,14 @@ import { ContactClient } from "./ContactClient";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Pouya Alavi Naeini. Open to collaborations, opportunities, and conversations.",
+    "Get in touch with Leo Alavi. Open to collaborations, opportunities, and conversations.",
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
-    title: "Contact | Pouya Alavi Naeini",
+    title: "Contact | Leo Alavi",
     description:
-      "Get in touch with Pouya Alavi Naeini. Open to collaborations, opportunities, and conversations.",
+      "Get in touch with Leo Alavi. Open to collaborations, opportunities, and conversations.",
   },
 };
 

@@ -84,7 +84,7 @@ export function ContactClient() {
                 id="body"
                 name="body"
                 rows={5}
-                  placeholder="Hi Pouya, I'm reaching out about..."
+                  placeholder="Hi Leo, I'm reaching out about..."
                 className="w-full px-4 py-3 rounded-xl bg-overlay-subtle border border-border-subtle text-foreground placeholder:text-text-muted text-sm focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/30 transition-all resize-none"
               />
             </div>
@@ -128,7 +128,7 @@ export function ContactClient() {
                 <span className="text-xs font-medium text-text-secondary group-hover:text-accent transition-colors">
                   GitHub
                 </span>
-                <span className="text-[11px] text-text-muted">@mrpouyaalavi</span>
+                <span className="text-[11px] text-text-muted">@leoalavi</span>
               </a>
               <a
                 href={LINKEDIN_URL}
@@ -142,7 +142,7 @@ export function ContactClient() {
                 <span className="text-xs font-medium text-text-secondary group-hover:text-accent transition-colors">
                   LinkedIn
                 </span>
-                <span className="text-[11px] text-text-muted">pouya-alavi</span>
+                <span className="text-[11px] text-text-muted">leo-alavi</span>
               </a>
             </div>
 

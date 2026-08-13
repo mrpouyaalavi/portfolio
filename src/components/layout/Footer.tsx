@@ -22,10 +22,10 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2.5">
               <div className="w-8 h-8 rounded-lg bg-accent/10 border border-accent/20 flex items-center justify-center">
-                <span className="text-accent font-bold text-sm">P</span>
+                <span className="text-accent font-bold text-sm">L</span>
               </div>
               <span className="font-semibold text-foreground text-sm">
-                Pouya Alavi Naeini
+                Leo Alavi
               </span>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed max-w-xs">
@@ -103,7 +103,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-10 pt-6 border-t border-border-subtle flex items-center justify-between">
           <p className="text-xs text-text-muted">
-            &copy; 2026 Pouya Alavi Naeini. All rights reserved.
+            &copy; 2026 Leo Alavi. All rights reserved.
           </p>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: "/about",
   },
   openGraph: {
-    title: "About | Pouya Alavi Naeini",
+    title: "About | Leo Alavi",
     description:
       "Australian graduate software engineer in Sydney, working across full-stack web, Flutter mobile and applied AI. Co-founder of the Syllabus Sync ecosystem, graduating November 2026.",
   },

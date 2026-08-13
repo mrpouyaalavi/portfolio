@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Typing animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=700&color=7C3AED&center=true&vCenter=true&width=860&lines=Pouya+Alavi+Naeini+%E2%80%94+Graduate+Software+Engineer;Full-Stack+Web+%C2%B7+Flutter+Mobile+%C2%B7+Applied+AI;Next.js+%C2%B7+React+%C2%B7+TypeScript+%C2%B7+Tailwind+CSS;Sydney%2C+Australia+%C2%B7+Australian+Citizen+%C2%B7+Graduating+November+2026;Open+to+Graduate+Software+Roles)](https://pouyaalavi.dev)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=700&color=7C3AED&center=true&vCenter=true&width=860&lines=Leo+Alavi+%E2%80%94+Graduate+Software+Engineer;Full-Stack+Web+%C2%B7+Flutter+Mobile+%C2%B7+Applied+AI;Next.js+%C2%B7+React+%C2%B7+TypeScript+%C2%B7+Tailwind+CSS;Sydney%2C+Australia+%C2%B7+Australian+Citizen+%C2%B7+Graduating+November+2026;Open+to+Graduate+Software+Roles)](https://leoalavi.dev)
 
 <!-- Badges -->
 ![Next.js](https://img.shields.io/badge/Next.js_16-000?style=for-the-badge&logo=nextdotjs)
@@ -17,15 +17,15 @@
 
 <br/>
 
-# pouyaalavi.dev — Personal Portfolio
+# leoalavi.dev — Personal Portfolio
 
 > **A modern personal portfolio built with Next.js, React, TypeScript and Tailwind CSS, showcasing my full-stack web, Flutter mobile and applied AI projects.**
 
-This repository contains the personal portfolio of **Pouya Alavi Naeini**, an Australian citizen and final-year Bachelor of Information Technology student at Macquarie University, majoring in Artificial Intelligence and Web and Mobile Application Development and graduating in November 2026.
+This repository contains the personal portfolio of **Leo Alavi**, an Australian citizen and final-year Bachelor of Information Technology student at Macquarie University, majoring in Artificial Intelligence and Web and Mobile Application Development and graduating in November 2026.
 
 The website presents my software-engineering experience, technical projects, education and current focus across full-stack web development, Flutter mobile development and applied AI.
 
-**[🔗 Live Site](https://www.pouyaalavi.dev)** &nbsp;·&nbsp; **[💼 LinkedIn](https://linkedin.com/in/pouya-alavi)** &nbsp;·&nbsp; **[🐙 GitHub](https://github.com/mrpouyaalavi)**
+**[🔗 Live Site](https://www.leoalavi.dev)** &nbsp;·&nbsp; **[💼 LinkedIn](https://linkedin.com/in/leo-alavi)** &nbsp;·&nbsp; **[🐙 GitHub](https://github.com/leoalavi)**
 
 <br/>
 
@@ -131,7 +131,7 @@ src/
 │   ├── data.ts           # Shared project, experience, education and skills data
 │   └── utils.ts          # Shared utilities and Framer Motion variants
 └── public/
-    └── pouya-profile.jpeg  # Public images and downloadable assets
+    └── leo-profile.jpeg  # Public images and downloadable assets
 ```
 
 <br/>
@@ -201,7 +201,7 @@ Current quality considerations include:
 
 ```bash
 # Clone repository
-git clone https://github.com/mrpouyaalavi/portfolio.git
+git clone https://github.com/leoalavi/portfolio.git
 cd portfolio
 
 # Install dependencies
@@ -236,7 +236,7 @@ npm start
 
 The production website is deployed on Vercel and connected to the repository for automatic deployments.
 
-Live site: [https://www.pouyaalavi.dev](https://www.pouyaalavi.dev)
+Live site: [https://www.leoalavi.dev](https://www.leoalavi.dev)
 
 <br/>
 
@@ -255,7 +255,7 @@ Built with Next.js, React, TypeScript and Supabase, with accessibility, multilin
 | | |
 | :--- | :--- |
 | **Stack** | Next.js · React · TypeScript · Supabase · Tailwind CSS |
-| **Links** | [Live Demo](https://syllabus-sync.app) · [Source](https://github.com/mrpouyaalavi/syllabus-sync) |
+| **Links** | [Live Demo](https://syllabus-sync.app) · [Source](https://github.com/leoalavi/syllabus-sync) |
 
 ### 2. MQ Navigation — Flutter Campus Navigation Companion
 
@@ -264,7 +264,7 @@ A Flutter-based campus-navigation companion for students and visitors, with camp
 | | |
 | :--- | :--- |
 | **Stack** | Flutter · Dart · GoRouter · Deep Linking · GitHub Actions |
-| **Links** | [Source](https://github.com/mrpouyaalavi/MQ_Navigation) |
+| **Links** | [Source](https://github.com/leoalavi/MQ_Navigation) |
 
 ### 3. Sylla — AI-Powered Study Assistant
 
@@ -273,7 +273,7 @@ An AI-assisted study application with streaming conversations, persistent histor
 | | |
 | :--- | :--- |
 | **Stack** | Next.js · React · TypeScript · Supabase · Vercel AI SDK |
-| **Links** | [Source](https://github.com/mrpouyaalavi/Sylla) |
+| **Links** | [Source](https://github.com/leoalavi/Sylla) |
 
 ### 4. CIFAR-10 Image Classification — PyTorch Benchmark
 
@@ -282,7 +282,7 @@ An end-to-end image-classification project comparing a custom CNN, MobileNetV2 a
 | | |
 | :--- | :--- |
 | **Stack** | Python · PyTorch · torchvision · Gradio · Hugging Face Spaces |
-| **Links** | [Live Demo](https://cifar10.pouyaalavi.dev) · [Source](https://github.com/mrpouyaalavi/CIFAR-10-Image-Classification) |
+| **Links** | [Live Demo](https://cifar10.leoalavi.dev) · [Source](https://github.com/leoalavi/CIFAR-10-Image-Classification) |
 
 <br/>
 
@@ -301,7 +301,7 @@ No open-source licence file is currently included in this repository, so all rig
 ### `> ping --author`
 
 ```
-> Target      : Pouya Alavi Naeini — Graduate Software Engineer
+> Target      : Leo Alavi — Graduate Software Engineer
 > University  : Macquarie University
 > Degree      : Bachelor of Information Technology
 > Majors      : Artificial Intelligence and Web and Mobile Application Development
@@ -311,9 +311,9 @@ No open-source licence file is currently included in this repository, so all rig
 > Status      : [●] ONLINE — open to graduate and junior software-engineering opportunities
 ```
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-7c3aed?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=0a0a0f)](https://www.linkedin.com/in/pouya-alavi/)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-38bdf8?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=0a0a0f)](https://github.com/mrpouyaalavi)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-34d399?style=for-the-badge&logo=vercel&logoColor=ffffff&labelColor=0a0a0f)](https://pouyaalavi.dev)
-[![Email](https://img.shields.io/badge/Email-Contact-f59e0b?style=for-the-badge&logo=gmail&logoColor=09090b&labelColor=0a0a0f)](mailto:pouya@pouyaalavi.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-7c3aed?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=0a0a0f)](https://www.linkedin.com/in/leo-alavi/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-38bdf8?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=0a0a0f)](https://github.com/leoalavi)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-34d399?style=for-the-badge&logo=vercel&logoColor=ffffff&labelColor=0a0a0f)](https://leoalavi.dev)
+[![Email](https://img.shields.io/badge/Email-Contact-f59e0b?style=for-the-badge&logo=gmail&logoColor=09090b&labelColor=0a0a0f)](mailto:leo@leoalavi.dev)
 
 </div>

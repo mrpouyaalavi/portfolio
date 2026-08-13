@@ -97,7 +97,7 @@ export default function Home() {
             >
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]">
                 <span className="text-foreground">Hi, I&apos;m </span>
-                <span className="text-gradient">Pouya</span>
+                <span className="text-gradient">Leo</span>
               </h1>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-text-secondary">
                 Graduate Software Engineer
@@ -217,8 +217,8 @@ I build accessible full-stack web applications, Flutter mobile
                 <div className="relative w-64 h-64 xl:w-72 xl:h-72 rounded-full p-1 bg-linear-to-br from-accent/40 via-secondary/20 to-accent/10">
                   <div className="w-full h-full rounded-full overflow-hidden bg-white ring-2 ring-border-subtle">
                     <Image
-                      src="/pouya-profile.jpeg"
-                      alt="Pouya Alavi Naeini, Graduate Software Engineer"
+                      src="/leo-profile.jpeg"
+                      alt="Leo Alavi, Graduate Software Engineer"
                       width={400}
                       height={400}
                       priority

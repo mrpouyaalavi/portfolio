@@ -38,10 +38,10 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group" aria-label="Home">
           <div className="w-8 h-8 rounded-lg bg-accent/10 border border-accent/20 flex items-center justify-center group-hover:bg-accent/20 group-hover:border-accent/40 transition-all duration-300">
-            <span className="text-accent font-bold text-sm">P</span>
+            <span className="text-accent font-bold text-sm">L</span>
           </div>
           <span className="font-semibold text-foreground group-hover:text-accent transition-colors duration-300 text-sm tracking-tight">
-            Pouya Alavi Naeini
+            Leo Alavi
           </span>
         </Link>
 

@@ -50,7 +50,7 @@ export const projects: Record<string, Project> = {
       "Vitest",
     ],
     links: {
-      repo: "https://github.com/mrpouyaalavi/Sylla",
+      repo: "https://github.com/leoalavi/Sylla",
       demo: "https://sylla.syllabus-sync.app",
       demoLabel: "Live App",
     },
@@ -80,7 +80,7 @@ export const projects: Record<string, Project> = {
       "Playwright",
     ],
     links: {
-      repo: "https://github.com/mrpouyaalavi/syllabus-sync",
+      repo: "https://github.com/leoalavi/syllabus-sync",
       demo: "https://syllabus-sync.app",
       demoLabel: "Live Platform",
     },
@@ -110,7 +110,7 @@ export const projects: Record<string, Project> = {
       "Flutter Testing",
     ],
     links: {
-      repo: "https://github.com/mrpouyaalavi/MQ_Navigation",
+      repo: "https://github.com/leoalavi/MQ_Navigation",
     },
     highlights: [
       "Built a Flutter campus navigation application supporting destination discovery, route previews, transport information and access to key university locations",
@@ -137,8 +137,8 @@ export const projects: Record<string, Project> = {
       "Grad-CAM",
     ],
     links: {
-      repo: "https://github.com/mrpouyaalavi/CIFAR-10-Image-Classification",
-      demo: "https://cifar10.pouyaalavi.dev",
+      repo: "https://github.com/leoalavi/CIFAR-10-Image-Classification",
+      demo: "https://cifar10.leoalavi.dev",
     },
     highlights: [
       "Designed and implemented an end-to-end deep learning pipeline comparing a custom CNN, MobileNetV2 and ResNet-18 under controlled conditions; ResNet-18 achieved 87.48% test accuracy using transfer learning, outperforming the custom CNN baseline",
@@ -183,7 +183,7 @@ export const experiences: Experience[] = [
     links: {
       demo: "https://syllabus-sync.app",
       demoLabel: "syllabus-sync.app",
-      repo: "https://github.com/mrpouyaalavi/syllabus-sync",
+      repo: "https://github.com/leoalavi/syllabus-sync",
       repoLabel: "GitHub",
     },
     description: [

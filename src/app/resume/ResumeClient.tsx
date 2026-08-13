@@ -39,7 +39,7 @@ export function ResumeClient() {
               <h1 className="text-3xl md:text-4xl font-bold text-foreground">Resume</h1>
             </div>
             <a
-              href="/Pouya_Resume.pdf"
+              href="/Leo_Resume.pdf"
               download
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent hover:bg-accent/90 text-white text-sm font-semibold rounded-xl transition-all shadow-lg shadow-accent/25"
             >
@@ -62,7 +62,7 @@ export function ResumeClient() {
               <div className="flex flex-col md:flex-row justify-between gap-6">
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-                    Pouya Alavi Naeini
+                    Leo Alavi
                   </h2>
                   <p className="text-lg text-accent-light font-medium mb-4">
                     Graduate Software Engineer · Full-Stack, Mobile &amp; Applied AI
@@ -101,7 +101,7 @@ export function ResumeClient() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors text-sm"
                   >
-                    <LinkedinIcon size={14} /> linkedin.com/in/pouya-alavi
+                    <LinkedinIcon size={14} /> linkedin.com/in/leo-alavi
                   </a>
                   <a
                     href={GITHUB_URL}
@@ -109,7 +109,7 @@ export function ResumeClient() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors text-sm"
                   >
-                    <GithubIcon size={14} /> github.com/mrpouyaalavi
+                    <GithubIcon size={14} /> github.com/leoalavi
                   </a>
                   <a
                     href={SITE_URL}
@@ -117,7 +117,7 @@ export function ResumeClient() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors text-sm"
                   >
-                    <Code2 size={14} /> pouyaalavi.dev
+                    <Code2 size={14} /> leoalavi.dev
                   </a>
                 </div>
               </div>

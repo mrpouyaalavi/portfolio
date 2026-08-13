@@ -4,12 +4,12 @@ import { ResumeClient } from "./ResumeClient";
 export const metadata: Metadata = {
   title: "Resume",
   description:
-"Resume for Pouya Alavi Naeini — graduate software engineer working across full-stack web, Flutter mobile and applied AI. Final-year Bachelor of Information Technology student at Macquarie University, graduating November 2026.",
+"Resume for Leo Alavi — graduate software engineer working across full-stack web, Flutter mobile and applied AI. Final-year Bachelor of Information Technology student at Macquarie University, graduating November 2026.",
   alternates: {
     canonical: "/resume",
   },
   openGraph: {
-    title: "Resume | Pouya Alavi Naeini",
+    title: "Resume | Leo Alavi",
     description:
       "Graduate software engineering resume with projects, skills, experience, education and PDF download.",
   },
