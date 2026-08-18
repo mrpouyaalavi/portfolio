@@ -17,7 +17,7 @@
 
 <br/>
 
-# leoalavi.dev — Personal Portfolio
+# leoalavi.dev - Personal Portfolio
 
 > **A modern personal portfolio built with Next.js, React, TypeScript and Tailwind CSS, showcasing my full-stack web, Flutter mobile and applied AI projects.**
 
