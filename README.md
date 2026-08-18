@@ -246,7 +246,7 @@ Live site: [https://www.leoalavi.dev](https://www.leoalavi.dev)
 
 ## 📌 Featured Portfolio Projects
 
-### 1. Syllabus Sync — Student Experience Platform
+### 1. Syllabus Sync - Student Experience Platform
 
 A connected student-experience platform for Macquarie University students, supporting academic planning, deadlines, campus information and student productivity.
 
@@ -257,7 +257,7 @@ Built with Next.js, React, TypeScript and Supabase, with accessibility, multilin
 | **Stack** | Next.js · React · TypeScript · Supabase · Tailwind CSS |
 | **Links** | [Live Demo](https://syllabus-sync.app) · [Source](https://github.com/leoalavi/syllabus-sync) |
 
-### 2. MQ Navigation — Flutter Campus Navigation Companion
+### 2. MQ Navigation - Flutter Campus Navigation Companion
 
 A Flutter-based campus-navigation companion for students and visitors, with campus discovery, route previews, transport information and destination deep links from Syllabus Sync.
 
@@ -266,7 +266,7 @@ A Flutter-based campus-navigation companion for students and visitors, with camp
 | **Stack** | Flutter · Dart · GoRouter · Deep Linking · GitHub Actions |
 | **Links** | [Source](https://github.com/leoalavi/MQ_Navigation) |
 
-### 3. Sylla — AI-Powered Study Assistant
+### 3. Sylla - AI-Powered Study Assistant
 
 An AI-assisted study application with streaming conversations, persistent history and reusable tools for summaries, explanations, flashcards, quizzes and structured study planning.
 
@@ -275,7 +275,7 @@ An AI-assisted study application with streaming conversations, persistent histor
 | **Stack** | Next.js · React · TypeScript · Supabase · Vercel AI SDK |
 | **Links** | [Source](https://github.com/leoalavi/Sylla) |
 
-### 4. CIFAR-10 Image Classification — PyTorch Benchmark
+### 4. CIFAR-10 Image Classification - PyTorch Benchmark
 
 An end-to-end image-classification project comparing a custom CNN, MobileNetV2 and ResNet-18. ResNet-18 achieved 87.48% test accuracy, with Grad-CAM interpretability, INT8 quantisation, CLI inference and a live Gradio demo.
 
