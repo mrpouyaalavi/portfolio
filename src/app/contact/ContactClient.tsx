@@ -25,8 +25,8 @@ export function ContactClient() {
             </h1>
             <p className="text-text-secondary max-w-md mx-auto">
               Open to graduate and early-career software roles in Sydney.
-              Email is the fastest way to reach me — I aim to reply within 24
-              hours.
+              Email is the fastest way to reach me and I usually reply within
+              24 hours.
             </p>
           </div>
         </AnimatedSection>

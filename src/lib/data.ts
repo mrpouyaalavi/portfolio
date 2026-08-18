@@ -33,7 +33,7 @@ export interface Project {
 export const projects: Record<string, Project> = {
   sylla: {
     slug: "sylla",
-    title: "Sylla — AI-Powered Study Assistant",
+    title: "Sylla: AI-Powered Study Assistant",
     category: "Applied AI Product",
     year: "Jul 2026 – Present",
     description:
@@ -62,7 +62,7 @@ export const projects: Record<string, Project> = {
   },
   "syllabus-sync": {
     slug: "syllabus-sync",
-    title: "Syllabus Sync Ecosystem — Student Experience Platform",
+    title: "Syllabus Sync Ecosystem: Student Experience Platform",
     category: "Full-Stack Web",
     year: "Dec 2025 – Present",
     description:
@@ -94,7 +94,7 @@ export const projects: Record<string, Project> = {
   },
   "mq-navigation": {
     slug: "mq-navigation",
-    title: "MQ Navigation — Flutter Campus Navigation Companion",
+    title: "MQ Navigation: Flutter Campus Navigation Companion",
     category: "Mobile Development",
     year: "Mar 2026 – Present",
     description:
@@ -120,7 +120,7 @@ export const projects: Record<string, Project> = {
   },
   "cifar-10-image-classification": {
     slug: "cifar-10-image-classification",
-    title: "CIFAR-10 Image Classification — PyTorch Benchmark",
+    title: "CIFAR-10 Image Classification: PyTorch Benchmark",
     category: "AI / Machine Learning",
     year: "Apr 2026 – Jul 2026",
     description:
